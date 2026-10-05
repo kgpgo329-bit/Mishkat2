@@ -59,7 +59,7 @@ export function isGeminiConfigured() {
  */
 export async function callGeminiQuestionInterpreter(originalQuestion, options = {}) {
   const apiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY;
-  const model = process.env.GEMINI_MODEL || 'gemini-3.5-flash';
+  const model = options.model || process.env.GEMINI_MODEL || 'gemini-flash-lite-latest';
 
   if (!apiKey || apiKey.trim().length === 0) {
     return {
@@ -74,6 +74,7 @@ export async function callGeminiQuestionInterpreter(originalQuestion, options = 
   aiDiagnostics.totalCalls++;
   const startTime = Date.now();
   let retries = 0;
+  const timeoutMs = options.timeoutMs ?? 3000;
 
   const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`;
 
@@ -98,7 +99,8 @@ export async function callGeminiQuestionInterpreter(originalQuestion, options = 
     const res = await fetch(endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(timeoutMs)
     });
 
     if (!res.ok) {

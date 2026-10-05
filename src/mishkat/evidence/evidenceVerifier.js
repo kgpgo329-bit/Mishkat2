@@ -79,10 +79,32 @@ ${chunk.text}
 }
 
 /**
- * Robust execution of Gemini API requests with rate-aware 429 backoff and jitter
+ * Detects whether an HTTP 429 response is hard plan/billing quota exhaustion
+ * versus a transient rate limit (e.g. RPM / concurrency).
+ */
+export function isHardQuotaExhausted(errorText) {
+  if (!errorText || typeof errorText !== 'string') return false;
+  const lower = errorText.toLowerCase();
+  return (
+    lower.includes('quota exceeded') ||
+    lower.includes('exceeded your current quota') ||
+    lower.includes('billing') ||
+    lower.includes('resource_exhausted') ||
+    lower.includes('check your plan')
+  );
+}
+
+/**
+ * Robust execution of Gemini API requests with rate-aware 429 backoff and jitter.
+ * Invariants:
+ * - Hard quota exhaustion fails fast immediately (no multi-minute wait).
+ * - Transient 429 retries at most 2 times with max 2000ms backoff per retry.
+ * - Explicit network timeout (~3000ms) with AbortSignal.timeout().
+ * - Fails safely without converting failed verification into VERIFIED.
  */
 export async function executeGeminiWithRetry({ endpoint, payload, options = {} }) {
-  const maxRetries = options.maxRateLimitRetries ?? 5;
+  const maxRetries = options.maxRateLimitRetries ?? 2;
+  const timeoutMs = options.timeoutMs ?? 3000;
   let lastError = null;
   let hadRateLimit = false;
 
@@ -92,7 +114,8 @@ export async function executeGeminiWithRetry({ endpoint, payload, options = {} }
       const res = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
+        signal: AbortSignal.timeout(timeoutMs)
       });
 
       const latencyMs = Date.now() - startTime;
@@ -103,6 +126,19 @@ export async function executeGeminiWithRetry({ endpoint, payload, options = {} }
           hadRateLimit = true;
           globalEvidenceDiagnostics.recordRateLimitHit();
 
+          // 1. HARD QUOTA EXHAUSTION: Fail fast immediately!
+          if (isHardQuotaExhausted(errorText)) {
+            globalEvidenceDiagnostics.recordRetryExhausted();
+            return {
+              success: false,
+              error: `HARD_QUOTA_EXHAUSTED: ${errorText}`,
+              isRateLimit: true,
+              isHardQuota: true,
+              latencyMs
+            };
+          }
+
+          // 2. TRANSIENT RATE LIMIT: Bounded retry (max 2 retries, max 2000ms delay)
           let waitSeconds = null;
           const retryHeader = res.headers.get('retry-after');
           if (retryHeader) {
@@ -115,17 +151,22 @@ export async function executeGeminiWithRetry({ endpoint, payload, options = {} }
             }
           }
           const baseWaitMs = (waitSeconds && !isNaN(waitSeconds) && waitSeconds > 0)
-            ? (waitSeconds * 1000) + 1500
-            : Math.pow(2, attempt) * 4000;
-          const jitter = Math.floor(Math.random() * 800);
-          const totalWaitMs = Math.min(baseWaitMs + jitter, 65000);
+            ? Math.min((waitSeconds * 1000) + 200, 2000)
+            : Math.min(Math.pow(2, attempt) * 500, 2000);
+          const jitter = Math.floor(Math.random() * 200);
+          const totalWaitMs = Math.min(baseWaitMs + jitter, 2000);
 
           if (attempt < maxRetries) {
             await new Promise(r => setTimeout(r, totalWaitMs));
             continue;
           } else {
             globalEvidenceDiagnostics.recordRetryExhausted();
-            throw new Error(`HTTP_429_EXHAUSTED: Rate limit quota exceeded after ${maxRetries} retries: ${errorText}`);
+            return {
+              success: false,
+              error: `HTTP_429_EXHAUSTED: Transient rate limit exceeded after ${maxRetries} retries: ${errorText}`,
+              isRateLimit: true,
+              latencyMs
+            };
           }
         }
         throw new Error(`HTTP_${res.status}: ${errorText}`);
@@ -139,7 +180,14 @@ export async function executeGeminiWithRetry({ endpoint, payload, options = {} }
       return { success: true, json, latencyMs };
     } catch (err) {
       lastError = err.message;
-      if (err.message && err.message.includes('HTTP_429_EXHAUSTED')) {
+      if (err.name === 'TimeoutError' || err.name === 'AbortError' || err.message?.includes('timeout') || err.message?.includes('aborted')) {
+        return {
+          success: false,
+          error: `NETWORK_TIMEOUT: Request exceeded ${timeoutMs}ms`,
+          isTimeout: true
+        };
+      }
+      if (err.message && (err.message.includes('HARD_QUOTA_EXHAUSTED') || err.message.includes('HTTP_429_EXHAUSTED'))) {
         return { success: false, error: lastError, isRateLimit: true };
       }
       if (err.message && err.message.includes('HTTP_429') && attempt < maxRetries) {
@@ -148,7 +196,7 @@ export async function executeGeminiWithRetry({ endpoint, payload, options = {} }
       if (attempt === maxRetries) {
         return { success: false, error: lastError, isRateLimit: lastError && lastError.includes('429') };
       }
-      await new Promise(r => setTimeout(r, 1000 * (attempt + 1)));
+      await new Promise(r => setTimeout(r, Math.min(500 * (attempt + 1), 1000)));
     }
   }
 
