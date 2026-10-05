@@ -1,0 +1,268 @@
+{
+  "sourceId": "src_quran_king_fahd",
+  "sourceName": "مصحف المدينة النبوية - مجمع الملك فهد لطباعة المصحف الشريف",
+  "domain": "QURAN",
+  "evidenceType": "QURANIC_CANONICAL_TEXT",
+  "records": [
+    {
+      "recordId": "rec_quran_112_1",
+      "title": "سورة الإخلاص - آية 1",
+      "section": "الجزء الثلاثون",
+      "subsection": "سورة الإخلاص",
+      "text": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+      "topics": ["التوحيد", "أسماء الله وصفاته", "الإخلاص"],
+      "reference": {
+        "surahNumber": 112,
+        "ayahNumber": 1,
+        "book": "القرآن الكريم",
+        "chapter": "سورة الإخلاص",
+        "page": 604
+      },
+      "attribution": {
+        "author": "كلام الله المعجز المنزل على رسوله محمد ﷺ",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "تواتر نص المصحف الشريف بإجماع الأمة"
+      },
+      "sourceUrl": "https://qurancomplex.gov.sa"
+    },
+    {
+      "recordId": "rec_quran_112_2",
+      "title": "سورة الإخلاص - آية 2",
+      "section": "الجزء الثلاثون",
+      "subsection": "سورة الإخلاص",
+      "text": "اللَّهُ الصَّمَدُ",
+      "topics": ["التوحيد", "أسماء الله وصفاته", "الإخلاص"],
+      "reference": {
+        "surahNumber": 112,
+        "ayahNumber": 2,
+        "book": "القرآن الكريم",
+        "chapter": "سورة الإخلاص",
+        "page": 604
+      },
+      "attribution": {
+        "author": "كلام الله المعجز المنزل على رسوله محمد ﷺ",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "تواتر نص المصحف الشريف بإجماع الأمة"
+      },
+      "sourceUrl": "https://qurancomplex.gov.sa"
+    },
+    {
+      "recordId": "rec_quran_112_3",
+      "title": "سورة الإخلاص - آية 3",
+      "section": "الجزء الثلاثون",
+      "subsection": "سورة الإخلاص",
+      "text": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+      "topics": ["التوحيد", "نفي الصاحبة والولد", "تنزيه الله"],
+      "reference": {
+        "surahNumber": 112,
+        "ayahNumber": 3,
+        "book": "القرآن الكريم",
+        "chapter": "سورة الإخلاص",
+        "page": 604
+      },
+      "attribution": {
+        "author": "كلام الله المعجز المنزل على رسوله محمد ﷺ",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "تواتر نص المصحف الشريف بإجماع الأمة"
+      },
+      "sourceUrl": "https://qurancomplex.gov.sa"
+    },
+    {
+      "recordId": "rec_quran_112_4",
+      "title": "سورة الإخلاص - آية 4",
+      "section": "الجزء الثلاثون",
+      "subsection": "سورة الإخلاص",
+      "text": "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
+      "topics": ["التوحيد", "نفي الكفء والمثيل", "تنزيه الله"],
+      "reference": {
+        "surahNumber": 112,
+        "ayahNumber": 4,
+        "book": "القرآن الكريم",
+        "chapter": "سورة الإخلاص",
+        "page": 604
+      },
+      "attribution": {
+        "author": "كلام الله المعجز المنزل على رسوله محمد ﷺ",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "تواتر نص المصحف الشريف بإجماع الأمة"
+      },
+      "sourceUrl": "https://qurancomplex.gov.sa"
+    },
+    {
+      "recordId": "rec_quran_2_144",
+      "title": "سورة البقرة - آية 144 (تحويل القبلة إلى المسجد الحرام)",
+      "section": "الجزء الثاني",
+      "subsection": "سورة البقرة",
+      "text": "قَدْ نَرَىٰ تَقَلُّبَ وَجْهِكَ فِي السَّمَاءِ ۖ فَلَنُوَلِّيَنَّكَ قِبْلَةً تَرْضَاهَا ۚ فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ ۚ وَحَيْثُ مَا كُنتُمْ فَوَلُّوا وُجُوهَكُمْ شَطْرَهُ ۗ وَإِنَّ الَّذِينَ أُوتُوا الْكِتَابَ لَيَعْلَمُونَ أَنَّهُ الْحَقُّ مِن رَّبِّهِمْ ۗ وَمَا اللَّهُ بِغَافِلٍ عَمَّا يَعْمَلُونَ",
+      "topics": ["القبلة", "المسجد الحرام", "الكعبة المشرفة", "التوحيد"],
+      "reference": {
+        "surahNumber": 2,
+        "ayahNumber": 144,
+        "book": "القرآن الكريم",
+        "chapter": "سورة البقرة",
+        "page": 22
+      },
+      "attribution": {
+        "author": "كلام الله المعجز المنزل على رسوله محمد ﷺ",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "تواتر نص المصحف الشريف بإجماع الأمة"
+      },
+      "sourceUrl": "https://qurancomplex.gov.sa"
+    },
+    {
+      "recordId": "rec_quran_2_256",
+      "title": "سورة البقرة - آية 256 (لا إكراه في الدين)",
+      "section": "الجزء الثالث",
+      "subsection": "سورة البقرة",
+      "text": "لَا إِكْرَاهَ فِي الدِّينِ ۖ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ ۚ فَمَن يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِن بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقَىٰ لَا انفِصَامَ لَهَا ۗ وَاللَّهُ سَمِيعٌ عَلِيمٌ",
+      "topics": ["حرية الاعتقاد", "نفي الإكراه في الدين", "التوحيد والكفر بالطاغوت"],
+      "reference": {
+        "surahNumber": 2,
+        "ayahNumber": 256,
+        "book": "القرآن الكريم",
+        "chapter": "سورة البقرة",
+        "page": 42
+      },
+      "attribution": {
+        "author": "كلام الله المعجز المنزل على رسوله محمد ﷺ",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "تواتر نص المصحف الشريف بإجماع الأمة"
+      },
+      "sourceUrl": "https://qurancomplex.gov.sa"
+    },
+    {
+      "recordId": "rec_quran_4_82",
+      "title": "سورة النساء - آية 82 (نفي الاختلاف والتناقض عن القرآن)",
+      "section": "الجزء الخامس",
+      "subsection": "سورة النساء",
+      "text": "أَفَلَا يَتَدَبَّرُونَ الْقُرْآنَ ۚ وَلَوْ كَانَ مِنْ عِندِ غَيْرِ اللَّهِ لَوَجَدُوا فِيهِ اخْتِلَافًا كَثِيرًا",
+      "topics": ["إعجاز القرآن", "مصدر القرآن الرباني", "نفي التناقض والتعارض"],
+      "reference": {
+        "surahNumber": 4,
+        "ayahNumber": 82,
+        "book": "القرآن الكريم",
+        "chapter": "سورة النساء",
+        "page": 91
+      },
+      "attribution": {
+        "author": "كلام الله المعجز المنزل على رسوله محمد ﷺ",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "تواتر نص المصحف الشريف بإجماع الأمة"
+      },
+      "sourceUrl": "https://qurancomplex.gov.sa"
+    },
+    {
+      "recordId": "rec_quran_16_125",
+      "title": "سورة النحل - آية 125 (الدعوة بالحكمة والموعظة الحسنة)",
+      "section": "الجزء الرابع عشر",
+      "subsection": "سورة النحل",
+      "text": "ادْعُ إِلَىٰ سَبِيلِ رَبِّكَ بِالْحِكْمَةِ وَالْمَوْعِظَةِ الْحَسَنَةِ ۖ وَجَادِلْهُم بِالَّتِي هِيَ أَحْسَنُ ۚ إِنَّ رَبَّكَ هُوَ أَعْلَمُ بِمَن ضَلَّ عَن سَبِيلِهِ ۖ وَهُوَ أَعْلَمُ بِالْمُهْتَدِينَ",
+      "topics": ["منهج الدعوة", "الحكمة والموعظة الحسنة", "الجدال بالتي هي أحسن"],
+      "reference": {
+        "surahNumber": 16,
+        "ayahNumber": 125,
+        "book": "القرآن الكريم",
+        "chapter": "سورة النحل",
+        "page": 281
+      },
+      "attribution": {
+        "author": "كلام الله المعجز المنزل على رسوله محمد ﷺ",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "تواتر نص المصحف الشريف بإجماع الأمة"
+      },
+      "sourceUrl": "https://qurancomplex.gov.sa"
+    },
+    {
+      "recordId": "rec_quran_49_13",
+      "title": "سورة الحجرات - آية 13 (وحدة الأصل البشري والتعارف)",
+      "section": "الجزء السادس والعشرون",
+      "subsection": "سورة الحجرات",
+      "text": "يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا ۚ إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ ۚ إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ",
+      "topics": ["الكرامة الإنسانية", "التعارف الإنساني", "ميزان التقوى", "نفي التمييز العنصري"],
+      "reference": {
+        "surahNumber": 49,
+        "ayahNumber": 13,
+        "book": "القرآن الكريم",
+        "chapter": "سورة الحجرات",
+        "page": 517
+      },
+      "attribution": {
+        "author": "كلام الله المعجز المنزل على رسوله محمد ﷺ",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "تواتر نص المصحف الشريف بإجماع الأمة"
+      },
+      "sourceUrl": "https://qurancomplex.gov.sa"
+    },
+    {
+      "recordId": "rec_quran_2_275",
+      "title": "سورة البقرة - آية 275 (إحلال البيع وتحريم الربا)",
+      "section": "الجزء الثالث",
+      "subsection": "سورة البقرة",
+      "text": "الَّذِينَ يَأْكُلُونَ الرِّبَا لَا يَقُومُونَ إِلَّا كَمَا يَقُومُ الَّذِي يَتَخَبَّطُهُ الشَّيْطَانُ مِنَ الْمَسِّ ۚ ذَٰلِكَ بِأَنَّهُمْ قَالُوا إِنَّمَا الْبَيْعُ مِثْلُ الرِّبَا ۗ وَأَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا",
+      "topics": ["تحريم الربا", "المعاملات المالية", "إحلال البيع", "مقاصد الشريعة المالية"],
+      "reference": {
+        "surahNumber": 2,
+        "ayahNumber": 275,
+        "book": "القرآن الكريم",
+        "chapter": "سورة البقرة",
+        "page": 47
+      },
+      "attribution": {
+        "author": "كلام الله المعجز المنزل على رسوله محمد ﷺ",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "تواتر نص المصحف الشريف بإجماع الأمة"
+      },
+      "sourceUrl": "https://qurancomplex.gov.sa"
+    }
+  ]
+}

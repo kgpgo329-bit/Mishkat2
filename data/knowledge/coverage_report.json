@@ -1,0 +1,198 @@
+{
+  "timestamp": "2026-10-05T11:16:30.223Z",
+  "summary": {
+    "totalRegisteredSources": 15,
+    "totalIndexedSources": 11,
+    "totalUnindexedSources": 4,
+    "totalRecords": 33,
+    "totalChunks": 33,
+    "rejectedDuplicates": 0,
+    "repositoryHealthy": true
+  },
+  "domains": {
+    "recordsPerDomain": {
+      "QURAN": 10,
+      "TAFSIR": 2,
+      "HADITH": 5,
+      "AQEEDAH": 2,
+      "FIQH": 2,
+      "HISTORY": 2,
+      "MISCONCEPTIONS": 3,
+      "TERMINOLOGY": 5,
+      "DAWAH": 2
+    },
+    "chunksPerDomain": {
+      "QURAN": 10,
+      "TAFSIR": 2,
+      "HADITH": 5,
+      "AQEEDAH": 2,
+      "FIQH": 2,
+      "HISTORY": 2,
+      "MISCONCEPTIONS": 3,
+      "TERMINOLOGY": 5,
+      "DAWAH": 2
+    }
+  },
+  "sources": {
+    "indexed": [
+      {
+        "sourceId": "src_quran_king_fahd",
+        "sourceName": "مصحف المدينة النبوية - مجمع الملك فهد لطباعة المصحف الشريف",
+        "domain": "QURAN",
+        "status": "INDEXED",
+        "records": 10,
+        "chunks": 10
+      },
+      {
+        "sourceId": "src_tafsir_dorar",
+        "sourceName": "موسوعة التفسير - الدرر السنية",
+        "domain": "TAFSIR",
+        "status": "INDEXED",
+        "records": 2,
+        "chunks": 2
+      },
+      {
+        "sourceId": "src_hadith_bukhari",
+        "sourceName": "الجامع المسند الصحيح المختصر (صحيح البخاري)",
+        "domain": "HADITH",
+        "status": "INDEXED",
+        "records": 3,
+        "chunks": 3
+      },
+      {
+        "sourceId": "src_hadith_muslim",
+        "sourceName": "المسند الصحيح المختصر بنقل العدل عن العدل (صحيح مسلم)",
+        "domain": "HADITH",
+        "status": "INDEXED",
+        "records": 1,
+        "chunks": 1
+      },
+      {
+        "sourceId": "src_hadith_dorar",
+        "sourceName": "الموسوعة الحديثية - الدرر السنية",
+        "domain": "HADITH",
+        "status": "INDEXED",
+        "records": 1,
+        "chunks": 1
+      },
+      {
+        "sourceId": "src_aqeedah_dorar",
+        "sourceName": "الموسوعة العقدية - الدرر السنية",
+        "domain": "AQEEDAH",
+        "status": "INDEXED",
+        "records": 2,
+        "chunks": 2
+      },
+      {
+        "sourceId": "src_fiqh_dorar",
+        "sourceName": "الموسوعة الفقهية - الدرر السنية",
+        "domain": "FIQH",
+        "status": "INDEXED",
+        "records": 2,
+        "chunks": 2
+      },
+      {
+        "sourceId": "src_history_dorar",
+        "sourceName": "الموسوعة التاريخية والسيرة النبوية - الدرر السنية",
+        "domain": "HISTORY",
+        "status": "INDEXED",
+        "records": 2,
+        "chunks": 2
+      },
+      {
+        "sourceId": "src_misconceptions_bayyinat",
+        "sourceName": "كتاب بيّنات: براهين وأدلة في تفنيد الشبهات والتساؤلات المتكررة",
+        "domain": "MISCONCEPTIONS",
+        "status": "INDEXED",
+        "records": 3,
+        "chunks": 3
+      },
+      {
+        "sourceId": "src_terminology_jamhara",
+        "sourceName": "معجم الجمهرة للمصطلحات الإسلامية وترجماتها",
+        "domain": "TERMINOLOGY",
+        "status": "INDEXED",
+        "records": 5,
+        "chunks": 5
+      },
+      {
+        "sourceId": "src_dawah_center",
+        "sourceName": "بوابة مركز دعوة للبحوث والدراسات",
+        "domain": "DAWAH",
+        "status": "INDEXED",
+        "records": 2,
+        "chunks": 2
+      }
+    ],
+    "unindexed": [
+      {
+        "sourceId": "src_quran_quranpedia",
+        "sourceName": "موسوعة القرآن الكريم - قرآن بيديا",
+        "domain": "QURAN",
+        "status": "REGISTERED_NOT_INDEXED",
+        "reason": "Source approved in registry; content awaits future ingestion bundle."
+      },
+      {
+        "sourceId": "src_tafsir_tabari",
+        "sourceName": "جامع البيان عن تأويل آي القرآن (تفسير الطبري)",
+        "domain": "TAFSIR",
+        "status": "REGISTERED_NOT_INDEXED",
+        "reason": "Source approved in registry; content awaits future ingestion bundle."
+      },
+      {
+        "sourceId": "src_hadith_shamela",
+        "sourceName": "المكتبة الشاملة - كتب السنة وشروحها",
+        "domain": "HADITH",
+        "status": "REGISTERED_NOT_INDEXED",
+        "reason": "Source approved in registry; content awaits future ingestion bundle."
+      },
+      {
+        "sourceId": "src_dawah_islamic_content",
+        "sourceName": "منصة المحتوى الإسلامي المفتوح",
+        "domain": "DAWAH",
+        "status": "REGISTERED_NOT_INDEXED",
+        "reason": "Source approved in registry; content awaits future ingestion bundle."
+      }
+    ],
+    "recordsPerSource": {
+      "src_quran_king_fahd": 10,
+      "src_quran_quranpedia": 0,
+      "src_tafsir_dorar": 2,
+      "src_tafsir_tabari": 0,
+      "src_hadith_bukhari": 3,
+      "src_hadith_muslim": 1,
+      "src_hadith_dorar": 1,
+      "src_hadith_shamela": 0,
+      "src_aqeedah_dorar": 2,
+      "src_fiqh_dorar": 2,
+      "src_history_dorar": 2,
+      "src_misconceptions_bayyinat": 3,
+      "src_terminology_jamhara": 5,
+      "src_dawah_center": 2,
+      "src_dawah_islamic_content": 0
+    },
+    "chunksPerSource": {
+      "src_quran_king_fahd": 10,
+      "src_quran_quranpedia": 0,
+      "src_tafsir_dorar": 2,
+      "src_tafsir_tabari": 0,
+      "src_hadith_bukhari": 3,
+      "src_hadith_muslim": 1,
+      "src_hadith_dorar": 1,
+      "src_hadith_shamela": 0,
+      "src_aqeedah_dorar": 2,
+      "src_fiqh_dorar": 2,
+      "src_history_dorar": 2,
+      "src_misconceptions_bayyinat": 3,
+      "src_terminology_jamhara": 5,
+      "src_dawah_center": 2,
+      "src_dawah_islamic_content": 0
+    }
+  },
+  "qualityMetrics": {
+    "missingReferencesCount": 0,
+    "unverifiedRecordsCount": 5,
+    "brokenProvenanceChains": 0
+  },
+  "integrityIssues": []
+}

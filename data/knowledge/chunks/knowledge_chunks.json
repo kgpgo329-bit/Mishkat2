@@ -1,0 +1,1288 @@
+[
+  {
+    "chunkId": "rec_quran_112_1_chk_0",
+    "recordId": "rec_quran_112_1",
+    "sourceId": "src_quran_king_fahd",
+    "sourceName": "مصحف المدينة النبوية - مجمع الملك فهد لطباعة المصحف الشريف",
+    "sourceUrl": "https://qurancomplex.gov.sa",
+    "domain": "QURAN",
+    "title": "سورة الإخلاص - آية 1",
+    "section": "الجزء الثلاثون",
+    "subsection": "سورة الإخلاص",
+    "text": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+    "topics": [
+      "التوحيد",
+      "أسماء الله وصفاته",
+      "الإخلاص"
+    ],
+    "evidenceType": "QURANIC_CANONICAL_TEXT",
+    "reference": {
+      "surahNumber": 112,
+      "ayahNumber": 1,
+      "book": "القرآن الكريم",
+      "chapter": "سورة الإخلاص",
+      "page": 604,
+      "volume": null,
+      "hadithNumber": null
+    },
+    "attribution": {
+      "author": "كلام الله المعجز",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تواتر المصحف الشريف بالإجماع"
+    },
+    "contentHash": "ad72e67976d8350acb643270a7aee61a57abbfce41374f4d55c6d6313ac92be9"
+  },
+  {
+    "chunkId": "rec_quran_112_2_chk_0",
+    "recordId": "rec_quran_112_2",
+    "sourceId": "src_quran_king_fahd",
+    "sourceName": "مصحف المدينة النبوية - مجمع الملك فهد لطباعة المصحف الشريف",
+    "sourceUrl": "https://qurancomplex.gov.sa",
+    "domain": "QURAN",
+    "title": "سورة الإخلاص - آية 2",
+    "section": "الجزء الثلاثون",
+    "subsection": "سورة الإخلاص",
+    "text": "اللَّهُ الصَّمَدُ",
+    "topics": [
+      "التوحيد",
+      "أسماء الله وصفاته",
+      "الإخلاص"
+    ],
+    "evidenceType": "QURANIC_CANONICAL_TEXT",
+    "reference": {
+      "surahNumber": 112,
+      "ayahNumber": 2,
+      "book": "القرآن الكريم",
+      "chapter": "سورة الإخلاص",
+      "page": 604,
+      "volume": null,
+      "hadithNumber": null
+    },
+    "attribution": {
+      "author": "كلام الله المعجز",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تواتر المصحف الشريف بالإجماع"
+    },
+    "contentHash": "4ad7b6a5af34ec951e8dd54f04074c1a41bc8c2b19ae630120731c934ea89e94"
+  },
+  {
+    "chunkId": "rec_quran_112_3_chk_0",
+    "recordId": "rec_quran_112_3",
+    "sourceId": "src_quran_king_fahd",
+    "sourceName": "مصحف المدينة النبوية - مجمع الملك فهد لطباعة المصحف الشريف",
+    "sourceUrl": "https://qurancomplex.gov.sa",
+    "domain": "QURAN",
+    "title": "سورة الإخلاص - آية 3",
+    "section": "الجزء الثلاثون",
+    "subsection": "سورة الإخلاص",
+    "text": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+    "topics": [
+      "التوحيد",
+      "نفي الصاحبة والولد",
+      "تنزيه الله"
+    ],
+    "evidenceType": "QURANIC_CANONICAL_TEXT",
+    "reference": {
+      "surahNumber": 112,
+      "ayahNumber": 3,
+      "book": "القرآن الكريم",
+      "chapter": "سورة الإخلاص",
+      "page": 604,
+      "volume": null,
+      "hadithNumber": null
+    },
+    "attribution": {
+      "author": "كلام الله المعجز",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تواتر المصحف الشريف بالإجماع"
+    },
+    "contentHash": "dc28ed5675f81b0a1c774690633680ad0651151e0bd1bf7d751af1e12b84e236"
+  },
+  {
+    "chunkId": "rec_quran_112_4_chk_0",
+    "recordId": "rec_quran_112_4",
+    "sourceId": "src_quran_king_fahd",
+    "sourceName": "مصحف المدينة النبوية - مجمع الملك فهد لطباعة المصحف الشريف",
+    "sourceUrl": "https://qurancomplex.gov.sa",
+    "domain": "QURAN",
+    "title": "سورة الإخلاص - آية 4",
+    "section": "الجزء الثلاثون",
+    "subsection": "سورة الإخلاص",
+    "text": "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
+    "topics": [
+      "التوحيد",
+      "نفي الكفء والمثيل",
+      "تنزيه الله"
+    ],
+    "evidenceType": "QURANIC_CANONICAL_TEXT",
+    "reference": {
+      "surahNumber": 112,
+      "ayahNumber": 4,
+      "book": "القرآن الكريم",
+      "chapter": "سورة الإخلاص",
+      "page": 604,
+      "volume": null,
+      "hadithNumber": null
+    },
+    "attribution": {
+      "author": "كلام الله المعجز",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تواتر المصحف الشريف بالإجماع"
+    },
+    "contentHash": "7cb7206821b25b90a9b7154e5b1a8fbfee53be06d7acfc16cd8d03886fa39bf2"
+  },
+  {
+    "chunkId": "rec_quran_2_144_chk_0",
+    "recordId": "rec_quran_2_144",
+    "sourceId": "src_quran_king_fahd",
+    "sourceName": "مصحف المدينة النبوية - مجمع الملك فهد لطباعة المصحف الشريف",
+    "sourceUrl": "https://qurancomplex.gov.sa",
+    "domain": "QURAN",
+    "title": "سورة البقرة - آية 144 (تحويل القبلة إلى المسجد الحرام)",
+    "section": "الجزء الثاني",
+    "subsection": "سورة البقرة",
+    "text": "قَدْ نَرَىٰ تَقَلُّبَ وَجْهِكَ فِي السَّمَاءِ ۖ فَلَنُوَلِّيَنَّكَ قِبْلَةً تَرْضَاهَا ۚ فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ ۚ وَحَيْثُ مَا كُنتُمْ فَوَلُّوا وُجُوهَكُمْ شَطْرَهُ ۗ وَإِنَّ الَّذِينَ أُوتُوا الْكِتَابَ لَيَعْلَمُونَ أَنَّهُ الْحَقُّ مِن رَّبِّهِمْ ۗ وَمَا اللَّهُ بِغَافِلٍ عَمَّا يَعْمَلُونَ",
+    "topics": [
+      "القبلة",
+      "المسجد الحرام",
+      "الكعبة المشرفة",
+      "التوحيد"
+    ],
+    "evidenceType": "QURANIC_CANONICAL_TEXT",
+    "reference": {
+      "surahNumber": 2,
+      "ayahNumber": 144,
+      "book": "القرآن الكريم",
+      "chapter": "سورة البقرة",
+      "page": 22,
+      "volume": null,
+      "hadithNumber": null
+    },
+    "attribution": {
+      "author": "كلام الله المعجز",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تواتر المصحف الشريف بالإجماع"
+    },
+    "contentHash": "e4b20bde6e2eacc86860847d7252b5070815cb6c2abba00bd1e5e0ce47dae460"
+  },
+  {
+    "chunkId": "rec_quran_2_256_chk_0",
+    "recordId": "rec_quran_2_256",
+    "sourceId": "src_quran_king_fahd",
+    "sourceName": "مصحف المدينة النبوية - مجمع الملك فهد لطباعة المصحف الشريف",
+    "sourceUrl": "https://qurancomplex.gov.sa",
+    "domain": "QURAN",
+    "title": "سورة البقرة - آية 256 (لا إكراه في الدين)",
+    "section": "الجزء الثالث",
+    "subsection": "سورة البقرة",
+    "text": "لَا إِكْرَاهَ فِي الدِّينِ ۖ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ ۚ فَمَن يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِن بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقَىٰ لَا انفِصَامَ لَهَا ۗ وَاللَّهُ سَمِيعٌ عَلِيمٌ",
+    "topics": [
+      "حرية الاعتقاد",
+      "نفي الإكراه في الدين",
+      "التوحيد والكفر بالطاغوت"
+    ],
+    "evidenceType": "QURANIC_CANONICAL_TEXT",
+    "reference": {
+      "surahNumber": 2,
+      "ayahNumber": 256,
+      "book": "القرآن الكريم",
+      "chapter": "سورة البقرة",
+      "page": 42,
+      "volume": null,
+      "hadithNumber": null
+    },
+    "attribution": {
+      "author": "كلام الله المعجز",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تواتر المصحف الشريف بالإجماع"
+    },
+    "contentHash": "6b23306b994c19945aec13689c21efa3bfdb0585fd235a766bde86ab321dda6d"
+  },
+  {
+    "chunkId": "rec_quran_4_82_chk_0",
+    "recordId": "rec_quran_4_82",
+    "sourceId": "src_quran_king_fahd",
+    "sourceName": "مصحف المدينة النبوية - مجمع الملك فهد لطباعة المصحف الشريف",
+    "sourceUrl": "https://qurancomplex.gov.sa",
+    "domain": "QURAN",
+    "title": "سورة النساء - آية 82 (نفي الاختلاف والتناقض عن القرآن)",
+    "section": "الجزء الخامس",
+    "subsection": "سورة النساء",
+    "text": "أَفَلَا يَتَدَبَّرُونَ الْقُرْآنَ ۚ وَلَوْ كَانَ مِنْ عِندِ غَيْرِ اللَّهِ لَوَجَدُوا فِيهِ اخْتِلَافًا كَثِيرًا",
+    "topics": [
+      "إعجاز القرآن",
+      "مصدر القرآن الرباني",
+      "نفي التناقض والتعارض"
+    ],
+    "evidenceType": "QURANIC_CANONICAL_TEXT",
+    "reference": {
+      "surahNumber": 4,
+      "ayahNumber": 82,
+      "book": "القرآن الكريم",
+      "chapter": "سورة النساء",
+      "page": 91,
+      "volume": null,
+      "hadithNumber": null
+    },
+    "attribution": {
+      "author": "كلام الله المعجز",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تواتر المصحف الشريف بالإجماع"
+    },
+    "contentHash": "79c4724d000ca9458e54aebc2cdfc7c4891b85323326095b667e53250257708a"
+  },
+  {
+    "chunkId": "rec_quran_16_125_chk_0",
+    "recordId": "rec_quran_16_125",
+    "sourceId": "src_quran_king_fahd",
+    "sourceName": "مصحف المدينة النبوية - مجمع الملك فهد لطباعة المصحف الشريف",
+    "sourceUrl": "https://qurancomplex.gov.sa",
+    "domain": "QURAN",
+    "title": "سورة النحل - آية 125 (الدعوة بالحكمة والموعظة الحسنة)",
+    "section": "الجزء الرابع عشر",
+    "subsection": "سورة النحل",
+    "text": "ادْعُ إِلَىٰ سَبِيلِ رَبِّكَ بِالْحِكْمَةِ وَالْمَوْعِظَةِ الْحَسَنَةِ ۖ وَجَادِلْهُم بِالَّتِي هِيَ أَحْسَنُ ۚ إِنَّ رَبَّكَ هُوَ أَعْلَمُ بِمَن ضَلَّ عَن سَبِيلِهِ ۖ وَهُوَ أَعْلَمُ بِالْمُهْتَدِينَ",
+    "topics": [
+      "منهج الدعوة",
+      "الحكمة والموعظة الحسنة",
+      "الجدال بالتي هي أحسن"
+    ],
+    "evidenceType": "QURANIC_CANONICAL_TEXT",
+    "reference": {
+      "surahNumber": 16,
+      "ayahNumber": 125,
+      "book": "القرآن الكريم",
+      "chapter": "سورة النحل",
+      "page": 281,
+      "volume": null,
+      "hadithNumber": null
+    },
+    "attribution": {
+      "author": "كلام الله المعجز",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تواتر المصحف الشريف بالإجماع"
+    },
+    "contentHash": "f4955ff3bf646d6087e5e48ffba8e19a6a718b2f34805163253933c03512f861"
+  },
+  {
+    "chunkId": "rec_quran_49_13_chk_0",
+    "recordId": "rec_quran_49_13",
+    "sourceId": "src_quran_king_fahd",
+    "sourceName": "مصحف المدينة النبوية - مجمع الملك فهد لطباعة المصحف الشريف",
+    "sourceUrl": "https://qurancomplex.gov.sa",
+    "domain": "QURAN",
+    "title": "سورة الحجرات - آية 13 (وحدة الأصل البشري والتعارف)",
+    "section": "الجزء السادس والعشرون",
+    "subsection": "سورة الحجرات",
+    "text": "يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا ۚ إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ ۚ إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ",
+    "topics": [
+      "الكرامة الإنسانية",
+      "التعارف الإنساني",
+      "ميزان التقوى",
+      "نفي التمييز العنصري"
+    ],
+    "evidenceType": "QURANIC_CANONICAL_TEXT",
+    "reference": {
+      "surahNumber": 49,
+      "ayahNumber": 13,
+      "book": "القرآن الكريم",
+      "chapter": "سورة الحجرات",
+      "page": 517,
+      "volume": null,
+      "hadithNumber": null
+    },
+    "attribution": {
+      "author": "كلام الله المعجز",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تواتر المصحف الشريف بالإجماع"
+    },
+    "contentHash": "a3a45668e42f352e6086807f73155f31759eb1c662ad03519ea70b2c5eb4fb19"
+  },
+  {
+    "chunkId": "rec_quran_2_275_chk_0",
+    "recordId": "rec_quran_2_275",
+    "sourceId": "src_quran_king_fahd",
+    "sourceName": "مصحف المدينة النبوية - مجمع الملك فهد لطباعة المصحف الشريف",
+    "sourceUrl": "https://qurancomplex.gov.sa",
+    "domain": "QURAN",
+    "title": "سورة البقرة - آية 275 (إحلال البيع وتحريم الربا)",
+    "section": "الجزء الثالث",
+    "subsection": "سورة البقرة",
+    "text": "الَّذِينَ يَأْكُلُونَ الرِّبَا لَا يَقُومُونَ إِلَّا كَمَا يَقُومُ الَّذِي يَتَخَبَّطُهُ الشَّيْطَانُ مِنَ الْمَسِّ ۚ ذَٰلِكَ بِأَنَّهُمْ قَالُوا إِنَّمَا الْبَيْعُ مِثْلُ الرِّبَا ۗ وَأَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا",
+    "topics": [
+      "تحريم الربا",
+      "المعاملات المالية",
+      "إحلال البيع",
+      "مقاصد الشريعة المالية"
+    ],
+    "evidenceType": "QURANIC_CANONICAL_TEXT",
+    "reference": {
+      "surahNumber": 2,
+      "ayahNumber": 275,
+      "book": "القرآن الكريم",
+      "chapter": "سورة البقرة",
+      "page": 47,
+      "volume": null,
+      "hadithNumber": null
+    },
+    "attribution": {
+      "author": "كلام الله المعجز",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تواتر المصحف الشريف بالإجماع"
+    },
+    "contentHash": "fde45a88d0b8770adb1269a5e389fbdc2aa8ac31fc0f545165a1facc14744bd3"
+  },
+  {
+    "chunkId": "rec_hadith_bukhari_1_chk_0",
+    "recordId": "rec_hadith_bukhari_1",
+    "sourceId": "src_hadith_bukhari",
+    "sourceName": "الجامع المسند الصحيح المختصر (صحيح البخاري)",
+    "sourceUrl": "https://dorar.net/hadith",
+    "domain": "HADITH",
+    "title": "حديث إنما الأعمال بالنيات",
+    "section": "كتاب بدء الوحي",
+    "subsection": "باب كيف كان بدء الوحي إلى رسول الله ﷺ",
+    "text": "حَدَّثَنَا الحُمَيْدِيُّ عَبْدُ اللَّهِ بْنُ الزُّبَيْرِ، قَالَ: حَدَّثَنَا سُفْيَانُ، قَالَ: حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ الأَنْصَارِيُّ، قَالَ: أَخْبَرَنِي مُحَمَّدُ بْنُ إِبْرَاهِيمَ التَّيْمِيُّ، أَنَّهُ سَمِعَ عَلْقَمَةَ بْنَ وَقَّاصٍ اللَّيْثِيَّ، يَقُولُ: سَمِعْتُ عُمَرَ بْنَ الخَطَّابِ رَضِيَ اللَّهُ عَنْهُ عَلَى المِنْبَرِ قَالَ: سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يَقُولُ: «إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى دُنْيَا يُصِيبُهَا، أَوْ إِلَى امْرَأَةٍ يَنْكِحُهَا، فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ».",
+    "topics": [
+      "النية",
+      "الإخلاص",
+      "قبول العمل",
+      "الهجرة لله ورسوله"
+    ],
+    "evidenceType": "HADITH_ISNAD_STATUS",
+    "reference": {
+      "book": "صحيح البخاري",
+      "chapter": "بدء الوحي",
+      "hadithNumber": 1,
+      "volume": 1,
+      "page": 6,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "narrator": "عمر بن الخطاب رضي الله عنه",
+      "scholar": "الإمام محمد بن إسماعيل البخاري",
+      "author": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": "صحيح متفق عليه",
+      "gradingAuthority": "إجماع أئمة الحديث على صحته"
+    },
+    "contentHash": "6576c7e0564d499f14c938354783032f7ec90c34552993ffeb9d71f3bbd3c163"
+  },
+  {
+    "chunkId": "rec_hadith_bukhari_8_chk_0",
+    "recordId": "rec_hadith_bukhari_8",
+    "sourceId": "src_hadith_bukhari",
+    "sourceName": "الجامع المسند الصحيح المختصر (صحيح البخاري)",
+    "sourceUrl": "https://dorar.net/hadith",
+    "domain": "HADITH",
+    "title": "حديث بني الإسلام على خمس",
+    "section": "كتاب الإيمان",
+    "subsection": "باب بني الإسلام على خمس",
+    "text": "حَدَّثَنَا عُبَيْدُ اللَّهِ بْنُ مُوسَى، قَالَ: أَخْبَرَنَا حَنْظَلَةُ بْنُ أَبِي سُفْيَانَ، عَنْ عِكْرِمَةَ بْنِ خَالِدٍ، عَنِ ابْنِ عُمَرَ رَضِيَ اللَّهُ عَنْهُمَا، قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ: «بُنِيَ الإِسْلاَمُ عَلَى خَمْسٍ: شَهَادَةِ أَنْ لاَ إِلَهَ إِلَّا اللَّهُ وَأَنَّ مُحَمَّدًا رَسُولُ اللَّهِ، وَإِقَامِ الصَّلاَةِ، وَإِيتَاءِ الزَّكَاةِ، وَالحَجِّ، وَصَوْمِ رَمَضَانَ».",
+    "topics": [
+      "أركان الإسلام",
+      "الشهادتان",
+      "الصلاة",
+      "الزكاة",
+      "الصيام",
+      "الحج"
+    ],
+    "evidenceType": "HADITH_ISNAD_STATUS",
+    "reference": {
+      "book": "صحيح البخاري",
+      "chapter": "كتاب الإيمان",
+      "hadithNumber": 8,
+      "volume": 1,
+      "page": 11,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "narrator": "عبد الله بن عمر رضي الله عنهما",
+      "scholar": "الإمام محمد بن إسماعيل البخاري",
+      "author": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": "صحيح متفق عليه",
+      "gradingAuthority": "إجماع أئمة الحديث على صحته"
+    },
+    "contentHash": "f31dc0f720325a13c13e60933d8b1bdfa7aa1cb81989fefb8dad142c4e3de592"
+  },
+  {
+    "chunkId": "rec_hadith_bukhari_50_chk_0",
+    "recordId": "rec_hadith_bukhari_50",
+    "sourceId": "src_hadith_bukhari",
+    "sourceName": "الجامع المسند الصحيح المختصر (صحيح البخاري)",
+    "sourceUrl": "https://dorar.net/hadith",
+    "domain": "HADITH",
+    "title": "حديث جبريل في مراتب الدين (الإسلام والإيمان والإحسان)",
+    "section": "كتاب الإيمان",
+    "subsection": "باب سؤال جبريل النبي ﷺ عن الإيمان والإسلام والإحسان",
+    "text": "عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ، أَنَّ رَسُولَ اللَّهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ كَانَ يَوْمًا بَارِزًا لِلنَّاسِ، إِذْ أَتَاهُ رَجُلٌ يَمْشِي، فَقَالَ: يَا رَسُولَ اللَّهِ مَا الإِيمَانُ؟ قَالَ: «الإِيمَانُ أَنْ تُؤْمِنَ بِاللَّهِ، وَمَلاَئِكَتِهِ، وَكُتُبِهِ، وَبِلِقَائِهِ، وَرُسُلِهِ، وَتُؤْمِنَ بِالْبَعْثِ». قَالَ: يَا رَسُولَ اللَّهِ مَا الإِسْلاَمُ؟ قَالَ: «الإِسْلاَمُ أَنْ تَعْبُدَ اللَّهَ، وَلاَ تُشْرِكَ بِهِ شَيْئًا، وَتُقِيمَ الصَّلاَةَ، وَتُؤَدِّيَ الزَّكَاةَ المَفْرُوضَةَ، وَتَصُومَ رَمَضَانَ». قَالَ: يَا رَسُولَ اللَّهِ مَا الإِحْسَانُ؟ قَالَ: «أَنْ تَعْبُدَ اللَّهَ كَأَنَّكَ تَرَاهُ، فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ».",
+    "topics": [
+      "مراتب الدين",
+      "الإحسان",
+      "الإيمان",
+      "الإسلام",
+      "المراقبة الإلهية"
+    ],
+    "evidenceType": "HADITH_ISNAD_STATUS",
+    "reference": {
+      "book": "صحيح البخاري",
+      "chapter": "كتاب الإيمان",
+      "hadithNumber": 50,
+      "volume": 1,
+      "page": 19,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "narrator": "أبو هريرة رضي الله عنه",
+      "scholar": "الإمام محمد بن إسماعيل البخاري",
+      "author": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": "صحيح متفق عليه",
+      "gradingAuthority": "إجماع أئمة الحديث على صحته"
+    },
+    "contentHash": "5587f7e9b3c733a64d81599b03198d5ec33f26d7082409a1514cd40af460fdf7"
+  },
+  {
+    "chunkId": "rec_hadith_muslim_2577_chk_0",
+    "recordId": "rec_hadith_muslim_2577",
+    "sourceId": "src_hadith_muslim",
+    "sourceName": "المسند الصحيح المختصر بنقل العدل عن العدل (صحيح مسلم)",
+    "sourceUrl": "https://dorar.net/hadith",
+    "domain": "HADITH",
+    "title": "الحديث القدسي في تحريم الظلم على الله والعباد",
+    "section": "كتاب البر والصلة والآداب",
+    "subsection": "باب تحريم الظلم",
+    "text": "عَنْ أَبِي ذَرٍّ رَضِيَ اللَّهُ عَنْهُ، عَنِ النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ فِيمَا رَوَى عَنِ اللهِ تَبَارَكَ وَتَعَالَى أَنَّهُ قَالَ: «يَا عِبَادِي إِنِّي حَرَّمْتُ الظُّلْمَ عَلَى نَفْسِي، وَجَعَلْتُهُ بَيْنَكُمْ مُحَرَّمًا، فَلَا تَظَالَمُوا، يَا عِبَادِي كُلُّكُمْ ضَالٌّ إِلَّا مَنْ هَدَيْتُهُ، فَاسْتَهْدُونِي أَهْدِكُمْ، يَا عِبَادِي كُلُّكُمْ جَائِعٌ إِلَّا مَنْ أَطْعَمْتُهُ، فَاسْتَطْعِمُونِي أُطْعِمْكُمْ».",
+    "topics": [
+      "تحريم الظلم",
+      "الحديث القدسي",
+      "العدل الإلهي",
+      "حرمة حقوق العباد"
+    ],
+    "evidenceType": "HADITH_ISNAD_STATUS",
+    "reference": {
+      "book": "صحيح مسلم",
+      "chapter": "كتاب البر والصلة والآداب",
+      "hadithNumber": 2577,
+      "volume": 4,
+      "page": 1994,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "narrator": "أبو ذر الغفاري رضي الله عنه",
+      "scholar": "الإمام مسلم بن الحجاج النيسابوري",
+      "author": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": "صحيح",
+      "gradingAuthority": "صحيح مسلم بأعلى مراتب الصحة"
+    },
+    "contentHash": "d84b771c3ac4ab8d85ddd617d7c06b2b0b94080deba93cdcc002bb8ef6a65d73"
+  },
+  {
+    "chunkId": "rec_hadith_dorar_watani_chk_0",
+    "recordId": "rec_hadith_dorar_watani",
+    "sourceId": "src_hadith_dorar",
+    "sourceName": "الموسوعة الحديثية - الدرر السنية",
+    "sourceUrl": "https://dorar.net/hadith",
+    "domain": "HADITH",
+    "title": "تخريج مقولة «حب الوطن من الإيمان» وبيان حكمها الحديثي",
+    "section": "قسم فحص الأحاديث الشائعة والمكذوبة",
+    "subsection": "الأحاديث التي لا أصل لها",
+    "text": "المتن المشهور: «حب الوطن من الإيمان». الحكم الحديثي: لا أصل له مكذوب على النبي ﷺ. قال الصغاني والعجلوني والألباني: موضوع، ولا يثبت عن رسول الله ﷺ بوجه من الوجوه، وإن كان حب الوطن غريزة وجبلة إنسانية فطرية، إلا أنه لا يصح نسبته نصاً إلى النبي ﷺ كحديث شرعي.",
+    "topics": [
+      "نقد الأحاديث الشائعة",
+      "الأحاديث الموضوعة",
+      "حب الوطن والشرع",
+      "ضوابط التخريج"
+    ],
+    "evidenceType": "HADITH_ISNAD_STATUS",
+    "reference": {
+      "book": "الموسوعة الحديثية - الدرر السنية",
+      "chapter": "باب تمييز الأحاديث الضعيفة والموضوعة",
+      "hadithNumber": null,
+      "volume": null,
+      "page": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "narrator": "مروية لا أصل لها في كتب السنة المسندة",
+      "scholar": "نقد الحفاظ: الصغاني، السخاوي، الألباني",
+      "author": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": "موضوع / لا أصل له",
+      "gradingAuthority": "أئمة نقد الحديث وعلماء الجرح والتعديل"
+    },
+    "contentHash": "edb0f9308b37f57804401de0f6cde1924858bf0dd11fcfc778978ef3ce64eb76"
+  },
+  {
+    "chunkId": "rec_misc_bayyinat_kaaba_chk_0",
+    "recordId": "rec_misc_bayyinat_kaaba",
+    "sourceId": "src_misconceptions_bayyinat",
+    "sourceName": "كتاب بيّنات: براهين وأدلة في تفنيد الشبهات والتساؤلات المتكررة",
+    "sourceUrl": "https://dawa.center/file/7937",
+    "domain": "MISCONCEPTIONS",
+    "title": "الشبهة الأولى: دعوى أن المسلمين يعبدون الكعبة أو يتخذونها وثناً",
+    "section": "شبهات حول أركان وشعائر العبادة",
+    "subsection": "حقيقة القبلة والطواف",
+    "text": "الدعوى والشبهة: يزعم بعض المشككين أن المسلمين بصلاتهم باتجاه الكعبة وطوافهم حولها يعبدون حجارة أو صرحاً مبنياً.\n\nالبرهان والتفنيد الشرعي والعقلي:\n1. التوحيد هو أصل الإسلام: المسلمون لا يعبدون الكعبة عيناً ولا حجارتها، بل يعبدون رب الكعبة وحده لا شريك له، قال تعالى: ﴿فَلْيَعْبُدُوا رَبَّ هَٰذَا الْبَيْتِ﴾ [قريش: 3].\n2. القبلة رمز لوحدة الوجهة لا معبود: جعل الله الكعبة جهة يتجه إليها المسلمون في صلاتهم لتوحيد صفوفهم في مشارق الأرض ومغاربها.\n3. مقولة عمر بن الخطاب رضي الله عنه التاريخية الصريحة عند تقبيل الحجر الأسود في صحيح البخاري: «إِنِّي أَعْلَمُ أَنَّكَ حَجَرٌ لاَ تَضُرُّ وَلاَ تَنْفَعُ، وَلَوْلاَ أَنِّي رَأَيْتُ النَّبِيَّ ﷺ يُقَبِّلُكَ مَا قَبَّلْتُكَ»، وهي تقطع أي وهم بوجود نفع ذاتي أو عبادة للحجر.\n4. المسلم إذا صلى فوق ظهر الكعبة صحت صلاته، وتغيرت القبلة تاريخياً من بيت المقدس إلى الكعبة بأمر الله، والمعبود لا يتغير ولا يُصلى فوقه.",
+    "topics": [
+      "الكعبة المشرفة",
+      "التوحيد",
+      "القبلة",
+      "نفي عبادة الأوثان",
+      "الحجر الأسود"
+    ],
+    "evidenceType": "MISCONCEPTION_REBUTTAL",
+    "reference": {
+      "book": "كتاب بيّنات: براهين وأدلة في تفنيد الشبهات",
+      "chapter": "الفصل الأول: شبهات التوحيد والعبادة",
+      "page": 28,
+      "volume": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "مركز دعوة للبحوث والدراسات (Dawa Center)",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "SOURCE_PROVIDED",
+      "grading": null,
+      "gradingAuthority": null
+    },
+    "contentHash": "4dfa2095b45bff53d06fec7566592186b2948e3e992f753f33f828f2df8d0774"
+  },
+  {
+    "chunkId": "rec_misc_bayyinat_quran_origin_chk_0",
+    "recordId": "rec_misc_bayyinat_quran_origin",
+    "sourceId": "src_misconceptions_bayyinat",
+    "sourceName": "كتاب بيّنات: براهين وأدلة في تفنيد الشبهات والتساؤلات المتكررة",
+    "sourceUrl": "https://dawa.center/file/7937",
+    "domain": "MISCONCEPTIONS",
+    "title": "الشبهة الثانية: زعم أن القرآن الكريم من تأليف بشري أو مقتبس من كتب السابقين",
+    "section": "شبهات حول الوحي والقرآن الكريم",
+    "subsection": "إعجاز القرآن ومصدره الإلهي",
+    "text": "الدعوى والشبهة: يزعم المستشرقون والمشككون أن النبي محمداً ﷺ ألّف القرآن بنفسه أو اقتبسه من أهل الكتاب.\n\nالبرهان والتفنيد الحاسم:\n1. أمية النبي ﷺ وعيشه بين قومه 40 عاماً قبل البعثة: لم يكن قارئاً ولا كاتباً ولا مشتغلاً بكتب السابقين، قال تعالى: ﴿وَمَا كُنتَ تَتْلُو مِن قَبْلِهِ مِن كِتَابٍ وَلَا تَخُطُّهُ بِيَمِينِكَ ۖ إِذًا لَّارْتَابَ الْمُبْطِلُونَ﴾ [العنكبوت: 48].\n2. التحدي البياني المعجز: تحدى القرآن فصحاء العرب وبُلغاءهم أن يأتوا بسورة من مثله فعجزوا، ولو كان بشرياً لكانوا أقدر الناس على محاكاته.\n3. أسلوب القرآن يختلف جوهرياً عن حديث النبي ﷺ: فالأحاديث النبوية المسندة لها لغة ونمط بشري معروف يختلف تماماً عن الإعجاز والسبك القرآني.\n4. تصحيح أخطاء الأمم السابقة: القرآن يصحح الانحرافات التاريخية والعقدية ولا يقلد كتبهم المحرفة، مع حفظ تناسقه التام بلا اختلاف ﴿وَلَوْ كَانَ مِنْ عِندِ غَيْرِ اللَّهِ لَوَجَدُوا فِيهِ اخْتِلَافًا كَثِيرًا﴾.",
+    "topics": [
+      "مصدر القرآن الكريم",
+      "الوحي الإلهي",
+      "نفي التأليف البشري",
+      "الإعجاز القرآني"
+    ],
+    "evidenceType": "MISCONCEPTION_REBUTTAL",
+    "reference": {
+      "book": "كتاب بيّنات: براهين وأدلة في تفنيد الشبهات",
+      "chapter": "الفصل الثاني: شبهات الوحي والنبوة",
+      "page": 56,
+      "volume": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "مركز دعوة للبحوث والدراسات (Dawa Center)",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "SOURCE_PROVIDED",
+      "grading": null,
+      "gradingAuthority": null
+    },
+    "contentHash": "10bbde9530fefe4b42b5f052e2ca4bfee010dfcd533bbfecd0f3becca58a7d39"
+  },
+  {
+    "chunkId": "rec_misc_bayyinat_sword_chk_0",
+    "recordId": "rec_misc_bayyinat_sword",
+    "sourceId": "src_misconceptions_bayyinat",
+    "sourceName": "كتاب بيّنات: براهين وأدلة في تفنيد الشبهات والتساؤلات المتكررة",
+    "sourceUrl": "https://dawa.center/file/7937",
+    "domain": "MISCONCEPTIONS",
+    "title": "الشبهة الثالثة: دعوى انتشار الإسلام بحد السيف وإكراه الناس على الدخول فيه",
+    "section": "شبهات تاريخية وتشريعية",
+    "subsection": "حرية الاعتقاد والفتوحات الإسلامية",
+    "text": "الدعوى والشبهة: يزعم البعض أن الإسلام فرض عقيدته بالقوة العسكرية وأجبر الشعوب المفتوحة على تغيير دينها.\n\nالبرهان والتفنيد المنهجي والتاريخي:\n1. القاعدة الشرعية القطعية: حرم القرآن الإكراه بنص صريح: ﴿لَا إِكْرَاهَ فِي الدِّينِ ۖ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ﴾ [البقرة: 256]، وقوله: ﴿أَفَأَنتَ تُكْرِهُ النَّاسَ حَتَّىٰ يَكُونُوا مُؤْمِنِينَ﴾ [يونس: 99].\n2. الحقيقة التاريخية في الفتوحات: لم يُقتل أو يُجبر أي شعب على ترك نصرانيته أو يهوديته أو مجوسيته، وظلت الكنائس والمعابد قائمة في مصر والشام والعراق والأندلس والهند لقرون تحت الحكم الإسلامي.\n3. العهدة العمرية لأهل القدس (إيلياء): أعطاهم الخليفة عمر بن الخطاب رضي الله عنه أماناً شاملاً لأنفسهم وأموالهم وكنائسهم وصلبانهم «ألا تُسكن كنائسهم ولا تُهدم ولا يُكرهون على دينهم».\n4. مقاصد القتال في الإسلام: القتال شُرع لرد العدوان وحماية حرية التبليغ والدفاع عن المستضعفين، لا لإكراه القلوب على الإيمان لأن الإيمان المكره باطل شرعاً.",
+    "topics": [
+      "انتشار الإسلام",
+      "حرية الاعتقاد",
+      "نفي الإكراه",
+      "العهدة العمرية",
+      "الفتوحات الإسلامية"
+    ],
+    "evidenceType": "MISCONCEPTION_REBUTTAL",
+    "reference": {
+      "book": "كتاب بيّنات: براهين وأدلة في تفنيد الشبهات",
+      "chapter": "الفصل الثالث: التاريخ والجهاد وشبهات المستشرقين",
+      "page": 84,
+      "volume": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "مركز دعوة للبحوث والدراسات (Dawa Center)",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "SOURCE_PROVIDED",
+      "grading": null,
+      "gradingAuthority": null
+    },
+    "contentHash": "8fc614aa8bc2baa7eb906c572db5896a56945ec11e34eda67062d0db0a0c60a4"
+  },
+  {
+    "chunkId": "rec_term_jamhara_tawheed_chk_0",
+    "recordId": "rec_term_jamhara_tawheed",
+    "sourceId": "src_terminology_jamhara",
+    "sourceName": "معجم الجمهرة للمصطلحات الإسلامية وترجماتها",
+    "sourceUrl": "https://islamic-content.com/dictionary",
+    "domain": "TERMINOLOGY",
+    "title": "مصطلح: التوحيد (Tawheed / Islamic Monotheism)",
+    "section": "حرف التاء",
+    "subsection": "أصول العقيدة والإيمان",
+    "text": "التعريف الشرعي: التوحيد هو إفراد الله سبحانه وتعالى بما يختص به من الربوبية (الخلق والملك والتدبير)، والألوهية (إخلاص العبادة بجميع أنواعها له وحده)، والأسماء والصفات (إثبات ما أثبته لنفسه ونفي ما نفاه عن نفسه من غير تحريف ولا تعطيل ولا تكييف ولا تمثيل).\n\nالمكافئ المعتمد بالإنجليزية: Islamic Monotheism / Tawheed.\n\nتنبيه الترجمة الحساسة: لا يُترجم بمجرد كلمة Monotheism المجردة دون تقييد؛ لأن التوحيد الإسلامي يشتمل على إفراد الألوهية ونفي الشرك بجميع صوره الظاهرة والباطنة وتنزيه الله المطلق عن الشبيه والمثيل.",
+    "topics": [
+      "التوحيد",
+      "أصول العقيدة",
+      "الترجمة الشرعية",
+      "توحيد الربوبية والألوهية"
+    ],
+    "evidenceType": "LEXICAL_DEFINITION",
+    "reference": {
+      "book": "معجم الجمهرة للمصطلحات الإسلامية المترجمة",
+      "chapter": "باب التاء - التوحيد",
+      "page": 104,
+      "volume": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "منصة المحتوى الإسلامي المفتوح (Islamic Content)",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "اعتماد المجمع اللغوي والشرعي"
+    },
+    "contentHash": "12cd2c93c008217da0fa7d806492eb54081606918102b7601b51d8441bb5d13b"
+  },
+  {
+    "chunkId": "rec_term_jamhara_taqwa_chk_0",
+    "recordId": "rec_term_jamhara_taqwa",
+    "sourceId": "src_terminology_jamhara",
+    "sourceName": "معجم الجمهرة للمصطلحات الإسلامية وترجماتها",
+    "sourceUrl": "https://islamic-content.com/dictionary",
+    "domain": "TERMINOLOGY",
+    "title": "مصطلح: التقوى (Taqwa / God-Consciousness and Piety)",
+    "section": "حرف التاء",
+    "subsection": "أعمال القلوب والأخلاق الإسلامية",
+    "text": "التعريف الشرعي: التقوى مشتقة من الوقاية؛ وهي أن يجعل العبد بينه وبين عذاب الله وسخطه وقاية بفعل أوامره واجتناب نواهيه، عن علم وبصيرة ورجاء لرحمته.\n\nالمكافئ المعتمد بالإنجليزية: God-Consciousness / Piety / Righteousness.\n\nتنبيه الترجمة الحساسة: ترجمة «التقوى» بكلمة Fear (الخوف) ترجمة قاصرة ومضللة؛ فالتقوى حالة قلبية إيجابية تجمع بين المحبة والرجاء والتعظيم واليقظة ومراقبة الله، وليست مجرد فزع أو ذعر سلبي.",
+    "topics": [
+      "التقوى",
+      "أعمال القلوب",
+      "الترجمة الشرعية",
+      "الوقاية من عذاب الله"
+    ],
+    "evidenceType": "LEXICAL_DEFINITION",
+    "reference": {
+      "book": "معجم الجمهرة للمصطلحات الإسلامية المترجمة",
+      "chapter": "باب التاء - التقوى",
+      "page": 118,
+      "volume": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "منصة المحتوى الإسلامي المفتوح (Islamic Content)",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "اعتماد المجمع اللغوي والشرعي"
+    },
+    "contentHash": "bc1dc453babef79454b06a471597bd481de9c4b4782817e0d3f2b4ab7622106e"
+  },
+  {
+    "chunkId": "rec_term_jamhara_shirk_chk_0",
+    "recordId": "rec_term_jamhara_shirk",
+    "sourceId": "src_terminology_jamhara",
+    "sourceName": "معجم الجمهرة للمصطلحات الإسلامية وترجماتها",
+    "sourceUrl": "https://islamic-content.com/dictionary",
+    "domain": "TERMINOLOGY",
+    "title": "مصطلح: الشرك (Shirk / Associating Partners with Allah)",
+    "section": "حرف الشين",
+    "subsection": "أبواب العقيدة والتحذير من المحرمات",
+    "text": "التعريف الشرعي: اتخاذ ند أو شريك مع الله في ربوبيته أو ألوهيته أو أسمائه وصفاته، وهو أعظم الذنوب في الإسلام. وينقسم إلى شرك أكبر مخرج من الملة (كصرف العبادة لغير الله ودعاء الأموات)، وشرك أصغر لا يخرج من الملة لكنه من كبائر الذنوب (كالرياء اليسير والحلف بغير الله).\n\nالمكافئ المعتمد بالإنجليزية: Associating partners with Allah / Polytheism / Shirk.\n\nتنبيه الترجمة الحساسة: يُفضل استخدام المصطلح الأصيل Shirk متبوعاً بشرحه، لأن لفظ Polytheism الشائع في الغرب ينصرف غالباً إلى تعدد الآلهة الإغريقي والروماني، بينما الشرك يشمل جعل وسائط وأنداد لله مع الاعتراف بأنه الخالق.",
+    "topics": [
+      "الشرك",
+      "التوحيد",
+      "الشرك الأكبر والأصغر",
+      "الترجمة الشرعية"
+    ],
+    "evidenceType": "LEXICAL_DEFINITION",
+    "reference": {
+      "book": "معجم الجمهرة للمصطلحات الإسلامية المترجمة",
+      "chapter": "باب الشين - الشرك",
+      "page": 215,
+      "volume": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "منصة المحتوى الإسلامي المفتوح (Islamic Content)",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "اعتماد المجمع اللغوي والشرعي"
+    },
+    "contentHash": "73386c05835a7d3a775fffbc87c76373ff642a1488bd780bcdb3675288d7ac89"
+  },
+  {
+    "chunkId": "rec_term_jamhara_barakah_chk_0",
+    "recordId": "rec_term_jamhara_barakah",
+    "sourceId": "src_terminology_jamhara",
+    "sourceName": "معجم الجمهرة للمصطلحات الإسلامية وترجماتها",
+    "sourceUrl": "https://islamic-content.com/dictionary",
+    "domain": "TERMINOLOGY",
+    "title": "مصطلح: البركة (Barakah / Divine Blessing and Abundance)",
+    "section": "حرف الباء",
+    "subsection": "المفاهيم الإيمانية والسنن الإلهية",
+    "text": "التعريف الشرعي: ثبوت الخير الإلهي في الشيء ونماؤه وزيادته وكفايته على نحو يتجاوز المقدار المادي الظاهري.\n\nالمكافئ المعتمد بالإنجليزية: Divine Blessing / Spiritual Abundance / Barakah.\n\nتنبيه الترجمة الحساسة: لا تختزل في معنى الربح المادي المالي (Profit or Luck)، فالبركة فضل إلهي معنوي يحل في الوقت أو المال أو الرزق أو العلم فيجعله نافعاً مباركاً مضاعف الأثر.",
+    "topics": [
+      "البركة",
+      "المفاهيم الإيمانية",
+      "الترجمة الشرعية"
+    ],
+    "evidenceType": "LEXICAL_DEFINITION",
+    "reference": {
+      "book": "معجم الجمهرة للمصطلحات الإسلامية المترجمة",
+      "chapter": "باب الباء - البركة",
+      "page": 63,
+      "volume": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "منصة المحتوى الإسلامي المفتوح (Islamic Content)",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "اعتماد المجمع اللغوي والشرعي"
+    },
+    "contentHash": "c30b09f671b24af211c20f44814269410b266eb67fa8e70a1fff337a94ae5339"
+  },
+  {
+    "chunkId": "rec_term_jamhara_iffah_chk_0",
+    "recordId": "rec_term_jamhara_iffah",
+    "sourceId": "src_terminology_jamhara",
+    "sourceName": "معجم الجمهرة للمصطلحات الإسلامية وترجماتها",
+    "sourceUrl": "https://islamic-content.com/dictionary",
+    "domain": "TERMINOLOGY",
+    "title": "مصطلح: العفة (Iffah / Chastity and Moral Restraint)",
+    "section": "حرف العين",
+    "subsection": "مكارم الأخلاق والسلوك",
+    "text": "التعريف الشرعي: ضبط النفس وحبسها عن المحرمات والشهوات غير المشروعة، والتنزه عن المطامع الدنيئة حفظاً للكرامة والدين.\n\nالمكافئ المعتمد بالإنجليزية: Chastity / Purity / Moral Restraint.\n\nتنبيه الترجمة الحساسة: تشمل العفة عفة الفرج وعفة البطن وعفة اللسان وعفة الكف عن أموال الناس، فلا تحصر فقط في الطهارة الجسدية.",
+    "topics": [
+      "العفة",
+      "مكارم الأخلاق",
+      "الترجمة الشرعية"
+    ],
+    "evidenceType": "LEXICAL_DEFINITION",
+    "reference": {
+      "book": "معجم الجمهرة للمصطلحات الإسلامية المترجمة",
+      "chapter": "باب العين - العفة",
+      "page": 280,
+      "volume": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "منصة المحتوى الإسلامي المفتوح (Islamic Content)",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "اعتماد المجمع اللغوي والشرعي"
+    },
+    "contentHash": "7757ca306ffa930506d55bd29ab393c95f6002e2d0e471fe561b08445399ce9b"
+  },
+  {
+    "chunkId": "rec_fiqh_dorar_ikhtilaf_reasons_chk_0",
+    "recordId": "rec_fiqh_dorar_ikhtilaf_reasons",
+    "sourceId": "src_fiqh_dorar",
+    "sourceName": "الموسوعة الفقهية - الدرر السنية",
+    "sourceUrl": "https://dorar.net/feqhia",
+    "domain": "FIQH",
+    "title": "أسباب اختلاف الأئمة والفقهاء في المسائل الاجتهادية الفرعية",
+    "section": "المدخل الفقهي وأصول الفقه",
+    "subsection": "أسباب اختلاف الفقهاء وأدب الخلاف",
+    "text": "بيان تأصيلي معتمد:\nاتفق علماء المسلمين على أن أصول الدين الكبرى وأركانه ومحكمات الشريعة مجمع عليها لا يسوغ فيها الخلاف. وإنما وقع الخلاف المعتبر بين المذاهب الفقهية الأربعة في المسائل الظنية والفرعية لأسباب علمية موضوعية، أبرزها:\n1. وصول النص الحديثي وثبوته: قد يبلغ الحديث إماماً بإسناد صحيح ولا يبلغ إماماً آخر في ذلك العصر، أو يبلغه بإسناد يراه غير متصل.\n2. الاختلاف في دلالات الألفاظ: كالألفاظ المشتركة في لغة العرب (مثل لفظ «القرء» هل يعني الحيض أم الطهر)، والحقيقة والمجاز، والمطلق والمقيد.\n3. تفاوت القواعد الأصولية وضوابط الترجيح: كالخلاف في حجية قول الصحابي، ومراسيل الثقات، وعمل أهل المدينة، والاستحسان والمصلحة المرسلة.\n4. الخلاف الفقهي رحمة وسعة للأمة في الفروع، ولا يعني أبداً أن أحد الأئمة مخالف للدين عمداً، بل كلهم مجتهدون مأجورون بنص حديث: «إِذَا حَكَمَ الحَاكِمُ فَاجْتَهَدَ ثُمَّ أَصَابَ فَلَهُ أَجْرَانِ، وَإِذَا حَكَمَ فَاجْتَهَدَ ثُمَّ أَخْطَأَ فَلَهُ أَجْرٌ» (متفق عليه).",
+    "topics": [
+      "أسباب اختلاف الفقهاء",
+      "الخلاف الفقهي المعتبر",
+      "أدب الخلاف",
+      "المذاهب الأربعة",
+      "الاجتهاد"
+    ],
+    "evidenceType": "",
+    "reference": {
+      "book": "الموسوعة الفقهية - الدرر السنية",
+      "chapter": "المدخل إلى الفقه الإسلامي - أدب الخلاف وأسبابه",
+      "volume": null,
+      "page": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "القسم العلمي بمؤسسة الدرر السنية",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تحرير ونقل مستفيض عن أئمة الأصول والفقه كابن تيمية وابن عبد البر"
+    },
+    "contentHash": "8d25437547432b5731e7ebd3a15964fc7dcd32ee92dcb7d1fbbde44a75fc68a6"
+  },
+  {
+    "chunkId": "rec_fiqh_dorar_fatwa_rules_chk_0",
+    "recordId": "rec_fiqh_dorar_fatwa_rules",
+    "sourceId": "src_fiqh_dorar",
+    "sourceName": "الموسوعة الفقهية - الدرر السنية",
+    "sourceUrl": "https://dorar.net/feqhia",
+    "domain": "FIQH",
+    "title": "ضوابط الفتوى والتفريق بين الحكم الشرعي العام والفتوى الفردية الخاصة",
+    "section": "كتاب القضاء والفتيا",
+    "subsection": "آداب المفتي والمستفتي",
+    "text": "بيان تأصيلي معتمد:\nيجب التفريق في الشريعة الإسلامية بين نوعين من البيان:\n1. بيان الحكم العام (التعليمي المجرد): كقولنا «الطلاق محرم لغير حاجة» أو «الربا محرم» أو «الصلوات الخمس واجبة»، فهذا بيان شرعي عام مبثوث في كتب العلم ومتاح لجميع المسلمين.\n2. الفتوى الفردية المعينة في واقعة خاصة: كأن يسأل شخص عن تلفظه بطلاق زوجته في غضب، أو نزاع مالي بين شريكين، أو قسمة ميراث بين ورثة محددين. فهذه المسائل القضائية والخاصة لا يجوز فيها الفتوى المجردة العامة ولا الفتوى الآلية، بل تستوجب المراجعة الشخصية للمفتي المؤهل أو المحكمة الشرعية لسماع تفاصيل الواقعة، وألفاظ المتكلم، وقصده ونيته، وحالته النفسية والإدراكية، لوجود موانع شرعية وشروط قد تبطل الأثر.",
+    "topics": [
+      "ضوابط الفتوى",
+      "الفتوى الشخصية",
+      "مسائل الطلاق والقضاء",
+      "آداب المستفتي"
+    ],
+    "evidenceType": "",
+    "reference": {
+      "book": "الموسوعة الفقهية - الدرر السنية",
+      "chapter": "كتاب القضاء والفتوى",
+      "volume": null,
+      "page": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "القسم العلمي بمؤسسة الدرر السنية",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "إجماع الفقهاء على شروط الفتوى في الأعيان"
+    },
+    "contentHash": "04394169cf4bcead1f2aedbc85d95ba23dd68605b445df59c67d85d65121836f"
+  },
+  {
+    "chunkId": "rec_hist_dorar_hudaybiyyah_chk_0",
+    "recordId": "rec_hist_dorar_hudaybiyyah",
+    "sourceId": "src_history_dorar",
+    "sourceName": "الموسوعة التاريخية والسيرة النبوية - الدرر السنية",
+    "sourceUrl": "https://dorar.net/history",
+    "domain": "HISTORY",
+    "title": "صلح الحديبية: تاريخه وبنوده وأثره الاستراتيجي في الدعوة الإسلامية",
+    "section": "السيرة النبوية العطرة",
+    "subsection": "أحداث السنة السادسة من الهجرة",
+    "text": "التوثيق التاريخي المعتمد:\nوقع صلح الحديبية في شهر ذي القعدة من العام السادس من الهجرة النبوية (6 هـ) بين رسول الله ﷺ وقريش، في منطقة الحديبية بالقرب من مكة المكرمة.\n\nأبرز بنود الصلح والنتائج:\n1. وضع الحرب بين الطرفين عشر سنين يأمن فيها الناس.\n2. تأجيل العمرة إلى العام القادم (عمرة القضاء).\n3. السماح للقبائل بالدخول في حلف أي الطرفين شاءت (فدخلت خزاعة في حلف النبي ﷺ، وبنو بكر في حلف قريش).\n4. سماه الله تعالى في القرآن فتحاً مبيناً ﴿إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا﴾ [الفتح: 1]؛ لأن الهدنة أتاحت للمسلمين حرية اللقاء بالناس والدعوة بالحجة والبيان، فدخل في الإسلام خلال عامي الهدنة أضعاف من دخلوا فيه منذ بدء البعثة، وكان مقدمة لفتح مكة الأعظم.",
+    "topics": [
+      "صلح الحديبية",
+      "السيرة النبوية",
+      "السنة السادسة للهجرة",
+      "المعاهدات في الإسلام"
+    ],
+    "evidenceType": "",
+    "reference": {
+      "book": "الموسوعة التاريخية والسيرة النبوية - الدرر السنية",
+      "chapter": "السنة السادسة للهجرة - غزوة الحديبية",
+      "volume": null,
+      "page": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "القسم العلمي بمؤسسة الدرر السنية",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "روايات متواترة وثابتة في صحيحي البخاري ومسلم وكتب السيرة المسندة"
+    },
+    "contentHash": "dc0ff9784c281cdfb46667b502059345dd242efce69fb07b6c5ec5ef9cd56341"
+  },
+  {
+    "chunkId": "rec_hist_dorar_makkah_amnesty_chk_0",
+    "recordId": "rec_hist_dorar_makkah_amnesty",
+    "sourceId": "src_history_dorar",
+    "sourceName": "الموسوعة التاريخية والسيرة النبوية - الدرر السنية",
+    "sourceUrl": "https://dorar.net/history",
+    "domain": "HISTORY",
+    "title": "فتح مكة والعفو النبوي العام عن أهلها (8 هـ)",
+    "section": "السيرة النبوية العطرة",
+    "subsection": "أحداث السنة الثامنة من الهجرة",
+    "text": "التوثيق التاريخي المعتمد:\nتم فتح مكة المكرمة في شهر رمضان من العام الثامن من الهجرة (8 هـ) بعد نقض قريش وحلفائها لبنود صلح الحديبية بالاعتداء على قبيلة خزاعة حليفة المسلمين.\n\nموقف العفو النبوي العظيم:\nدخل رسول الله ﷺ مكة فاتحاً خاشعاً يقرأ سورة الفتح ورأسه يكاد يمس رحله تواضعاً لله. وعندما وقف أهل مكة من المشركين الذين عذبوه وآذوه وحاربوه عشرين عاماً وأخرجوه من دياره، سألهم: «مَا تَرَوْنَ أَنِّي صَانِعٌ بِكُمْ؟» قَالُوا: خَيْرًا، أَخٌ كَرِيمٌ وَابْنُ أَخٍ كَرِيمٍ. فَقَالَ ﷺ كلمته الخالدة: «لَا تَثْرِيبَ عَلَيْكُمُ الْيَوْمَ، يَغْفِرُ اللَّهُ لَكُمْ وَهُوَ أَرْحَمُ الرَّاحِمِينَ، اذْهَبُوا فَأَنْتُمُ الطُّلَقَاءُ»، فأطلقهم جميعاً وعفا عنهم، مما كان سبباً في دخول قريش أفواجاً في الإسلام.",
+    "topics": [
+      "فتح مكة",
+      "السيرة النبوية",
+      "العفو عند المقدرة",
+      "السنة الثامنة للهجرة",
+      "سماحة الإسلام"
+    ],
+    "evidenceType": "",
+    "reference": {
+      "book": "الموسوعة التاريخية والسيرة النبوية - الدرر السنية",
+      "chapter": "السنة الثامنة للهجرة - فتح مكة",
+      "volume": null,
+      "page": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "القسم العلمي بمؤسسة الدرر السنية",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "ثابت بالأسانيد الصحيحة في السنن ودلائل النبوة والمغازي"
+    },
+    "contentHash": "2de84bec5ee9ff1b195dbc1b00cece2357df51a31649a33f263cccd199fc45ec"
+  },
+  {
+    "chunkId": "rec_aqeedah_dorar_tawheed_pillars_chk_0",
+    "recordId": "rec_aqeedah_dorar_tawheed_pillars",
+    "sourceId": "src_aqeedah_dorar",
+    "sourceName": "الموسوعة العقدية - الدرر السنية",
+    "sourceUrl": "https://dorar.net/aqeeda",
+    "domain": "AQEEDAH",
+    "title": "أقسام التوحيد الثلاثة واستقراؤها من نصوص الكتاب والسنة",
+    "section": "أصول الإيمان والتوحيد",
+    "subsection": "تقرير عقيدة أهل السنة والجماعة",
+    "text": "التقرير العقدي المعتمد:\nدلت نصوص القرآن الكريم والسنة النبوية بالاستقراء التام على أن التوحيد الذي دعت إليه الرسل ينقسم إلى ثلاثة أقسام متلازمة لا ينفك أحدها عن الآخر:\n1. توحيد الربوبية: وهو إفراد الله بأفعاله؛ كالخلق والرزق والإحياء والإماتة والتدبير والملك، قال تعالى: ﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ﴾. وهذا القسم كان يقره مشركو العرب ولكن لم يدخلهم في الإسلام وحده.\n2. توحيد الألوهية (توحيد العبادة): وهو إفراد الله بأفعال العباد؛ كالدعاء، والخوف، والرجاء، والتوكل، والصلاة، والذبح، والنذر، قال تعالى: ﴿وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ ۖ لَّا إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ﴾. وهذا هو مفرق الطريق والغاية التي أُرسلت من أجلها الرسل.\n3. توحيد الأسماء والصفات: وهو إثبات ما أثبته الله لنفسه وما أثبته له رسوله ﷺ من الأسماء الحسنى والصفات العلى، من غير تحريف ولا تعطيل، ومن غير تكييف ولا تمثيل، على حد قوله تعالى: ﴿لَيْسَ كَمِثْلِهِ شَيْءٌ ۖ وَهُوَ السَّمِيعُ الْبَصِيرُ﴾ [الشورى: 11].",
+    "topics": [
+      "أقسام التوحيد",
+      "توحيد الألوهية",
+      "توحيد الربوبية",
+      "الأسماء والصفات",
+      "عقيدة أهل السنة"
+    ],
+    "evidenceType": "",
+    "reference": {
+      "book": "الموسوعة العقدية - الدرر السنية",
+      "chapter": "الباب الأول: حقيقة التوحيد وأقسامه",
+      "volume": null,
+      "page": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "القسم العلمي بمؤسسة الدرر السنية",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "إجماع سلف الأمة وعلماء أهل السنة والجماعة"
+    },
+    "contentHash": "ab7105d7def15d472769b9d4c91f4b9558d6367071fc24baeaf29130d7fdb1ac"
+  },
+  {
+    "chunkId": "rec_aqeedah_dorar_takfeer_controls_chk_0",
+    "recordId": "rec_aqeedah_dorar_takfeer_controls",
+    "sourceId": "src_aqeedah_dorar",
+    "sourceName": "الموسوعة العقدية - الدرر السنية",
+    "sourceUrl": "https://dorar.net/aqeeda",
+    "domain": "AQEEDAH",
+    "title": "ضوابط التكفير وموانعه والتفريق الصارم بين تكفير النوع وتكفير المعين",
+    "section": "قواعد الأسماء والأحكام",
+    "subsection": "ضوابط التكفير والتحذير من الغلو",
+    "text": "التقرير العقدي المعتمد:\nقرر أئمة أهل السنة والجماعة قواعد صارمة ومحكمة لحفظ دماء المسلمين وأعراضهم من الغلو في التكفير:\n1. التفريق بين تكفير النوع وتكفير المعين: فقد يكون القول أو الفعل كفراً وضلالاً (كتكذيب نص قطعي أو سب الله ورسوله)، ولكن الشخص المعين الذي تلبس به لا يُحكم بكفره وخروجه من الملة حتى تتوفر فيه الشروط وتنتفي عنه الموانع.\n2. موانع التكفير المعتبرة شرعاً:\n- الجهل الذي يُعذر به مثله.\n- الخطأ غير المتعمد وسبق اللسان.\n- الإكراه الملجئ لقوله تعالى: ﴿إِلَّا مَنْ أُكْرِهَ وَقَلْبُهُ مُطْمَئِنٌّ بِالْإِيمَانِ﴾.\n- التأويل والشبهة العارضة.\n3. الحكم بردة المعين حق قضائي محض للمحاكم الشرعية والعلماء الراسخين بعد الاستتابة وإقامة الحجة ودفع الشبهة، وليس لآحاد الناس ولا للجماعات إطلاق أحكام التكفير واستحلال الدماء والأموال.",
+    "topics": [
+      "ضوابط التكفير",
+      "تكفير المعين والنوع",
+      "موانع التكفير",
+      "التحذير من الغلو والخوارج"
+    ],
+    "evidenceType": "",
+    "reference": {
+      "book": "الموسوعة العقدية - الدرر السنية",
+      "chapter": "الباب السابع: قواعد الأسماء والأحكام وضوابط التكفير",
+      "volume": null,
+      "page": null,
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "القسم العلمي بمؤسسة الدرر السنية",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "إجماع أئمة السنة: الإمام أحمد، الشافعي، ابن تيمية، وابن عبد البر"
+    },
+    "contentHash": "204a0d4b82e269543b45df57f26adf11d4599578995084ea583d7717befbdd05"
+  },
+  {
+    "chunkId": "rec_tafsir_dorar_ikhlas_chk_0",
+    "recordId": "rec_tafsir_dorar_ikhlas",
+    "sourceId": "src_tafsir_dorar",
+    "sourceName": "موسوعة التفسير - الدرر السنية",
+    "sourceUrl": "https://dorar.net/tafseer",
+    "domain": "TAFSIR",
+    "title": "تفسير سورة الإخلاص وبيان فضلها في التوحيد الخالص",
+    "section": "تفسير جزء عم",
+    "subsection": "سورة الإخلاص",
+    "text": "التفسير المحرر المعتمد:\nقوله تعالى: ﴿قُلْ هُوَ اللَّهُ أَحَدٌ﴾ أي: قل يا محمد لهؤلاء السائلين عن نسب ربك: هو الله المتفرد بالوحدانية والألوهية، الذي لا شبيه له ولا نظير ولا مثيل له في ذاته ولا في صفاته ولا في أفعاله.\n\nقوله: ﴿اللَّهُ الصَّمَدُ﴾ الصمد في لغة العرب وفي أقوال السلف: هو السيد الذي كمل في سؤدده وشرفه وعظمته، والذي تصمد إليه الخلائق وتقصده في حوائجها ورغائبها ومسائلها، والغني عن كل ما سواه وكل شيء مفتقر إليه.\n\nقوله: ﴿لَمْ يَلِدْ وَلَمْ يُولَدْ﴾ رد قاطع على كل من نسب لله ولداً؛ كاليهود في عزير، والنصارى في المسيح، ومشركي العرب في الملائكة، فنفى سبحانه أن يكون له ولد إذ ليس له كفء، ونفى أن يكون مولوداً لأنه الأول الذي ليس قبله شيء والقديم الأزلي.\n\nقوله: ﴿وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ﴾ أي ليس له مماثل ولا مكافئ من خلقه بوجه من الوجوه.",
+    "topics": [
+      "تفسير سورة الإخلاص",
+      "التوحيد الخالص",
+      "الصمد",
+      "تنزيه الله عن الولد والمثل"
+    ],
+    "evidenceType": "",
+    "reference": {
+      "book": "موسوعة التفسير - الدرر السنية",
+      "chapter": "تفسير سورة الإخلاص",
+      "volume": null,
+      "page": null,
+      "hadithNumber": null,
+      "surahNumber": 112,
+      "ayahNumber": 1
+    },
+    "attribution": {
+      "author": "القسم العلمي بمؤسسة الدرر السنية",
+      "scholar": "نقل أقوال ابن عباس ومجاهد وقتادة وابن جرير الطبري",
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تفسير محرّر مجمع على أصوله عند المفسرين بالمأثور"
+    },
+    "contentHash": "9a4ed89205a25daf1a8190b99bcbf5a9a4df31b28e43204a051fd8484f4ff103"
+  },
+  {
+    "chunkId": "rec_tafsir_dorar_ikrah_chk_0",
+    "recordId": "rec_tafsir_dorar_ikrah",
+    "sourceId": "src_tafsir_dorar",
+    "sourceName": "موسوعة التفسير - الدرر السنية",
+    "sourceUrl": "https://dorar.net/tafseer",
+    "domain": "TAFSIR",
+    "title": "تفسير قوله تعالى: ﴿لَا إِكْرَاهَ فِي الدِّينِ﴾ وبيان حكم حرية الاعتقاد",
+    "section": "تفسير سورة البقرة",
+    "subsection": "آية 256",
+    "text": "التفسير المحرر المعتمد:\nقوله تعالى: ﴿لَا إِكْرَاهَ فِي الدِّينِ ۖ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ﴾:\nقال أئمة التفسير كابن جرير الطبري وابن كثير: لا تُكرهوا أحداً على الدخول في دين الإسلام؛ فإن الإسلام واضح وبراهينه وأدلته جلية بينة، لا يحتاج إلى أن يُكره أحدٌ على الدخول فيه، بل من هداه الله وشرح صدره دخل فيه على بصيرة ورغبة واقتناع تام.\n\nوقد نزلت الآية الكريمة حين أراد بعض أهل المدينة من الأنصار إجبار أولادهم الذين تهودوا أو تنصروا قبل الإسلام على الدخول في الإسلام، فنهاهم الله سبحانه عن ذلك وأمرهم بتركهم على دينهم إن أبوا وأدوا الجزية، مما يقرر قاعدة أن الإيمان عقد قلبي لا يصح شرعاً بالإكراه والقسر.",
+    "topics": [
+      "تفسير آية لا إكراه في الدين",
+      "حرية الاعتقاد",
+      "أسباب النزول",
+      "نفي الإكراه"
+    ],
+    "evidenceType": "",
+    "reference": {
+      "book": "موسوعة التفسير - الدرر السنية",
+      "chapter": "سورة البقرة - تفسير آية 256",
+      "volume": null,
+      "page": null,
+      "hadithNumber": null,
+      "surahNumber": 2,
+      "ayahNumber": 256
+    },
+    "attribution": {
+      "author": "القسم العلمي بمؤسسة الدرر السنية",
+      "scholar": "نقل أئمة التفسير: الطبري، ابن كثير، القرطبي",
+      "narrator": null
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "grading": null,
+      "gradingAuthority": "تفسير معتمد بالمأثور متفق على مدلوله الأصيل"
+    },
+    "contentHash": "8f55cb5c5dd455ddaa05a3a99e7e5e01bc7c8c67c1f576e566e1fabd664aa43c"
+  },
+  {
+    "chunkId": "rec_dawah_center_methodology_chk_0",
+    "recordId": "rec_dawah_center_methodology",
+    "sourceId": "src_dawah_center",
+    "sourceName": "بوابة مركز دعوة للبحوث والدراسات",
+    "sourceUrl": "https://dawa.center",
+    "domain": "DAWAH",
+    "title": "منهجية الحوار والدعوة مع غير المسلمين وعرض محاسن الإسلام",
+    "section": "أصول الدعوة ومناهجها",
+    "subsection": "فقه الخطاب الدعوي المعاصر",
+    "text": "التأصيل المنهجي المعتمد:\nتقوم الدعوة إلى الله في الإسلام على ركائز ربانية محكمة بينتها نصوص الوحي:\n1. الحكمة والموعظة الحسنة: قال تعالى: ﴿ادْعُ إِلَىٰ سَبِيلِ رَبِّكَ بِالْحِكْمَةِ وَالْمَوْعِظَةِ الْحَسَنَةِ ۖ وَجَادِلْهُم بِالَّتِي هِيَ أَحْسَنُ﴾، فالحكمة تعني وضع الكلام في موضعه ومخاطبة العقول بالبراهين ومراعاة أحوال المخاطبين.\n2. التركيز على الأصول المشتركة والتدرج: البدء بالتعريف بالله وعظمته ورحمته ووحدانيته قبل الدخول في الفروع والتفاصيل التشريعية.\n3. حسن الخلق والقدوة العملية: فالإسلام دخل كثيراً من بقاع الأرض (كإندونيسيا وماليزيا وشرق إفريقيا) بأخلاق التجار المسلمين وأمانتهم وصدقهم دون أي حرب.\n4. الابتعاد عن التعنيف والاستفزاز والجدل العقيم؛ لأن الغاية هي هداية الخلق وإيصال الحق برحمة وإنصاف.",
+    "topics": [
+      "منهج الدعوة",
+      "الحكمة في الخطاب",
+      "الحوار مع غير المسلمين",
+      "أخلاق الداعية"
+    ],
+    "evidenceType": "",
+    "reference": {
+      "book": "أصول الدعوة ومناهج الحوار - دراسات مركز دعوة",
+      "volume": null,
+      "page": null,
+      "chapter": "الباب الأول: ضوابط الخطاب الإسلامي",
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "مركز دعوة للبحوث والدراسات (Dawa Center)",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "SOURCE_PROVIDED",
+      "grading": null,
+      "gradingAuthority": null
+    },
+    "contentHash": "6870d690da2d9dd21909512e5b3e8f10436f093be61c2202f68b4891cdb9bf58"
+  },
+  {
+    "chunkId": "rec_dawah_center_non_muslim_rights_chk_0",
+    "recordId": "rec_dawah_center_non_muslim_rights",
+    "sourceId": "src_dawah_center",
+    "sourceName": "بوابة مركز دعوة للبحوث والدراسات",
+    "sourceUrl": "https://dawa.center",
+    "domain": "DAWAH",
+    "title": "حقوق غير المسلمين في الشريعة الإسلامية وحرمة الاعتداء على المعاهدين",
+    "section": "العلاقات الإنسانية في الفقه والدعوة",
+    "subsection": "فقه التعايش والعدل",
+    "text": "التأصيل المنهجي المعتمد:\nأرست الشريعة الإسلامية حقوقاً محكمة لحماية غير المسلمين والوفاء بعهودهم:\n1. حرمة الدماء والأموال: قال النبي ﷺ في الحديث الصحيح الثابت في البخاري: «مَنْ قَتَلَ مُعَاهَدًا لَمْ يَرِحْ رَائِحَةَ الجَنَّةِ، وَإِنَّ رِيحَهَا تُوجَدُ مِنْ مَسِيرَةِ أَرْبَعِينَ عَامًا».\n2. البر والقسط مع المسالمين: قال تعالى: ﴿لَّا يَنْهَاكُمُ اللَّهُ عَنِ الَّذِينَ لَمْ يُقَاتِلُوكُمْ فِي الدِّينِ وَلَمْ يُخْرِجُوكُم مِّن دِيَارِكُمْ أَن تَبَرُّوهُمْ وَتُقْسِطُوا إِلَيْهِمْ ۚ إِنَّ اللَّهَ يُحِبُّ الْمُقْسِطِينَ﴾ [الممتحنة: 8]، والبر هو أعلى درجات الإحسان والصلة.\n3. حرية ممارسة العبادات وحفظ دور العبادة من التعدي بنصوص الوحي والعهود النبوية والخلفاء الراشدين عبر التاريخ.",
+    "topics": [
+      "حقوق غير المسلمين",
+      "حرمة دماء المعاهدين",
+      "العدل والقسط",
+      "المعاملة الإنسانية"
+    ],
+    "evidenceType": "",
+    "reference": {
+      "book": "حقوق الإنسان في الإسلام - بحوث مركز دعوة",
+      "volume": null,
+      "page": null,
+      "chapter": "الفصل الثالث: حقوق غير المسلمين",
+      "hadithNumber": null,
+      "surahNumber": null,
+      "ayahNumber": null
+    },
+    "attribution": {
+      "author": "مركز دعوة للبحوث والدراسات (Dawa Center)",
+      "scholar": null,
+      "narrator": null
+    },
+    "verification": {
+      "status": "SOURCE_PROVIDED",
+      "grading": null,
+      "gradingAuthority": null
+    },
+    "contentHash": "6b470e47fd7f3674f3ac46e41b7df4aa92780411f9484f833c4b03e762ac7e37"
+  }
+]

@@ -1,0 +1,138 @@
+{
+  "sourceId": "src_terminology_jamhara",
+  "sourceName": "معجم الجمهرة للمصطلحات الإسلامية وترجماتها",
+  "domain": "TERMINOLOGY",
+  "evidenceType": "LEXICAL_DEFINITION",
+  "records": [
+    {
+      "recordId": "rec_term_jamhara_tawheed",
+      "sourceId": "src_terminology_jamhara",
+      "domain": "TERMINOLOGY",
+      "title": "مصطلح: التوحيد (Tawheed / Islamic Monotheism)",
+      "section": "حرف التاء",
+      "subsection": "أصول العقيدة والإيمان",
+      "text": "التعريف الشرعي: التوحيد هو إفراد الله سبحانه وتعالى بما يختص به من الربوبية (الخلق والملك والتدبير)، والألوهية (إخلاص العبادة بجميع أنواعها له وحده)، والأسماء والصفات (إثبات ما أثبته لنفسه ونفي ما نفاه عن نفسه من غير تحريف ولا تعطيل ولا تكييف ولا تمثيل).\n\nالمكافئ المعتمد بالإنجليزية: Islamic Monotheism / Tawheed.\n\nتنبيه الترجمة الحساسة: لا يُترجم بمجرد كلمة Monotheism المجردة دون تقييد؛ لأن التوحيد الإسلامي يشتمل على إفراد الألوهية ونفي الشرك بجميع صوره الظاهرة والباطنة وتنزيه الله المطلق عن الشبيه والمثيل.",
+      "topics": ["التوحيد", "أصول العقيدة", "الترجمة الشرعية", "توحيد الربوبية والألوهية"],
+      "reference": {
+        "book": "معجم الجمهرة للمصطلحات الإسلامية المترجمة",
+        "chapter": "باب التاء - التوحيد",
+        "page": 104
+      },
+      "attribution": {
+        "author": "منصة المحتوى الإسلامي المفتوح (Islamic Content)",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "اعتماد مجمع اللغة ومراجعة المتخصصين الشرعيين"
+      },
+      "sourceUrl": "https://islamic-content.com/dictionary"
+    },
+    {
+      "recordId": "rec_term_jamhara_taqwa",
+      "sourceId": "src_terminology_jamhara",
+      "domain": "TERMINOLOGY",
+      "title": "مصطلح: التقوى (Taqwa / God-Consciousness and Piety)",
+      "section": "حرف التاء",
+      "subsection": "أعمال القلوب والأخلاق الإسلامية",
+      "text": "التعريف الشرعي: التقوى مشتقة من الوقاية؛ وهي أن يجعل العبد بينه وبين عذاب الله وسخطه وقاية بفعل أوامره واجتناب نواهيه، عن علم وبصيرة ورجاء لرحمته.\n\nالمكافئ المعتمد بالإنجليزية: God-Consciousness / Piety / Righteousness.\n\nتنبيه الترجمة الحساسة: ترجمة «التقوى» بكلمة Fear (الخوف) ترجمة قاصرة ومضللة؛ فالتقوى حالة قلبية إيجابية تجمع بين المحبة والرجاء والتعظيم واليقظة ومراقبة الله، وليست مجرد فزع أو ذعر سلبي.",
+      "topics": ["التقوى", "أعمال القلوب", "الترجمة الشرعية", "الوقاية من عذاب الله"],
+      "reference": {
+        "book": "معجم الجمهرة للمصطلحات الإسلامية المترجمة",
+        "chapter": "باب التاء - التقوى",
+        "page": 118
+      },
+      "attribution": {
+        "author": "منصة المحتوى الإسلامي المفتوح (Islamic Content)",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "اعتماد مجمع اللغة ومراجعة المتخصصين الشرعيين"
+      },
+      "sourceUrl": "https://islamic-content.com/dictionary"
+    },
+    {
+      "recordId": "rec_term_jamhara_shirk",
+      "sourceId": "src_terminology_jamhara",
+      "domain": "TERMINOLOGY",
+      "title": "مصطلح: الشرك (Shirk / Associating Partners with Allah)",
+      "section": "حرف الشين",
+      "subsection": "أبواب العقيدة والتحذير من المحرمات",
+      "text": "التعريف الشرعي: اتخاذ ند أو شريك مع الله في ربوبيته أو ألوهيته أو أسمائه وصفاته، وهو أعظم الذنوب في الإسلام. وينقسم إلى شرك أكبر مخرج من الملة (كصرف العبادة لغير الله ودعاء الأموات)، وشرك أصغر لا يخرج من الملة لكنه من كبائر الذنوب (كالرياء اليسير والحلف بغير الله).\n\nالمكافئ المعتمد بالإنجليزية: Associating partners with Allah / Polytheism / Shirk.\n\nتنبيه الترجمة الحساسة: يُفضل استخدام المصطلح الأصيل Shirk متبوعاً بشرحه، لأن لفظ Polytheism الشائع في الغرب ينصرف غالباً إلى تعدد الآلهة الإغريقي والروماني، بينما الشرك يشمل جعل وسائط وأنداد لله مع الاعتراف بأنه الخالق.",
+      "topics": ["الشرك", "التوحيد", "الشرك الأكبر والأصغر", "الترجمة الشرعية"],
+      "reference": {
+        "book": "معجم الجمهرة للمصطلحات الإسلامية المترجمة",
+        "chapter": "باب الشين - الشرك",
+        "page": 215
+      },
+      "attribution": {
+        "author": "منصة المحتوى الإسلامي المفتوح (Islamic Content)",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "اعتماد مجمع اللغة ومراجعة المتخصصين الشرعيين"
+      },
+      "sourceUrl": "https://islamic-content.com/dictionary"
+    },
+    {
+      "recordId": "rec_term_jamhara_barakah",
+      "sourceId": "src_terminology_jamhara",
+      "domain": "TERMINOLOGY",
+      "title": "مصطلح: البركة (Barakah / Divine Blessing and Abundance)",
+      "section": "حرف الباء",
+      "subsection": "المفاهيم الإيمانية والسنن الإلهية",
+      "text": "التعريف الشرعي: ثبوت الخير الإلهي في الشيء ونماؤه وزيادته وكفايته على نحو يتجاوز المقدار المادي الظاهري.\n\nالمكافئ المعتمد بالإنجليزية: Divine Blessing / Spiritual Abundance / Barakah.\n\nتنبيه الترجمة الحساسة: لا تختزل في معنى الربح المادي المالي (Profit or Luck)، فالبركة فضل إلهي معنوي يحل في الوقت أو المال أو الرزق أو العلم فيجعله نافعاً مباركاً مضاعف الأثر.",
+      "topics": ["البركة", "المفاهيم الإيمانية", "الترجمة الشرعية"],
+      "reference": {
+        "book": "معجم الجمهرة للمصطلحات الإسلامية المترجمة",
+        "chapter": "باب الباء - البركة",
+        "page": 63
+      },
+      "attribution": {
+        "author": "منصة المحتوى الإسلامي المفتوح (Islamic Content)",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "اعتماد مجمع اللغة ومراجعة المتخصصين الشرعيين"
+      },
+      "sourceUrl": "https://islamic-content.com/dictionary"
+    },
+    {
+      "recordId": "rec_term_jamhara_iffah",
+      "sourceId": "src_terminology_jamhara",
+      "domain": "TERMINOLOGY",
+      "title": "مصطلح: العفة (Iffah / Chastity and Moral Restraint)",
+      "section": "حرف العين",
+      "subsection": "مكارم الأخلاق والسلوك",
+      "text": "التعريف الشرعي: ضبط النفس وحبسها عن المحرمات والشهوات غير المشروعة، والتنزه عن المطامع الدنيئة حفظاً للكرامة والدين.\n\nالمكافئ المعتمد بالإنجليزية: Chastity / Purity / Moral Restraint.\n\nتنبيه الترجمة الحساسة: تشمل العفة عفة الفرج وعفة البطن وعفة اللسان وعفة الكف عن أموال الناس، فلا تحصر فقط في الطهارة الجسدية.",
+      "topics": ["العفة", "مكارم الأخلاق", "الترجمة الشرعية"],
+      "reference": {
+        "book": "معجم الجمهرة للمصطلحات الإسلامية المترجمة",
+        "chapter": "باب العين - العفة",
+        "page": 280
+      },
+      "attribution": {
+        "author": "منصة المحتوى الإسلامي المفتوح (Islamic Content)",
+        "scholar": null,
+        "narrator": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "grading": null,
+        "gradingAuthority": "اعتماد مجمع اللغة ومراجعة المتخصصين الشرعيين"
+      },
+      "sourceUrl": "https://islamic-content.com/dictionary"
+    }
+  ]
+}

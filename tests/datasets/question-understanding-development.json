@@ -1,0 +1,1030 @@
+[
+  {
+    "question": "ما معنى التقوى في اصطلاح الشريعة؟",
+    "expectedTaskFamily": "DEFINE",
+    "expectedBehavior": "بيان التعريف الشرعي واللغوي لمفهوم التقوى",
+    "notes": "صيغة فصحى مباشرة لطلب تعريف"
+  },
+  {
+    "question": "وش يعني الاستدلال في الفقه؟",
+    "expectedTaskFamily": "DEFINE",
+    "expectedBehavior": "تعريف مصطلح الاستدلال الفقهي بأسلوب ميسر",
+    "notes": "لهجة سعودية (وش يعني)"
+  },
+  {
+    "question": "ما مفهوم التوكل في الإسلام؟",
+    "expectedTaskFamily": "DEFINE",
+    "expectedBehavior": "بيان حقيقة مفهوم التوكل الشرعي",
+    "notes": "طلب مفهوم عقدي وتربوي"
+  },
+  {
+    "question": "ما هو الإحسان لغة وشرعاً؟",
+    "expectedTaskFamily": "DEFINE",
+    "expectedBehavior": "بيان مرتبة الإحسان في الدين",
+    "notes": "سؤال مراتب الدين"
+  },
+  {
+    "question": "ايش معنى الصدقة الجارية؟",
+    "expectedTaskFamily": "DEFINE",
+    "expectedBehavior": "تعريف مصطلح الصدقة الجارية وما يشمله",
+    "notes": "لهجة عامية خليجية (ايش معنى)"
+  },
+  {
+    "question": "ما حقيقة الشرك الأصغر؟",
+    "expectedTaskFamily": "DEFINE",
+    "expectedBehavior": "بيان ماهية الشرك الأصغر وضابطه",
+    "notes": "تعريف مصطلح عقدي دقيق"
+  },
+  {
+    "question": "شنو معنى الإجماع عند الأصوليين؟",
+    "expectedTaskFamily": "DEFINE",
+    "expectedBehavior": "تعريف الإجماع في أصول الفقه",
+    "notes": "لهجة كويتية/خليجية (شنو معنى)"
+  },
+  {
+    "question": "ما المقصود بالنوازل الفقهية؟",
+    "expectedTaskFamily": "DEFINE",
+    "expectedBehavior": "تعريف مصطلح النوازل المعاصرة",
+    "notes": "تعريف مصطلح فقهي تخصصي"
+  },
+  {
+    "question": "تعريف الغيبة والنميمة في الإسلام",
+    "expectedTaskFamily": "DEFINE",
+    "expectedBehavior": "بيان تعريف الغيبة والفرق بينها وبين النميمة",
+    "notes": "صياغة خبرية مباشرة بصيغة المصدر"
+  },
+  {
+    "question": "ما هي المروءة في خلق المسلم؟",
+    "expectedTaskFamily": "DEFINE",
+    "expectedBehavior": "بيان خلق المروءة لغة واصطلاحاً",
+    "notes": "تعريف خلق إسلامي"
+  },
+  {
+    "question": "وش مفهوم الزهد الحقيقي؟",
+    "expectedTaskFamily": "DEFINE",
+    "expectedBehavior": "بيان حقيقة الزهد الشرعي",
+    "notes": "لهجة سعودية"
+  },
+
+  {
+    "question": "كيف تؤدى صلاة الجنازة بالتفصيل؟",
+    "expectedTaskFamily": "EXPLAIN",
+    "expectedBehavior": "شرح صفة وكيفية صلاة الجنازة بتسلسل واضح",
+    "notes": "استفهام عن كيفية عبادة (كيف)"
+  },
+  {
+    "question": "شلون أصلي قيام الليل وكم ركعة؟",
+    "expectedTaskFamily": "EXPLAIN",
+    "expectedBehavior": "شرح صفة قيام الليل وعدد ركعاته",
+    "notes": "لهجة سعودية/شامية (شلون)"
+  },
+  {
+    "question": "اشرح لي مراحل جمع القرآن الكريم تاريخياً",
+    "expectedTaskFamily": "EXPLAIN",
+    "expectedBehavior": "شرح مراحل التدوين في عهد النبوة والصحابة",
+    "notes": "صيغة طلب الشرح المباشر (اشرح لي)"
+  },
+  {
+    "question": "وضح لي كيفية إخراج زكاة الذهب الملبوس",
+    "expectedTaskFamily": "EXPLAIN",
+    "expectedBehavior": "توضيح أقوال الفقهاء وطريقة الحساب",
+    "notes": "صيغة توضيح (وضح لي)"
+  },
+  {
+    "question": "كيف نتصرف إذا سها الإمام في الصلاة؟",
+    "expectedTaskFamily": "EXPLAIN",
+    "expectedBehavior": "شرح أحكام تنبيه الإمام وسجود السهو للمأموم",
+    "notes": "استفهام عملي عن صفة تصرف شرعي"
+  },
+  {
+    "question": "بين كيفية غسل الجنابة الكامل والمجزئ",
+    "expectedTaskFamily": "EXPLAIN",
+    "expectedBehavior": "بيان صفة الغسل المسنون والمجزئ",
+    "notes": "طلب تفصيل فقهي"
+  },
+  {
+    "question": "طريقة أداء صلاة الاستخارة ودعائها",
+    "expectedTaskFamily": "EXPLAIN",
+    "expectedBehavior": "شرح كيفية صلاة الاستخارة وموضع الدعاء",
+    "notes": "صيغة غير استفهامية تبدأ بالمصدر"
+  },
+  {
+    "question": "كيف أفهم قوله تعالى: فإن مع العسر يسرا؟",
+    "expectedTaskFamily": "EXPLAIN",
+    "expectedBehavior": "شرح المعنى التفسيري والبياني للآية",
+    "notes": "شرح تفسيري سياقي"
+  },
+  {
+    "question": "شلون أتعامل مع وسواس الطهارة المتكرر؟",
+    "expectedTaskFamily": "EXPLAIN",
+    "expectedBehavior": "شرح القواعد الشرعية لدفع الوسواس والشك",
+    "notes": "لهجة خليجية وإرشاد فقهي عام"
+  },
+  {
+    "question": "كيف نجمع بين نصوص التوكل والأخذ بالأسباب؟",
+    "expectedTaskFamily": "EXPLAIN",
+    "expectedBehavior": "شرح الجمع التوفيقي بين الأدلة الشرعية",
+    "notes": "سؤال تأصيلي حول دفع التعارض الظاهري"
+  },
+
+  {
+    "question": "لماذا حرم الإسلام الكذب في جميع الأحوال؟",
+    "expectedTaskFamily": "WHY",
+    "expectedBehavior": "بيان علة وحكمة تحريم الكذب ومفاسده الفردية والمجتمعية",
+    "notes": "استفهام صريح عن العلة (لماذا)"
+  },
+  {
+    "question": "ليش فرض الله صيام شهر رمضان على المسلمين؟",
+    "expectedTaskFamily": "WHY",
+    "expectedBehavior": "بيان حكمة تشريع الصيام والتقوى والصحة الروحية",
+    "notes": "لهجة سعودية (ليش)"
+  },
+  {
+    "question": "ما الحكمة من تحريم الربا في المعاملات المالية؟",
+    "expectedTaskFamily": "WHY",
+    "expectedBehavior": "بيان المقاصد الاقتصادية والاجتماعية لتحريم الربا",
+    "notes": "استفهام اصطلاحي عن الحكمة"
+  },
+  {
+    "question": "ليه نتوضأ قبل كل صلاة؟",
+    "expectedTaskFamily": "WHY",
+    "expectedBehavior": "بيان مقاصد الطهارة الظاهرة والباطنة",
+    "notes": "لهجة مصرية/شامية/سعودية (ليه)"
+  },
+  {
+    "question": "ما علة تحريم الخمر والمخدرات في الشريعة؟",
+    "expectedTaskFamily": "WHY",
+    "expectedBehavior": "بيان علة الإسكار وحفظ العقل كضرورة شرعية",
+    "notes": "استفهام أصولي عن العلة"
+  },
+  {
+    "question": "لماذا شرع الله صلاة الجماعة في المسجد؟",
+    "expectedTaskFamily": "WHY",
+    "expectedBehavior": "بيان حكم الاجتماع والتعارف والمساواة في صلاة الجماعة",
+    "notes": "حكمة تشريع عبادة"
+  },
+  {
+    "question": "ما سبب منع بيع الغرر في الفقه الإسلامي؟",
+    "expectedTaskFamily": "WHY",
+    "expectedBehavior": "بيان سبب تحريم الجهالة والغرر درءاً للنزاع والظلم",
+    "notes": "سؤال عن سبب المنع الفقهي"
+  },
+  {
+    "question": "ليش توجد أحكام مختلفة بين المذاهب الأربعة؟",
+    "expectedTaskFamily": "WHY",
+    "expectedBehavior": "بيان أسباب اختلاف الفقهاء المشروعة دون جعله تناقضاً",
+    "notes": "سؤال مرجعي هام حول أسباب الخلاف"
+  },
+  {
+    "question": "لأي سبب جعلت كفارة اليمين إطعام عشرة مساكين؟",
+    "expectedTaskFamily": "WHY",
+    "expectedBehavior": "بيان حكمة تقدير الكفارة وتكفير الحنث وإطعام المحتاجين",
+    "notes": "استفهام سببي بأداة لأي سبب"
+  },
+  {
+    "question": "لماذا جعل الإسلام عدة للمرأة بعد الطلاق أو الوفاة؟",
+    "expectedTaskFamily": "WHY",
+    "expectedBehavior": "بيان حكم العدة من براءة الرحم ورعاية حق الزوج والمشاعر",
+    "notes": "حكمة تشريع اجتماعي"
+  },
+  {
+    "question": "ليه حرم الإسلام عقوق الوالدين وجعله من الكبائر؟",
+    "expectedTaskFamily": "WHY",
+    "expectedBehavior": "بيان عظم حق الوالدين والعدالة والوفاء",
+    "notes": "لهجة عامية وسؤال حكمة"
+  },
+  {
+    "question": "ما حكمة التدرج في تحريم الخمر في العهد المكي والمدني؟",
+    "expectedTaskFamily": "WHY",
+    "expectedBehavior": "بيان سنة التدرج التشريعي ومراعاة النفوس في الدعوة",
+    "notes": "سؤال تاريخي تشريعي عن الحكمة"
+  },
+
+  {
+    "question": "ما الفرق بين الإسلام والإيمان في حديث جبريل؟",
+    "expectedTaskFamily": "COMPARE",
+    "expectedBehavior": "بيان الفرق إذا اجتمعا وافترقا بين الأعمال الظاهرة والباطنة",
+    "notes": "مقارنة عقدية تأسيسية"
+  },
+  {
+    "question": "وش الفرق بين الفرض والواجب عند الفقهاء؟",
+    "expectedTaskFamily": "COMPARE",
+    "expectedBehavior": "مقارنة اصطلاحية بين الجمهور والحنفية في قطعية الدليل",
+    "notes": "لهجة سعودية (وش الفرق)"
+  },
+  {
+    "question": "ما الفرق بين النبي والرسول؟",
+    "expectedTaskFamily": "COMPARE",
+    "expectedBehavior": "بيان الفروق الجوهرية بين رتبتي النبوة والرسالة",
+    "notes": "مقارنة مفاهيم عقدية"
+  },
+  {
+    "question": "ايش الفرق بين الربا وغلاء الأسعار الطبيعي؟",
+    "expectedTaskFamily": "COMPARE",
+    "expectedBehavior": "بيان التمايز بين الزيادة المشروطة في القرض وحركة السوق",
+    "notes": "لهجة خليجية ومقارنة مالية"
+  },
+  {
+    "question": "أيهما أفضل صلاة الليل أم قراءة القرآن في جوف الليل؟",
+    "expectedTaskFamily": "COMPARE",
+    "expectedBehavior": "مقارنة بين الفضيلتين والجمع بينهما في الصلاة",
+    "notes": "صيغة تفضيل مقارن (أيهما أفضل)"
+  },
+  {
+    "question": "مقارنة بين سجود السهو وسجود التلاوة وسجود الشكر",
+    "expectedTaskFamily": "COMPARE",
+    "expectedBehavior": "جدول أو بيان الفروق في الشروط والصفة والموجب",
+    "notes": "مقارنة متعددة بصيغة المصدر"
+  },
+  {
+    "question": "ما الفرق بين الحديث القدسي والقرآن الكريم؟",
+    "expectedTaskFamily": "COMPARE",
+    "expectedBehavior": "بيان الفروق في التعبد باللفظ والإعجاز والرسم",
+    "notes": "مقارنة مصطلحات علوم القرآن"
+  },
+  {
+    "question": "شو الفرق بين الرشوة والهدية للموظف؟",
+    "expectedTaskFamily": "COMPARE",
+    "expectedBehavior": "بيان الضابط الشرعي الدقيق في هدايا العمال واستغلال المنصب",
+    "notes": "لهجة شامية (شو الفرق)"
+  },
+  {
+    "question": "هل هناك فرق بين الفسق والنفاق الأكبر؟",
+    "expectedTaskFamily": "COMPARE",
+    "expectedBehavior": "بيان الفرق في الحكم العقدي والمآل الأخروي",
+    "notes": "استفهام مقارنة عقدي"
+  },
+  {
+    "question": "أيهما أعظم إثم الغيبة أم النميمة؟",
+    "expectedTaskFamily": "COMPARE",
+    "expectedBehavior": "مقارنة بين الجريمتين وأثرهما على الأفراد والمجتمع",
+    "notes": "صيغة مقارنة تفضيلية"
+  },
+  {
+    "question": "وش الفرق بين الطلاق الرجعي والطلاق البائن؟",
+    "expectedTaskFamily": "COMPARE",
+    "expectedBehavior": "بيان الفروق الفقهية في الرجعة والعدة والإرث",
+    "notes": "لهجة سعودية ومقارنة أحكام أسرية"
+  },
+  {
+    "question": "ما الفرق بين صلاة التراويح والتهجد والوتر؟",
+    "expectedTaskFamily": "COMPARE",
+    "expectedBehavior": "بيان مسميات قيام الليل وأوقاتها",
+    "notes": "مقارنة صلوات نافلة"
+  },
+
+  {
+    "question": "هل صحيح أن الأرض لا تأكل أجساد الأنبياء؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "التحقق من ثبوت الحديث والدعوى الشرعية بالدليل المعتمد",
+    "notes": "فحص دعوى عقدية غيبية"
+  },
+  {
+    "question": "هل صدق أن قراءة سورة يس لما قرئت له؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "فحص صحة هذه المقولة الشائعة وبيان حكم الاستدلال بها",
+    "notes": "لهجة سعودية (هل صدق أن)"
+  },
+  {
+    "question": "ما صحة القول بأن المعاصي تمنع الرزق؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "بحث الأدلة الواردة في أثر الذنوب على حرمان الرزق والبركة",
+    "notes": "فحص مقولة دينية شائعة"
+  },
+  {
+    "question": "هل صحيح أن تارك الصلاة كافر بإجماع الصحابة؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "فحص صحة النقل ودعوى الإجماع وبيان خلاف الفقهاء",
+    "notes": "فحص دعوى تتضمن إجماعاً وحكماً خطيراً"
+  },
+  {
+    "question": "هل يصح أن آدم عليه السلام نزل في الهند؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "فحص الروايات الإسرائيلية والتاريخية الواردة ونقدها",
+    "notes": "فحص رواية تاريخية غير مؤصلة"
+  },
+  {
+    "question": "ما صحة مقولة: صوموا تصحوا؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "تخريج الحديث ونقد سنده مع بيان صحة المعنى طبياً",
+    "notes": "فحص مقولة مشهورة منسوبة لحديث"
+  },
+  {
+    "question": "هل صدق أن تارك صلاة الفجر يربط الشيطان على قافيته؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "التحقق من نص حديث البخاري ومسلم في عقد الشيطان",
+    "notes": "فحص دعوى نبوية صحيحة بألفاظ عامية"
+  },
+  {
+    "question": "هل يصح أن زيارة قبر النبي ﷺ واجبة كالحج؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "بيان حكم الزيارة وأنها سنة وليست ركناً ولا شرطاً للحج",
+    "notes": "تصحيح دعوى فقهية غير دقيقة"
+  },
+  {
+    "question": "هل صحيح أن من قرأ آية الكرسي دبر كل صلاة لم يمنعه من دخول الجنة إلا الموت؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "فحص الحديث الوارد في سنن النسائي وثبوته عند المحدثين",
+    "notes": "فحص فضل عمل مشهور"
+  },
+  {
+    "question": "ما صحة القول بأن الأرواح تتلاقى بعد الموت؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "إيراد الأدلة الشرعية من الكتاب والسنة وأقوال المحققين",
+    "notes": "فحص مسألة برزخية غيبية"
+  },
+  {
+    "question": "هل صدق أن من قال كذا وكذا غفرت ذنوبه وإن كانت مثل زبد البحر؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "التحقق من ألفاظ أذكار التسبيح الصحيحة في الصحيحين",
+    "notes": "فحص فضل ذكر مشهور"
+  },
+  {
+    "question": "هل يصح أن عيسى عليه السلام لم يمت وسينزل في آخر الزمان؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "تأصيل عقيدة رفع عيسى عليه السلام ونزوله بالأدلة القطعية",
+    "notes": "فحص دعوى عقدية قطعية"
+  },
+
+  {
+    "question": "هل هذا حديث صحيح: «طلب العلم فريضة على كل مسلم»؟",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "تخريج الحديث وبيان حكم المحدثين في طرقه وشواهده",
+    "notes": "طلب تصحيح حديث شهير"
+  },
+  {
+    "question": "ما صحة حديث: «اختلاف أمتي رحمة»؟",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "بيان أنه لا أصل له بسند صحيح ونقل كلام المحدثين فيه",
+    "notes": "نفي نسبة حديث لا أصل له بأمانة"
+  },
+  {
+    "question": "هل ورد حديث صحيح عن صلاة التسابيح؟",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "عرض خلاف المحدثين والفقهاء في ثبوت حديث صلاة التسابيح",
+    "notes": "مسألة حديثية وفقهية خلافية مشهورة"
+  },
+  {
+    "question": "تخريج حديث: «إن الله يحب إذا عمل أحدكم عملا أن يتقنه»",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "عزو الحديث لمصادره وتوضيح درجته وشواهده",
+    "notes": "طلب تخريج حديث اصطلاحي"
+  },
+  {
+    "question": "هل قال الرسول ﷺ: «حب الوطن من الإيمان»؟",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "بيان أنه موضوع أو لا يثبت سنده مع صحة محبة المسلم لوطنه فطرة",
+    "notes": "تمييز عدم صحة الإسناد عن سلامة المعنى"
+  },
+  {
+    "question": "هل صح حديث: «من تفقه ولم يتصوف فقد تفسق»؟",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "بيان أنه قول منسوب لبعض الأئمة وليس حديثاً نبوياً",
+    "notes": "نفي رفعه إلى النبي ﷺ"
+  },
+  {
+    "question": "ما درجة حديث الأبدال في الشام؟",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "نقد أسانيد أحاديث الأبدال ونقل أحكام ابن تيمية وابن القيم",
+    "notes": "سؤال عن درجة حديث تخصصي"
+  },
+  {
+    "question": "هل ثبت عن النبي ﷺ أنه قال: «الجنة تحت أقدام الأمهات»؟",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "بيان ضعف هذا اللفظ وتصحيح حديث: «الزم رجلها فثم الجنة»",
+    "notes": "إرشاد للبديل الصحيح الثابت"
+  },
+  {
+    "question": "هل رواه البخاري حديث افتراق الأمة إلى ثلاث وسبعين فرقة؟",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "توضيح أن الحديث في السنن والمسانيد وليس في صحيح البخاري وتخريجه",
+    "notes": "تدقيق دقيق في مصدر الحديث"
+  },
+  {
+    "question": "ما صحة حديث: «تداووا عباد الله فإن الله لم يضع داء إلا وضع له دواء»؟",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "تخريج الحديث في السنن والمستدرك وتصحيحه",
+    "notes": "توثيق حديث صحيح في الطب النبوي"
+  },
+  {
+    "question": "هل ثبت حديث النهي عن الشرب قائماً؟",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "إثبات وروده في صحيح مسلم والجمع بينه وبين أحاديث الجواز",
+    "notes": "توثيق وتوفيق فقهي"
+  },
+  {
+    "question": "هل حديث فضل سورة الكهف يوم الجمعة صحيح؟",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "تخريج روايات الحاكم والدارمي والتمييز بين المرفوع والموقوف",
+    "notes": "توثيق سنة راتبة"
+  },
+
+  {
+    "question": "هل أجمع العلماء على وجوب الصلوات الخمس؟",
+    "expectedTaskFamily": "VERIFY_CONSENSUS",
+    "expectedBehavior": "إثبات الإجماع القطعي المعلوم من الدين بالضرورة",
+    "notes": "إجماع قطعي معلوم بالضرورة"
+  },
+  {
+    "question": "هل هناك إجماع على تحريم الربا بجميع صوره؟",
+    "expectedTaskFamily": "VERIFY_CONSENSUS",
+    "expectedBehavior": "بيان الإجماع على ربا النسيئة وتفصيل الخلاف في بعض المعاملات المعاصرة",
+    "notes": "إجماع على الأصل وتفصيل في الفروع"
+  },
+  {
+    "question": "هل العلماء متفقون على نجاسة الخنزير؟",
+    "expectedTaskFamily": "VERIFY_CONSENSUS",
+    "expectedBehavior": "بيان الإجماع على تحريم أكله وعرض خلاف المالكية في طهارة عينه حال الحياة",
+    "notes": "تدقيق في محل الإجماع ومحل الخلاف"
+  },
+  {
+    "question": "هل خالف أحد من الأئمة في كفر من سب الله تعالى ورسوله؟",
+    "expectedTaskFamily": "VERIFY_CONSENSUS",
+    "expectedBehavior": "إثبات الإجماع المنعقد على ردة وكفر الساب عياذاً بالله",
+    "notes": "إجماع عقدي قطعي"
+  },
+  {
+    "question": "هل هو محل اتفاق بين الفقهاء أن صلاة الجماعة فرض عين؟",
+    "expectedTaskFamily": "VERIFY_CONSENSUS",
+    "expectedBehavior": "توضيح وجود الخلاف المعتبر وأنها سنة مؤكدة أو فرض كفاية عند الجمهور وفرض عين عند الحنابلة",
+    "notes": "نفي الإجماع وإثبات الخلاف المعتبر"
+  },
+  {
+    "question": "هل أجمع الفقهاء على توريث الجدة مع وجود الأم؟",
+    "expectedTaskFamily": "VERIFY_CONSENSUS",
+    "expectedBehavior": "بيان الإجماع على حجب الأم للجدة بالإجماع",
+    "notes": "مسألة فرائضية فيها إجماع"
+  },
+  {
+    "question": "هل هناك إجماع على بطلان صلاة من ترك الفاتحة متعمداً؟",
+    "expectedTaskFamily": "VERIFY_CONSENSUS",
+    "expectedBehavior": "بيان قول الجمهور بالبطلان وعرض مذهب الحنفية في كونها واجباً وليست فرضاً",
+    "notes": "تمييز مذهب الجمهور عن الإجماع التام"
+  },
+  {
+    "question": "هل اتفق العلماء على مشروعية صلاة التراويح في رمضان؟",
+    "expectedTaskFamily": "VERIFY_CONSENSUS",
+    "expectedBehavior": "إثبات الاتفاق والإجماع العملي على مشروعيتها",
+    "notes": "إجماع عملي سني"
+  },
+  {
+    "question": "هل هناك إجماع في حكم تارك الصلاة تهاونا وكسلا؟",
+    "expectedTaskFamily": "VERIFY_CONSENSUS",
+    "expectedBehavior": "بيان أنه لا إجماع في المسألة وأنها من أشهر مسائل الخلاف بين الجمهور والإمام أحمد",
+    "notes": "نفي الإجماع وبيان أدب الخلاف"
+  },
+  {
+    "question": "هل أجمع المسلمون على ختم النبوة بمحمد ﷺ؟",
+    "expectedTaskFamily": "VERIFY_CONSENSUS",
+    "expectedBehavior": "إثبات الإجماع القطعي وأن من ادعى النبوة بعده كافر بإجماع الأمة",
+    "notes": "إجماع عقدي مجمع عليه قطعاً"
+  },
+
+  {
+    "question": "هل هذه آية في القرآن: «لا راحة في الدنيا لمؤمن»؟",
+    "expectedTaskFamily": "VERIFY_QURAN",
+    "expectedBehavior": "بيان أنها ليست آية قرآنية بل حكمة مأثورة أو مقولة",
+    "notes": "فحص نسبة عبارة للقرآن الكريم"
+  },
+  {
+    "question": "هل في القرآن آية تقول: «أنا عند ظن عبدي بي»؟",
+    "expectedTaskFamily": "VERIFY_QURAN",
+    "expectedBehavior": "بيان أنه حديث قدسي وليس آية قرآنية والتفريق بينهما",
+    "notes": "تمييز الحديث القدسي عن القرآن"
+  },
+  {
+    "question": "هل قوله تعالى: «إن الله لا يضيع أجر المحسنين» آية قرآنية وما سورتها؟",
+    "expectedTaskFamily": "VERIFY_QURAN",
+    "expectedBehavior": "إثبات أنها جزء من آية قرآنية في سورة التوبة وهود ويوسف وعزوها بدقة",
+    "notes": "توثيق وعزو آية ثابتة"
+  },
+  {
+    "question": "هل ورد لفظ الديمقراطية في القرآن الكريم؟",
+    "expectedTaskFamily": "VERIFY_QURAN",
+    "expectedBehavior": "بيان أن اللفظ مصطلح يوناني حديث لم يرد وذكر مفهوم الشورى القرآني",
+    "notes": "فحص معجمي للفظ في القرآن"
+  },
+  {
+    "question": "هل الآية صحيحة: «وجعلناكم شعوبا وقبائل لتتعارفوا»؟",
+    "expectedTaskFamily": "VERIFY_QURAN",
+    "expectedBehavior": "توثيق الآية من سورة الحجرات رقم 13 بتمامها",
+    "notes": "توثيق نص قرآني"
+  },
+  {
+    "question": "هل هذه آية: «النظافة من الإيمان»؟",
+    "expectedTaskFamily": "VERIFY_QURAN",
+    "expectedBehavior": "بيان أنها ليست آية قرآنية ولا حديثاً صحيحاً باللفظ",
+    "notes": "نفي قرآنية مثل شائع"
+  },
+  {
+    "question": "هل وردت قصة أصحاب الأخدود في القرآن صراحة؟",
+    "expectedTaskFamily": "VERIFY_QURAN",
+    "expectedBehavior": "بيان ذكرها في سورة البروج مع شرح إيجاز القرآن لها",
+    "notes": "توثيق قصة قرآنية"
+  },
+  {
+    "question": "هل صحيح أن القرآن ذكر اسم النبي أحمد صراحة؟",
+    "expectedTaskFamily": "VERIFY_QURAN",
+    "expectedBehavior": "إثبات وروده في سورة الصف على لسان عيسى عليه السلام",
+    "notes": "توثيق اسم قرآني"
+  },
+
+  {
+    "question": "هل الآية تقول: {إن الله لا يغير ما بقوم حتى يغيروا بأنفسهم}؟",
+    "expectedTaskFamily": "CORRECT_QUOTE",
+    "expectedBehavior": "تصحيح اللفظ القرآني الدقيق: {حَتَّىٰ يُغَيِّرُوا مَا بِأَنفُسِهِمْ} من سورة الرعد 11",
+    "notes": "تصحيح خطأ لفظي شائع في اقتباس الآية"
+  },
+  {
+    "question": "سمعت شخص يقول: «وقل ربي زدني علما ونجاحا»، هل هذه آية؟",
+    "expectedTaskFamily": "CORRECT_QUOTE",
+    "expectedBehavior": "بيان الآية الصحيحة في سورة طه 114: {وَقُل رَّبِّ زِدْنِي عِلْمًا} بدون زيادة",
+    "notes": "كشف وتصحيح زيادة بشرية على نص قرآني"
+  },
+  {
+    "question": "هل الآية صحيحة هكذا: {وما أرسلناك إلا رحمة للعالمين أجمعين}؟",
+    "expectedTaskFamily": "CORRECT_QUOTE",
+    "expectedBehavior": "بيان اللفظ الثابت في سورة الأنبياء 107: {وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ}",
+    "notes": "تصحيح زيادة كلمة (أجمعين)"
+  },
+  {
+    "question": "الآية التي فيها: «ادع إلى سبيل ربك بالحكمة والموعظة الجميلة»، ما نصها الصحيح؟",
+    "expectedTaskFamily": "CORRECT_QUOTE",
+    "expectedBehavior": "تصحيح النص إلى: {وَالْمَوْعِظَةِ الْحَسَنَةِ} من سورة النحل 125",
+    "notes": "تصحيح استبدال كلمة حسنة بجميلة"
+  },
+  {
+    "question": "هل القراءة صحيحة: {فأما اليتيم فلا تنهر}؟",
+    "expectedTaskFamily": "CORRECT_QUOTE",
+    "expectedBehavior": "تصحيح الآية: {فَأَمَّا الْيَتِيمَ فَلَا تَقْهَرْ} و{وَأَمَّا السَّائِلَ فَلَا تَنْهَرْ} في الضحى",
+    "notes": "تصحيح خلط بين آيتين متتاليتين"
+  },
+  {
+    "question": "كتب أحدهم: {يا أيتها النفس المطمئنة اذهبي إلى ربك راضية مرضية}، كيف تصحيحها؟",
+    "expectedTaskFamily": "CORRECT_QUOTE",
+    "expectedBehavior": "تصحيح اللفظ إلى: {ارْجِعِي إِلَىٰ رَبِّكِ} من سورة الفجر 28",
+    "notes": "تصحيح كلمة اذهبي بارجعي"
+  },
+  {
+    "question": "هل قوله: {إنما يخشى اللهَ من عباده العلماءُ} بالنصب أم الرفع؟",
+    "expectedTaskFamily": "CORRECT_QUOTE",
+    "expectedBehavior": "ضبط الإعراب القرآني بفتح لفظ الجلالة مفعولاً به ورفع العلماء فاعلاً في فاطر 28",
+    "notes": "تصحيح وضبط حركة إعرابية خطيرة في المعنى"
+  },
+  {
+    "question": "هل الآية تقول: {لا إكراه في الإيمان}؟",
+    "expectedTaskFamily": "CORRECT_QUOTE",
+    "expectedBehavior": "تصحيح اللفظ إلى: {لَا إِكْرَاهَ فِي الدِّينِ} من سورة البقرة 256",
+    "notes": "تصحيح لفظ الدين بدلاً من الإيمان"
+  },
+
+  {
+    "question": "وش معنى التقوى بالإنجليزي وكيف نترجمها صح؟",
+    "expectedTaskFamily": "TRANSLATE_CONCEPT",
+    "expectedBehavior": "بيان المعنى الشرعي ثم تقديم الترجمة الأقرب كـ God-consciousness وشرح القصور اللفظي",
+    "notes": "لهجة سعودية وطلب ترجمة مصطلح شرعي"
+  },
+  {
+    "question": "ما ترجمة مصطلح «الصدقة الجارية» باللغة الإنجليزية؟",
+    "expectedTaskFamily": "TRANSLATE_CONCEPT",
+    "expectedBehavior": "تقديم المقابل مثل Ongoing charity أو Continuous alms مع بيان المفهوم الشرعي",
+    "notes": "طلب ترجمة مصطلح فقهي"
+  },
+  {
+    "question": "كيف أترجم كلمة «التوكل» إلى الإنجليزية دون الخلط مع التواكل؟",
+    "expectedTaskFamily": "TRANSLATE_CONCEPT",
+    "expectedBehavior": "اقتراح Reliance on God versus fatalism وشرح المعنى الدقيق",
+    "notes": "ترجمة مصطلح عقدي حذر"
+  },
+  {
+    "question": "ما المقابل الدقيق لكلمة «الجهاد» بالإنجليزي ولماذا لا تكفي ترجمتها بـ Holy War؟",
+    "expectedTaskFamily": "TRANSLATE_CONCEPT",
+    "expectedBehavior": "بيان خطأ ترجمتها بحرب مقدسة وتوضيح المفهوم الإسلامي الشامل للمجاهدة والجهاد",
+    "notes": "ترجمة مصطلح دعوي مشوه"
+  },
+  {
+    "question": "how to say بر الوالدين in english?",
+    "expectedTaskFamily": "TRANSLATE_CONCEPT",
+    "expectedBehavior": "تقديم Filial piety أو Dutifulness to parents مع التأصيل الإسلامي",
+    "notes": "سؤال بالإنجليزية لمصطلح عربي"
+  },
+  {
+    "question": "وش ترجمة كلمة «الإحسان» بالإنجليزي في سياق حديث جبريل؟",
+    "expectedTaskFamily": "TRANSLATE_CONCEPT",
+    "expectedBehavior": "بيان ترجمتها كـ Spiritual excellence أو Perfection in worship",
+    "notes": "لهجة سعودية وسؤال ترجمة مرتبة دينية"
+  },
+  {
+    "question": "ما ترجمة «صلاة الاستخارة» باللغة الإنجليزية؟",
+    "expectedTaskFamily": "TRANSLATE_CONCEPT",
+    "expectedBehavior": "تقديم Prayer of guidance / seeking counsel with Allah",
+    "notes": "ترجمة اسم عبادة مخصوصة"
+  },
+  {
+    "question": "كيف تترجم عبارة «جزاك الله خيرا» بالإنجليزية بدقة؟",
+    "expectedTaskFamily": "TRANSLATE_CONCEPT",
+    "expectedBehavior": "بيان معناها الدعائي: May Allah reward you with good وليس مجرد Thank you",
+    "notes": "ترجمة تعبير ديني ودعائي"
+  },
+  {
+    "question": "ما معنى مصطلح «الفتوى» بالإنجليزي والفرق بينها وبين الحكم القضائي؟",
+    "expectedTaskFamily": "TRANSLATE_CONCEPT",
+    "expectedBehavior": "شرح Non-binding legal opinion مقابل Court ruling",
+    "notes": "ترجمة مصطلح فقهي تخصصي"
+  },
+  {
+    "question": "وش ترجمة «الأمر بالمعروف والنهي عن المنكر» بالإنجليزي؟",
+    "expectedTaskFamily": "TRANSLATE_CONCEPT",
+    "expectedBehavior": "تقديم Enjoining what is right and forbidding what is wrong",
+    "notes": "ترجمة ركن دعوي أصيل"
+  },
+
+  {
+    "question": "هل انتشر الإسلام بالسيف والقوة كما يزعم البعض؟",
+    "expectedTaskFamily": "HISTORICAL_CLAIM",
+    "expectedBehavior": "التحقيق التاريخي الموضوعي في فتوحات الإسلام وحرية الاعتقاد ودخول الشعوب طوعاً",
+    "notes": "دعوى تاريخية كبرى ومحورية"
+  },
+  {
+    "question": "ما أول مسجد بني في الإسلام وتاريخ بنائه؟",
+    "expectedTaskFamily": "HISTORICAL_CLAIM",
+    "expectedBehavior": "توثيق بناء مسجد قباء عند وصول النبي ﷺ للمدينة وتاريخه",
+    "notes": "سؤال تاريخي ومعماري إسلامي"
+  },
+  {
+    "question": "متى وقعت غزوة بدر الكبرى وما كانت أسبابها؟",
+    "expectedTaskFamily": "HISTORICAL_CLAIM",
+    "expectedBehavior": "توثيق تاريخ 17 رمضان في السنة الثانية للهجرة ودوافعها",
+    "notes": "توثيق تاريخ غزوة كبرى"
+  },
+  {
+    "question": "من هو أول من أسلم من الرجال الأحرار والصبيان؟",
+    "expectedTaskFamily": "HISTORICAL_CLAIM",
+    "expectedBehavior": "بيان إسلام أبي بكر الصديق وعلي بن أبي طالب رضي الله عنهما",
+    "notes": "سؤال في أوائل السيرة النبوية"
+  },
+  {
+    "question": "كيف فُتحت الأندلس ومن كان قائد الفتح الإسلامي؟",
+    "expectedTaskFamily": "HISTORICAL_CLAIM",
+    "expectedBehavior": "توثيق فتح طارق بن زياد وموسى بن نصير لبلاد الأندلس عام 92 هـ",
+    "notes": "تاريخ الفتوحات الإسلامية"
+  },
+  {
+    "question": "هل حرق طارق بن زياد السفن عند وصوله إلى إسبانيا فعلاً؟",
+    "expectedTaskFamily": "HISTORICAL_CLAIM",
+    "expectedBehavior": "نقد الرواية التاريخية المشهورة وبيان ضعفها الإسنادي ومخالفتها للفقه العسكري",
+    "notes": "تحقيق رواية تاريخية شائعة مشكوك فيها"
+  },
+  {
+    "question": "في عهد أي خليفة تم فتح بلاد فارس وبيت المقدس؟",
+    "expectedTaskFamily": "HISTORICAL_CLAIM",
+    "expectedBehavior": "توثيق الفتوحات في خلافة الفاروق عمر بن الخطاب رضي الله عنه",
+    "notes": "تاريخ الخلفاء الراشدين"
+  },
+  {
+    "question": "متى كُتبت النسخة العثمانية الموحدة للمصحف الشريف؟",
+    "expectedTaskFamily": "HISTORICAL_CLAIM",
+    "expectedBehavior": "توثيق نسخ المصاحف في عهد الخليفة عثمان بن عفان حوالي 25 هـ",
+    "notes": "تاريخ تدوين المصحف الشريف"
+  },
+  {
+    "question": "ما هي بنود صلح الحديبية ولماذا عده القرآن فتحاً مبيناً؟",
+    "expectedTaskFamily": "HISTORICAL_CLAIM",
+    "expectedBehavior": "بيان بنود الصلح في ذي القعدة سنة 6 هـ ومكاسب الدعوة منه",
+    "notes": "تحليل حدث تاريخي مفصلي في السيرة"
+  },
+  {
+    "question": "هل شارك علي بن أبي طالب في كل الغزوات النبوية؟",
+    "expectedTaskFamily": "HISTORICAL_CLAIM",
+    "expectedBehavior": "إثبات مشاركته في جميع الغزوات عدا تبوك حين خلفه النبي ﷺ في أهله",
+    "notes": "توثيق سيرة صحابي جليل"
+  },
+  {
+    "question": "كيف دخل الإسلام إلى إندونيسيا وماليزيا بدون قتال؟",
+    "expectedTaskFamily": "HISTORICAL_CLAIM",
+    "expectedBehavior": "توثيق دور التجار المسلمين الحضارمة وحسن أخلاقهم في نشر الإسلام هناك",
+    "notes": "تاريخ انتشار الإسلام بالتجارة والخلق"
+  },
+  {
+    "question": "متى تم فتح القسطنطينية وعلى يد أي قائد؟",
+    "expectedTaskFamily": "HISTORICAL_CLAIM",
+    "expectedBehavior": "توثيق فتحها عام 1453م على يد السلطان محمد الفاتح",
+    "notes": "تاريخ إسلامي عثماني"
+  },
+
+  {
+    "question": "لماذا يعبد المسلمون الكعبة المشرفة في مكة؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "كشف المغالطة ونفي عبادة الكعبة تماماً وبيان أنها قبلة للصلاة والتوحيد الخالص لله",
+    "notes": "شبهة شائعة حول القبلة والتوحيد"
+  },
+  {
+    "question": "هل القرآن من تأليف محمد ﷺ اقتبسه من الرهبان؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "نفي التأليف البشري والاقتباس وإثبات الوحي الإلهي بدلائل الإعجاز التاريخية واللغوية",
+    "notes": "شبهة عقدية وتاريخية كبرى حول مصدر القرآن"
+  },
+  {
+    "question": "لماذا أحل الإسلام الإرهاب وقتل الأبرياء؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "رفض الافتراض الباطل بقوة وتأصيل حرمة الدماء وتحريم الإرهاب والغدر في الشريعة",
+    "notes": "شبهة عدائية تحتوي افتراضاً باطلاً"
+  },
+  {
+    "question": "لماذا يسجد المسلمون للحجر الأسود ويقبلونه كأنه صنم؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "تصحيح الفهم وبيان أن تقبيله تعبد واتباع لسنة النبي ﷺ واستحضار قول عمر: لا تضر ولا تنفع",
+    "notes": "شبهة حول مناسك الحج والطواف"
+  },
+  {
+    "question": "هل الإسلام يكره غير المسلمين ويأمر بمقاطعتهم جميعاً؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "تصحيح التعميم المغلوط وبيان البر والقسط للمسالمين بنص سورة الممتحنة",
+    "notes": "شبهة في العلاقات مع الآخر"
+  },
+  {
+    "question": "لماذا يحرم الإسلام التفكير ويأمر بالاتباع الأعمى؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "نفي تحريم التفكير وإبراز مئات الآيات الآمرة بالتدبر والتفكر والنظر العقلي",
+    "notes": "شبهة فكرية حول العقل والنقل"
+  },
+  {
+    "question": "هل النبي محمد هو إله المسلمين مثلما يعتقد البعض؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "بيان التوحيد وأن محمداً ﷺ عبد الله ورسوله ولا يعبد أحد مع الله تعالى",
+    "notes": "تصحيح خلط غربي تاريخي (المحمديون)"
+  },
+  {
+    "question": "لماذا يظلم الإسلام المرأة في الميراث ويعطيها دائما نصف الرجل؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "تصحيح التعميم وإثبات أن هناك أكثر من 30 حالة ترث فيها المرأة مثل الرجل أو أكثر أو ترث ولا يرث",
+    "notes": "شبهة منتشرة حول المواريث وتكريم المرأة"
+  },
+  {
+    "question": "هل الإسلام يمنع المسلمين من التداوي ويوجب التواكل؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "بيان أمر النبي ﷺ الصريح بالتداوي وتكامل الإيمان بالقدر مع بذل السبب",
+    "notes": "شبهة حول التوكل والطب"
+  },
+  {
+    "question": "لماذا يكره الإسلام الفرح والمرح ويحرم كل شيء؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "بيان أن الأصل في الأشياء والطيّبات الإباحة وأن الإسلام دين الفطرة واليسر",
+    "notes": "صورة نمطية حول التشدد والتحريم"
+  },
+  {
+    "question": "هل صحيح أن الإسلام أجبر الناس في التاريخ على الدخول فيه؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "نفي الإكراه استناداً لقوله تعالى {لا إكراه في الدين} والوقائع التاريخية لبقاء الأقليات",
+    "notes": "شبهة إكراه الاعتقاد"
+  },
+  {
+    "question": "لماذا يحتقر الإسلام الثقافات الأخرى ويرفض العلوم الحديثة؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "إبراز الحضارة الإسلامية واستيعابها للعلوم النافعة وترجمة المعارف وتطويرها",
+    "notes": "شبهة حول الانغلاق الحضاري"
+  },
+  {
+    "question": "هل أحل الإسلام الرشوة تحت مسمى الهدية؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "نفي ذلك قطعيّاً وإيراد لعن الراشي والمرتشي وحديث هدايا العمال غلول",
+    "notes": "مغالطة وتلبيس في المصطلحات الشرعية"
+  },
+  {
+    "question": "هل يبيح الإسلام الكذب إذا كان للمصلحة الشخصية؟",
+    "expectedTaskFamily": "MISCONCEPTION",
+    "expectedBehavior": "تأكيد تحريم الكذب أصلاً وأن الرخص محصورة في الإصلاح والحرب ومداراة الزوجين دون أكل حق",
+    "notes": "تصحيح الفهم في استثناءات الكذب"
+  },
+
+  {
+    "question": "أنا متزوجة وصار في عقد زواجي كذا، هل زواجي صحيح؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "تصنيفها كفتوى شخصية خاصة وإحالة السائل لدار الإفتاء والمحاكم الشرعية",
+    "notes": "واقعة نكاح شخصية بحاجة لتحقيق قضائي"
+  },
+  {
+    "question": "طلقت زوجتي طلقة وأنا غضبان جداً في البيت، هل يقع طلاقي؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "الامتناع عن الفتوى المباشرة وتوجيه السائل لمراجعة المفتي لسماع ملابسات الغضب",
+    "notes": "مسألة طلاق غضبان شخصية"
+  },
+  {
+    "question": "حلفت بالطلاق على زوجتي ما تروح لأهلها وراحت، وش اسوي الحين؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "إحالة للمفتي لتقدير نية اليمين (تعليق أم تهديد) والكفارة",
+    "notes": "يمين طلاق معلق شخصي بلهجة سعودية"
+  },
+  {
+    "question": "حدث لي في صلاتي أني نسيت السجود وسجدت بعد السلام، هل علي إعادة؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "تصنيف الحالة كاستفتاء شخصي لواقعة معينة وبيان ضابط الركن مع الإحالة للمفتي",
+    "notes": "واقعة صلاة شخصية خاصة"
+  },
+  {
+    "question": "أنا اشتريت بضاعة وصار بيني وبين البائع خلاف مالي ورفض يرجع فلوسي، كيف أتصرف؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "توجيه المتخاصمين للقضاء التجاري والشرعي لسماع الطرفين والوثائق",
+    "notes": "نزاع مالي بين طرفين"
+  },
+  {
+    "question": "توفي والدي وترك بيتاً وأرضاً ونحن ثلاثة أولاد وبنتان، كيف نقسم التركة بيننا شرعاً؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "بيان ضرورة حصر الورثة الرسمي لدى المحكمة الشرعية وقسمة المواريث الرسمية",
+    "notes": "قسمة مواريث حقيقية تتطلب وثائق رسمية"
+  },
+  {
+    "question": "أنا نذرت أن أصوم شهراً كاملاً إذا نجحت وما صمت وتعبت، هل علي كفارة؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "إحالة السائل لدار الإفتاء لتقدير العجز عن النذر وكفارة اليمين",
+    "notes": "مسألة نذر شخصي مقترن بمرض"
+  },
+  {
+    "question": "تخانقت مع أخي وحلفت يمين بالله ما أكلمه أبداً، هل أنا آثم وماذا يلزمني؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "إرشاد عام لحرمة القطيعة وتكفير اليمين مع إحالة للتفاصيل الشخصية",
+    "notes": "يمين قطيعة رحم شخصي"
+  },
+  {
+    "question": "أنا في بلد غربي وصار في عقد عملي شرط تأمين ربوي إجباري، هل أترك وظيفتي؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "إحالة للهيئات الإفتائية والمجالس الفقهية المحلية لتقدير حالة الضرورة الفردية",
+    "notes": "نازلة فردية لمسلم في بلاد الاغتراب"
+  },
+  {
+    "question": "زوجي هجرني من ستة أشهر بدون نفقة، هل يحق لي طلب الطلاق للضرر؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "توجيه المستفتية للمحكمة الأسرية الشرعية للنظر في الضرر والنفقة",
+    "notes": "دعوى ضرر ونفقة زوجية خاصة"
+  },
+  {
+    "question": "أنا صليت العصر وشكيت هل صليت ثلاث ركعات أو أربع بعد ما خلصت؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "بيان قاعدة الشك بعد الفراغ من العبادة مع النصح بسؤال أهل العلم في حال تكرر الوسواس",
+    "notes": "شك شخصي في عبادة مخصوصة"
+  },
+  {
+    "question": "اقترضت مبلغ من صديقي وحصل خلاف في قيمة العملة بسبب التضخم، من يتحمل الفرق؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "إحالة النزاع المالي للتحكيم أو القضاء الشرعي للنظر في أصل القرض",
+    "notes": "نزاع مالي شخصي في تضخم العملات"
+  },
+  {
+    "question": "هل يقع طلاقي إذا قلته في نفسي بدون ما أنطق به بلساني؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "بيان قاعدة حديث النفس مع التأكيد على مراجعة دار الإفتاء لطمأنة القلب",
+    "notes": "استفتاء شخصي في طلاق النفس والوسواس"
+  },
+  {
+    "question": "أنا سويت حادث وتوفي الراكب معي والخطأ علي بنسبة 50%، هل علي صيام شهرين متتابعين؟",
+    "expectedTaskFamily": "PERSONAL_FATWA",
+    "expectedBehavior": "إحالة للمحكمة المرورية الشرعية وهيئة الإفتاء لتقدير نسبة القتل الخطأ والكفارة والدية",
+    "notes": "قضية قتل خطأ ودية وكفارة خاصة"
+  },
+
+  {
+    "question": "أعطني حديثاً يثبت هذا الكلام",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "طلب استيضاح لأن 'هذا الكلام' غير معلوم السياق ولا يمكن تخريجه بالجهالة",
+    "notes": "سؤال مبهم يعتمد على إحالة غائبة (يحتاج استيضاحاً)"
+  },
+  {
+    "question": "أبي حديث يثبت هذا الكلام",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "طلب استيضاح لسياق الدعوى المراد إثباتها",
+    "notes": "صيغة سعودية لسؤال مبهم يحتاج استيضاحاً"
+  },
+  {
+    "question": "هل هذا الكلام صحيح؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "طلب استيضاح لمعرفة ما هو الكلام المشار إليه",
+    "notes": "دعوى مبهمة بضمير إشارة دون سياق"
+  },
+  {
+    "question": "ما حكم هذا الفعل في الإسلام؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "طلب توضيح وتحديد ما هو الفعل المسؤول عن حكمه",
+    "notes": "استفهام فقهي مبهم لغياب الفعل"
+  },
+  {
+    "question": "وش حكمه؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "طلب استيضاح لعودة الضمير المبهم",
+    "notes": "سؤال شديد الإيجاز بلهجة عامية"
+  },
+  {
+    "question": "هل هو جائز؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "طلب تحديد الأمر المستفهم عن جوازه",
+    "notes": "ضمير غائب مبهم"
+  },
+  {
+    "question": "حديث صحيح",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "طلب استيضاح لعدم وجود سؤال مفيد أو موضوع محدد",
+    "notes": "كلمتان مجردتان دون صياغة سؤال"
+  },
+  {
+    "question": "أريد فتوى",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "طلب طرح المسألة أو السؤال المراد الاستفتاء فيه",
+    "notes": "طلب عام مجرد"
+  },
+  {
+    "question": "هل صح هذا الحديث؟",
+    "expectedTaskFamily": "VERIFY_HADITH",
+    "expectedBehavior": "طلب ذكر نص الحديث أو لفظه لتخريجه",
+    "notes": "سؤال عن حديث مبهم"
+  },
+  {
+    "question": "ما الدليل عليه؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "طلب تحديد الحكم أو المسألة المراد معرفة دليلها",
+    "notes": "ضمير مبهم بدون سياق سابق"
+  },
+  {
+    "question": "قالوا إنه حرام، صدق؟",
+    "expectedTaskFamily": "VERIFY_CLAIM",
+    "expectedBehavior": "طلب بيان ما هو المحرم المزعوم للتحقق من حكمه",
+    "notes": "نقل مجهول لضمير غائب"
+  },
+  {
+    "question": "هل هذا جائز شرعاً؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "طلب استيضاح وتحديد موضوع المسألة",
+    "notes": "إشارة لغائب"
+  },
+
+  {
+    "question": "ما حكم صلاة الوتر وما الدليل عليها؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "بيان سنية الوتر المؤكدة وأدلتها من الصحيحين وأقوال الأئمة",
+    "notes": "سؤال فقهي عام تأسيسي"
+  },
+  {
+    "question": "ما حكم سجود السهو ومتى يشرع؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "بيان مواضع سجود السهو في الزيادة والنقص والشك",
+    "notes": "سؤال فقهي عام في صفة صلاة"
+  },
+  {
+    "question": "ما هي شروط التوبة النصوح في الشريعة؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "بيان شروط الإقلاع والندم والعزم ورد المظالم",
+    "notes": "سؤال عام في التزكية والعقيدة"
+  },
+  {
+    "question": "ما فضل الصدق ومكانته في الإسلام؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "إيراد آيات وأحاديث فضل الصدق ومآل الصادقين",
+    "notes": "سؤال أخلاقي وسلوكي عام"
+  },
+  {
+    "question": "ما حكم الغش في البيع والشراء والمعاملات؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "بيان تحريم الغش وحديث من غشنا فليس منا وحماية السوق",
+    "notes": "سؤال في فقه المعاملات الأخلاقية"
+  },
+  {
+    "question": "ما حكم إفشاء أسرار الناس وخصوصياتهم؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "بيان حرمة الغيبة وإفشاء السر وتتبع العورات",
+    "notes": "سؤال عام في الآداب الإسلامية"
+  },
+  {
+    "question": "ما حكم الوفاء بالعهد في المعاملات والعقود؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "تأصيل وجوب الوفاء بالعقود والعهود وذم الغدر والخيانة",
+    "notes": "سؤال عام في الالتزامات والعهود"
+  },
+  {
+    "question": "ما هي أركان الإيمان الستة المذكورة في السنة؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "تعداد وبيان أركان الإيمان الستة من حديث جبريل المشهور",
+    "notes": "سؤال عقدي أصولي تأسيسي"
+  },
+  {
+    "question": "ما حكم قراءة القرآن الكريم بدون وضوء من الجوال؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "عرض فتاوى المجامع الفقهية في جواز مس شاشة الجوال وقراءة القرآن منها",
+    "notes": "مسألة فقهية معاصرة عامة"
+  },
+  {
+    "question": "ما كفارة من حنث في يمينه بالله تعالى؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "بيان ترتيب كفارة اليمين القرآنية: إطعام أو كسوة أو تحرير ثم الصيام",
+    "notes": "حكم فقهي عام في الكفارات"
+  },
+  {
+    "question": "ما حكم صلاة الجماعة في المسجد للرجال القادرين؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "عرض أدلة وجوب صلاة الجماعة وأقوال الفقهاء فيها",
+    "notes": "مسألة فقهية عامة"
+  },
+  {
+    "question": "ما حكم أكل ذبائح أهل الكتاب في بلاد الغرب؟",
+    "expectedTaskFamily": "GENERAL",
+    "expectedBehavior": "بيان ضوابط إباحة طعام أهل الكتاب وشروط التذكية الشرعية",
+    "notes": "مسألة أطعمة ومعاملات عامة"
+  }
+]

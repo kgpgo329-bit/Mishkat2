@@ -1,0 +1,17 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Mishkat Architecture:
+    // All persistence is server-mediated through the trusted API bridge (/api/*).
+    // Direct browser/client access to protected sessions, private assessments,
+    // answer keys, journey records, and reports is strictly denied.
+    match /sessions/{sessionId}/{document=**} {
+      allow read, write: if false;
+    }
+
+    // Default deny all client access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
