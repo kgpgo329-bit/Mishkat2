@@ -278,9 +278,68 @@ export default function App() {
         {currentView === 'report' && (
           <JourneyReportView
             reportData={reportData}
+            journeyState={journeyState}
             onBackToJourney={() => setCurrentView('journey')}
             onAskQuestion={handleAskQuestion}
           />
+        )}
+
+        {currentView === 'fatwa' && (
+          <div className="max-w-3xl mx-auto px-4 py-16 text-center">
+            <div className="bg-[#082A22] border border-[#1A5243] rounded-3xl p-8 sm:p-10 shadow-xl">
+              <div className="w-16 h-16 rounded-full bg-[#103C31] text-[#34D399] flex items-center justify-center mx-auto mb-5">
+                <AlertCircle className="w-8 h-8" />
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-3">طلب الفتوى والمختص الشرعي</h2>
+              <p className="text-sm text-[#D1EAE2]/80 leading-relaxed mb-6 max-w-xl mx-auto">
+                منصة مشكاة محرك استرجاع وتوثيق معرفي تعليمي للأدلة المعتمدة، ولا تُصدر فتاوى شخصية خاصة في النوازل الفردية أو المسائل المعقدة. نحيل المسائل الفتوائية الفردية إلى الجهات الرسمية المعتمدة.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-lg mx-auto mb-8">
+                <a
+                  href="https://www.dar-alifta.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 rounded-xl bg-[#0D332A] hover:bg-[#103C31] border border-[#1A5243] text-sm text-[#34D399] font-medium transition-colors"
+                >
+                  دار الإفتاء الرسمية
+                </a>
+                <a
+                  href="https://alifta.gov.sa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 rounded-xl bg-[#0D332A] hover:bg-[#103C31] border border-[#1A5243] text-sm text-[#34D399] font-medium transition-colors"
+                >
+                  الرئاسة العامة للبحوث والإفتاء
+                </a>
+              </div>
+              <button
+                onClick={() => setCurrentView('home')}
+                className="px-6 py-2.5 rounded-xl bg-[#34D399] text-[#051C17] font-semibold text-sm hover:bg-[#2BB380] transition-colors"
+              >
+                العودة للرئيسية
+              </button>
+            </div>
+          </div>
+        )}
+
+        {currentView === 'specialist' && (
+          <div className="max-w-3xl mx-auto px-4 py-16 text-center">
+            <div className="bg-[#082A22] border border-[#1A5243] rounded-3xl p-8 sm:p-10 shadow-xl">
+              <div className="w-16 h-16 rounded-full bg-[#103C31] text-[#34D399] flex items-center justify-center mx-auto mb-5">
+                <Award className="w-8 h-8" />
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-3">بوابة المتخصصين (المراجعة والتدقيق)</h2>
+              <p className="text-sm text-[#D1EAE2]/80 leading-relaxed mb-6 max-w-xl mx-auto">
+                منظومة مراجعة علمية محكمة للمتخصصين وعلماء الشريعة لتدقيق خطوط العزو، وفحص نسب الأدلة، والمصادقة على أوزان الموثوقية في مستودع المصادر المعتمدة لمشكاة.
+              </p>
+              <button
+                onClick={() => setCurrentView('journey')}
+                className="px-6 py-2.5 rounded-xl bg-[#34D399] text-[#051C17] font-semibold text-sm hover:bg-[#2BB380] transition-colors"
+              >
+                العودة إلى رحلتي المعرفية
+              </button>
+            </div>
+          </div>
         )}
       </main>
 

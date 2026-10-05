@@ -9,6 +9,8 @@ export default function Navbar({ currentView, setCurrentView, onOpenSearch }) {
     { id: 'home', label: 'الرئيسية' },
     { id: 'sources', label: 'المصادر' },
     { id: 'journey', label: 'رحلتي المعرفية' },
+    { id: 'report', label: 'تقرير رحلتك المعرفية' },
+    { id: 'fatwa', label: 'طلب الفتوى والمختص' },
     { id: 'about', label: 'حول مشكاة' },
   ];
 
@@ -16,13 +18,13 @@ export default function Navbar({ currentView, setCurrentView, onOpenSearch }) {
     <header className="sticky top-0 z-40 bg-[#06231C]/90 backdrop-blur-md border-b border-[#1A5243]/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         
-        {/* Right side in RTL: Navigation Links */}
+        {/* Right side in RTL: Navigation Links & Logo */}
         <div className="flex items-center gap-8">
-          {/* Logo on far side */}
+          {/* Logo on far right */}
           <Logo size="sm" onClick={() => setCurrentView('home')} />
 
           {/* Desktop Nav Items */}
-          <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+          <nav className="hidden lg:flex items-center gap-5 text-sm font-medium">
             {navItems.map((item) => {
               const isActive = currentView === item.id;
               return (
@@ -48,30 +50,35 @@ export default function Navbar({ currentView, setCurrentView, onOpenSearch }) {
           </nav>
         </div>
 
-        {/* Left side in RTL: Action Icons (Search, Profile, Mobile Menu) */}
+        {/* Left side in RTL: Specialist Portal, Language & Actions */}
         <div className="flex items-center gap-3">
           <button
-            onClick={onOpenSearch}
-            className="w-10 h-10 rounded-full flex items-center justify-center text-[#D1EAE2] hover:text-white hover:bg-[#0D332A] transition-colors border border-transparent hover:border-[#1A5243]"
-            title="البحث العام"
-            aria-label="البحث"
+            onClick={() => setCurrentView('specialist')}
+            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#1A5243] bg-[#0D332A]/50 hover:bg-[#103C31] text-xs text-[#D1EAE2] hover:text-[#34D399] hover:border-[#34D399]/40 transition-colors"
           >
-            <Search className="w-5 h-5" />
+            <span>بوابة المتخصصين (المراجعة)</span>
           </button>
 
           <button
-            onClick={() => setCurrentView('journey')}
-            className="w-10 h-10 rounded-full flex items-center justify-center text-[#D1EAE2] hover:text-white hover:bg-[#0D332A] transition-colors border border-transparent hover:border-[#1A5243]"
-            title="الحساب الشخصي"
-            aria-label="الحساب"
+            onClick={() => {}}
+            className="hidden sm:inline-flex items-center px-2.5 py-1 rounded-full text-xs text-[#7CA79B] hover:text-white border border-[#1A5243]/60 hover:border-[#1A5243] transition-colors"
           >
-            <User className="w-5 h-5" />
+            English
+          </button>
+
+          <button
+            onClick={onOpenSearch}
+            className="w-9 h-9 rounded-full flex items-center justify-center text-[#D1EAE2] hover:text-white hover:bg-[#0D332A] transition-colors border border-transparent hover:border-[#1A5243]"
+            title="البحث العام"
+            aria-label="البحث"
+          >
+            <Search className="w-4 h-4" />
           </button>
 
           {/* Mobile hamburger toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden w-10 h-10 rounded-full flex items-center justify-center text-[#D1EAE2] hover:text-white hover:bg-[#0D332A] transition-colors"
+            className="lg:hidden w-9 h-9 rounded-full flex items-center justify-center text-[#D1EAE2] hover:text-white hover:bg-[#0D332A] transition-colors"
             aria-label="القائمة"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

@@ -13,35 +13,54 @@ import {
   ChevronLeft
 } from 'lucide-react';
 
-export default function JourneyReportView({ reportData, onBackToJourney, onAskQuestion }) {
+export default function JourneyReportView({ reportData, journeyState, onBackToJourney, onAskQuestion }) {
   const [activeTab, setActiveTab] = useState('summary'); // 'summary' | 'assessment'
 
   // Extract sections if canonical client-safe report is provided
   const js = reportData?.sections?.['ملخص الرحلة المعرفية'] || reportData?.sections?.JOURNEY_SUMMARY;
   const as = reportData?.sections?.['تقييم الفهم'] || reportData?.sections?.ASSESSMENT_EVALUATION;
 
-  // If report data has not been generated yet, render authentic empty state
+  const verifiedCount = journeyState?.uniqueVerifiedCount ?? (js?.uniqueVerifiedCount ?? 0);
+  const targetCount = journeyState?.targetCount ?? 20;
+  const remainingCount = Math.max(0, targetCount - verifiedCount);
+
+  // If report data has not been generated yet, render screen exactly matching Screenshot 4
   if (!reportData || (!js && !as)) {
     return (
-      <div className="max-w-2xl mx-auto px-4 py-16 text-center">
-        <div className="bg-[#082A22] border border-[#1A5243] rounded-3xl p-8 shadow-xl">
-          <div className="w-16 h-16 rounded-full bg-[#103C31] text-[#34D399] flex items-center justify-center mx-auto mb-4">
-            <Award className="w-8 h-8" />
-          </div>
-          <h2 className="text-xl font-bold text-white mb-2">
-            لم يتم إصدار تقرير الرحلة المعرفية بعد
-          </h2>
-          <p className="text-sm text-[#D1EAE2]/80 leading-relaxed mb-6">
-            يصدر التقرير النهائي تلقائياً بعد إتمام 20 محطة معرفية موثقة واجتياز تقييم الفهم بنجاح عبر النظام الحقيقي.
-          </p>
-          <button
-            onClick={onBackToJourney}
-            className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#34D399] text-[#051C17] font-semibold text-sm rounded-xl hover:bg-[#2BB380] transition-colors"
-          >
-            <ArrowRight className="w-4 h-4" />
-            العودة إلى رحلتي المعرفية
-          </button>
+      <div className="max-w-2xl mx-auto px-4 py-20 text-center">
+        {/* Circular Award Icon with border */}
+        <div className="w-16 h-16 rounded-full bg-[#082A22] border border-[#1A5243] flex items-center justify-center mx-auto mb-6 text-[#34D399] shadow-lg">
+          <Award className="w-7 h-7" />
         </div>
+
+        {/* Title & Subtitle */}
+        <h1 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
+          التقرير المعرفي النهائي
+        </h1>
+        <p className="text-xs sm:text-sm text-[#D1EAE2]/80 max-w-lg mx-auto leading-relaxed mb-8">
+          يُنشأ التقرير المعرفي المعتمد تلقائياً وبشكل مخصص بناءً على أدائك الحقيقي في <strong className="text-white">التقييم الشامل</strong> بعد استكمال 20 سجلاً معرفياً موثقاً.
+        </p>
+
+        {/* Center Progress Box Matching Screenshot 4 */}
+        <div className="bg-[#082A22] border border-[#1A5243] rounded-3xl p-6 sm:p-8 max-w-md mx-auto mb-6 shadow-xl text-center">
+          <div className="text-xs text-[#7CA79B] mb-2 font-medium">رصيدك في الرحلة المعرفية</div>
+          <div className="text-3xl sm:text-4xl font-extrabold mb-2">
+            <span className="text-[#34D399]">{verifiedCount} / {targetCount}</span>{' '}
+            <span className="text-white text-2xl font-bold">سجل موثق</span>
+          </div>
+          <div className="text-xs text-[#7CA79B]">
+            تحتاج إلى {remainingCount} سجلات إضافية لفتح التقييم
+          </div>
+        </div>
+
+        {/* Return Button */}
+        <button
+          onClick={onBackToJourney}
+          className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-[#0D332A] hover:bg-[#103C31] border border-[#1A5243] text-sm text-[#D1EAE2] hover:text-white transition-colors"
+        >
+          <ArrowRight className="w-4 h-4" />
+          <span>العودة إلى مسار الرحلة</span>
+        </button>
       </div>
     );
   }
