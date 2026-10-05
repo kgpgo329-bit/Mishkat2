@@ -22,27 +22,46 @@ import {
 } from 'firebase/firestore';
 import { AssessmentStorageBase } from '../assessment/assessmentStorage.js';
 import { getFirestoreDb } from './firebaseConfig.js';
+import { getAdminFirestoreDb, createAdminFirestoreOps } from './firebaseAdmin.js';
 
 export class FirestoreAssessmentStorage extends AssessmentStorageBase {
   /**
-   * @param {import('firebase/firestore').Firestore} [db]
+   * @param {import('firebase/firestore').Firestore|import('firebase-admin/firestore').Firestore} [db]
    * @param {Object} [options]
    */
   constructor(db = null, options = {}) {
     super();
     this._db = db;
     this._options = options;
-    this._ops = options.firestoreOps || {
-      doc,
-      getDoc,
-      setDoc,
-      deleteDoc
-    };
+    this.__ops = options.firestoreOps || null;
+  }
+
+  get _ops() {
+    if (this.__ops) return this.__ops;
+    if (this._options.firestoreOps) {
+      this.__ops = this._options.firestoreOps;
+      return this.__ops;
+    }
+    const resolvedDb = this._getDb();
+    try {
+      this.__ops = createAdminFirestoreOps(resolvedDb);
+    } catch {
+      this.__ops = { doc, getDoc, setDoc, deleteDoc };
+    }
+    return this.__ops;
+  }
+
+  set _ops(val) {
+    this.__ops = val;
   }
 
   _getDb() {
     if (!this._db) {
-      this._db = getFirestoreDb(this._options);
+      try {
+        this._db = getAdminFirestoreDb(this._options);
+      } catch {
+        this._db = getFirestoreDb(this._options);
+      }
     }
     return this._db;
   }

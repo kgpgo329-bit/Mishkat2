@@ -3,6 +3,9 @@
 !.env.example
 service-account*.json
 *firebase-admin*.json
+*serviceAccountKey*.json
+*firebase-adminsdk*.json
+*.private-key.json
 node_modules/
 dist/
 .gemini/

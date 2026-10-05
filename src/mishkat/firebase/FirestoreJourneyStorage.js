@@ -25,33 +25,51 @@ import {
 } from 'firebase/firestore';
 import { JourneyStorageBase } from '../journey/journeyStorage.js';
 import { getFirestoreDb } from './firebaseConfig.js';
+import { getAdminFirestoreDb, createAdminFirestoreOps } from './firebaseAdmin.js';
 
 export class FirestoreJourneyStorage extends JourneyStorageBase {
   /**
-   * @param {import('firebase/firestore').Firestore} [db] Optional Firestore instance
+   * @param {import('firebase/firestore').Firestore|import('firebase-admin/firestore').Firestore} [db] Optional Firestore instance
    * @param {Object} [options]
    */
   constructor(db = null, options = {}) {
     super();
     this._db = db;
     this._options = options;
-    this._ops = options.firestoreOps || {
-      doc,
-      getDoc,
-      setDoc,
-      getDocs,
-      collection,
-      deleteDoc
-    };
+    this.__ops = options.firestoreOps || null;
+  }
+
+  get _ops() {
+    if (this.__ops) return this.__ops;
+    if (this._options.firestoreOps) {
+      this.__ops = this._options.firestoreOps;
+      return this.__ops;
+    }
+    const resolvedDb = this._getDb();
+    try {
+      this.__ops = createAdminFirestoreOps(resolvedDb);
+    } catch {
+      this.__ops = { doc, getDoc, setDoc, getDocs, collection, deleteDoc };
+    }
+    return this.__ops;
+  }
+
+  set _ops(val) {
+    this.__ops = val;
   }
 
   /**
    * Returns the resolved Firestore instance (lazily initialized if not injected).
+   * Prioritizes trusted server-side Admin Firestore.
    * @private
    */
   _getDb() {
     if (!this._db) {
-      this._db = getFirestoreDb(this._options);
+      try {
+        this._db = getAdminFirestoreDb(this._options);
+      } catch {
+        this._db = getFirestoreDb(this._options);
+      }
     }
     return this._db;
   }

@@ -13,3 +13,10 @@ export { FirestoreJourneyStorage } from './FirestoreJourneyStorage.js';
 export { FirestoreAssessmentStorage } from './FirestoreAssessmentStorage.js';
 export { FirestoreReportStorage } from './FirestoreReportStorage.js';
 export { createStorage } from './storageFactory.js';
+export {
+  getAdminApp,
+  getAdminFirestoreDb,
+  isAdminCredentialConfigured,
+  createAdminFirestoreOps
+} from './firebaseAdmin.js';
+

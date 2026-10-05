@@ -15,6 +15,8 @@ import { FirestoreJourneyStorage } from './FirestoreJourneyStorage.js';
 import { FirestoreAssessmentStorage } from './FirestoreAssessmentStorage.js';
 import { FirestoreReportStorage } from './FirestoreReportStorage.js';
 
+import { getAdminFirestoreDb, createAdminFirestoreOps } from './firebaseAdmin.js';
+
 /**
  * Creates and returns the storage adapters bundle.
  *
@@ -31,11 +33,24 @@ export function createStorage(type = null, options = {}) {
   const resolvedType = type || (process.env.MISHKAT_STORAGE === 'firestore' ? 'firestore' : 'memory');
 
   if (resolvedType === 'firestore') {
+    let db = options.db;
+    let opts = { ...options };
+
+    if (!db && !opts.firestoreOps) {
+      try {
+        db = getAdminFirestoreDb(options);
+        opts.db = db;
+        opts.firestoreOps = createAdminFirestoreOps(db);
+      } catch (err) {
+        console.warn('[Mishkat StorageFactory] Admin Firestore init fallback:', err.message);
+      }
+    }
+
     return {
       type: 'firestore',
-      journeyStorage: new FirestoreJourneyStorage(options.db, options),
-      assessmentStorage: new FirestoreAssessmentStorage(options.db, options),
-      reportStorage: new FirestoreReportStorage(options.db, options)
+      journeyStorage: new FirestoreJourneyStorage(db, opts),
+      assessmentStorage: new FirestoreAssessmentStorage(db, opts),
+      reportStorage: new FirestoreReportStorage(db, opts)
     };
   }
 

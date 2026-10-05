@@ -479,4 +479,84 @@ describe('Firebase Firestore Storage Adapters & Restoration Suite', () => {
       assert.equal(restoredReport.sections['ملخص الرحلة المعرفية'].uniqueVerifiedCount, 20);
     });
   });
+
+  // ── 6. Firebase Admin SDK Ops & Credential Resolution ────────────────────
+  describe('6. Firebase Admin SDK Ops & Credential Resolution', () => {
+    test('isAdminCredentialConfigured returns boolean without error', async () => {
+      const { isAdminCredentialConfigured } = await import('../src/mishkat/firebase/firebaseAdmin.js');
+      const configured = isAdminCredentialConfigured();
+      assert.equal(typeof configured, 'boolean');
+    });
+
+    test('createAdminFirestoreOps produces compliant ops conforming to storage contract', async () => {
+      const { createAdminFirestoreOps } = await import('../src/mishkat/firebase/firebaseAdmin.js');
+      const fakeAdminDb = {
+        _data: new Map(),
+        doc(p) {
+          const self = this;
+          return {
+            path: p,
+            id: p.split('/').pop(),
+            async get() {
+              const val = self._data.get(p);
+              return {
+                id: p.split('/').pop(),
+                exists: val !== undefined,
+                data: () => (val ? JSON.parse(JSON.stringify(val)) : undefined)
+              };
+            },
+            async set(data, options = {}) {
+              if (options.merge && self._data.has(p)) {
+                self._data.set(p, { ...self._data.get(p), ...data });
+              } else {
+                self._data.set(p, data);
+              }
+            },
+            async delete() {
+              self._data.delete(p);
+            }
+          };
+        },
+        collection(p) {
+          const self = this;
+          return {
+            path: p,
+            async get() {
+              const prefix = p + '/';
+              const docs = [];
+              for (const [key, val] of self._data.entries()) {
+                if (key.startsWith(prefix) && !key.slice(prefix.length).includes('/')) {
+                  docs.push({
+                    id: key.slice(prefix.length),
+                    data: () => JSON.parse(JSON.stringify(val))
+                  });
+                }
+              }
+              return { docs, empty: docs.length === 0, size: docs.length, forEach: fn => docs.forEach(fn) };
+            }
+          };
+        }
+      };
+
+      const ops = createAdminFirestoreOps(fakeAdminDb);
+      assert.equal(typeof ops.doc, 'function');
+      assert.equal(typeof ops.getDoc, 'function');
+      assert.equal(typeof ops.setDoc, 'function');
+      assert.equal(typeof ops.collection, 'function');
+      assert.equal(typeof ops.getDocs, 'function');
+      assert.equal(typeof ops.deleteDoc, 'function');
+
+      // Test write -> read -> delete via ops
+      const dRef = ops.doc(fakeAdminDb, 'testCol', 'testDoc');
+      await ops.setDoc(dRef, { hello: 'admin' });
+      const snap = await ops.getDoc(dRef);
+      assert.equal(snap.exists(), true);
+      assert.deepEqual(snap.data(), { hello: 'admin' });
+
+      await ops.deleteDoc(dRef);
+      const afterSnap = await ops.getDoc(dRef);
+      assert.equal(afterSnap.exists(), false);
+    });
+  });
 });
+
