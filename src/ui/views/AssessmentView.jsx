@@ -11,55 +11,35 @@ export default function AssessmentView({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
 
-  // Fallback assessment questions if none provided
-  const defaultQuestions = [
-    {
-      assessmentItemId: 'q-1',
-      question: 'أي مما يلي يصف بدقة مصدر القرآن الكريم وفق العقيدة الإسلامية الصحيحة؟',
-      concept: 'مصدر القرآن الكريم ونفي التأليف البشري',
-      options: [
-        { optionId: 'opt-a', text: 'هو كلام الله تعالى المُنزل على رسوله ﷺ بلفظه ومعناه بواسطة جبريل عليه السلام.' },
-        { optionId: 'opt-b', text: 'هو تأليف النبي محمد ﷺ استلهمه من الكتب والشرائع السابقة في جزيرة العرب.' },
-        { optionId: 'opt-c', text: 'هو وحي بالمعنى فقط وصاغه النبي ﷺ بألفاظه وأسلوبه الأدبي.' },
-        { optionId: 'opt-d', text: 'هو كتاب تاريخي يحكي أحداث القرون الماضية دون تشريع ديني ملزم.' }
-      ]
-    },
-    {
-      assessmentItemId: 'q-2',
-      question: 'ما هو الأصل في اختلاف الفقهاء في بعض المسائل الفرعية الاجتهادية؟',
-      concept: 'أسباب اختلاف الفقهاء ومشروعية الاجتهاد',
-      options: [
-        { optionId: 'opt-a', text: 'سعة مدارك الفهم، واختلاف دلالات الألفاظ، وتفاوت بلوغ النصوص مع اتفاقهم على تعظيم الوحي.' },
-        { optionId: 'opt-b', text: 'تعارض وتناقض حقيقي في نصوص القرآن الكريم والسنة النبوية الصحيحة.' },
-        { optionId: 'opt-c', text: 'انقسام مقصود بين المدارس الفقهية لإلغاء العمل ببعض الأحكام الشرعية.' },
-        { optionId: 'opt-d', text: 'الاعتماد على الآراء العقلية المجردة دون الرجوع إلى الأدلة النقلية.' }
-      ]
-    },
-    {
-      assessmentItemId: 'q-3',
-      question: 'عند وجود دعوى تزعم وجود حديث نبوي غير معروف، ما هو الموقف المنهجي الصحيح لمشكاة؟',
-      concept: 'توثيق الحديث النبوي والتحقق من صحة الإسناد',
-      options: [
-        { optionId: 'opt-a', text: 'الامتناع الصادق والتوقف المنهجي (INSUFFICIENT) دون اختلاق نص أو نسبته للنبي ﷺ.' },
-        { optionId: 'opt-b', text: 'توليد صياغة مشابهة من ذاكرة الذكاء الاصطناعي مع تقدير المعنى العام.' },
-        { optionId: 'opt-c', text: 'قبول أي لفظ مادام يوافق المعاني الأخلاقية العامة دون حاجة لمصدر معتمد.' },
-        { optionId: 'opt-d', text: 'استبدال الحديث المزعوم بآية قرآنية تشبهه في اللفظ دون إشارة للمستخدم.' }
-      ]
-    },
-    {
-      assessmentItemId: 'q-4',
-      question: 'ما الفرق الجوهري بين التوكل الشرعي والتواكل المذموم؟',
-      concept: 'التوكل والأخذ بالأسباب',
-      options: [
-        { optionId: 'opt-a', text: 'التوكل يجمع بين صدق اعتماد القلب على الله مع بذل الأسباب المشروعة، بينما التواكل ترك للأسباب.' },
-        { optionId: 'opt-b', text: 'التواكل هو أعلى مراتب اليقين لأن الإنسان يستغني فيه عن العمل والسعي.' },
-        { optionId: 'opt-c', text: 'لا فرق بينهما في الاصطلاح الشرعي وكلاهما بمعنى تفويض الأمر دون عمل.' },
-        { optionId: 'opt-d', text: 'التوكل يختص بالأمور الأخروية والتواكل يختص بالسعي الدنيوي والرزق.' }
-      ]
-    }
-  ];
+  // If no questions derived from real verified journey, display authentic empty state
+  if (!questions || questions.length === 0) {
+    return (
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+        <button
+          onClick={onCancel}
+          className="inline-flex items-center gap-2 text-sm text-[#D1EAE2] hover:text-[#34D399] transition-colors mb-6 group"
+        >
+          <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+          العودة إلى رحلتي المعرفية
+        </button>
+        <div className="bg-[#082A22] border border-[#1A5243] rounded-3xl p-10 text-center shadow-xl">
+          <Award className="w-12 h-12 text-[#34D399] mx-auto mb-4" />
+          <h2 className="text-2xl font-bold text-white mb-2">اختبار الفهم المعرفي</h2>
+          <p className="text-sm text-[#D1EAE2]/80 max-w-md mx-auto mb-6 leading-relaxed">
+            لا يوجد اختبار نشط حالياً. يتطلب بدء التقييم إكمال 20 محطة موثقة في رحلتك المعرفية ليتم توليد الأسئلة بدقة من المسائل التي استكشفتها.
+          </p>
+          <button
+            onClick={onCancel}
+            className="px-6 py-2.5 rounded-xl bg-[#34D399] hover:bg-[#6EE7B7] text-[#06231C] font-bold text-sm transition-colors"
+          >
+            متابعة استكشاف الرحلة المعرفية
+          </button>
+        </div>
+      </div>
+    );
+  }
 
-  const currentQuestions = questions.length > 0 ? questions : defaultQuestions;
+  const currentQuestions = questions;
   const currentQ = currentQuestions[currentIndex] || currentQuestions[0];
   const currentItemId = currentQ.assessmentItemId || currentQ.itemId || currentQ.id;
   const isLast = currentIndex === currentQuestions.length - 1;

@@ -24,49 +24,37 @@ export default function ResultView({
   const [copied, setCopied] = useState(false);
   const [rated, setRated] = useState(false);
 
-  // Default fallback data matching reference if not yet provided
-  const data = resultData || {
-    status: 'ANSWERED',
-    statusLabel: 'إجابة موثقة',
-    answer: "لا، القرآن الكريم ليس من تأليف محمد ﷺ، فهو وحي الله المبين نزل على الرسول ﷺ، وقد ثبت ذلك بالدلائل القرآنية، وبشهادة القرآن نفسه، وبإجماع المسلمين وقواطع البراهين العقلية والتاريخية.",
-    sources: [
-      {
-        id: 1,
-        name: "تفسير الطبري",
-        title: "جامع البيان عن تأويل آي القرآن",
-        section: "تفسير آيات التحدي وإعجاز القرآن",
-        url: "https://dorar.net/tafseer",
-        verified: true,
-        reason: "بيان أن القرآن وحي إلهي معجز لا يستطيعه البشر"
-      },
-      {
-        id: 2,
-        name: "صحيح البخاري",
-        title: "كتاب فضائل القرآن",
-        section: "باب كيف نزل الوحي وبدء أمره",
-        url: "https://dorar.net/hadith",
-        verified: true,
-        reason: "أحاديث بدء الوحي الثابتة بسند صحيح متصل"
-      },
-      {
-        id: 3,
-        name: "موقع وزارة الشؤون الإسلامية",
-        title: "القرآن الكريم وعلومه",
-        section: "أصول التنزيل وسلامة النص القرآني",
-        url: "https://dorar.net/aqeeda",
-        verified: true,
-        reason: "توثيق حفظ النص القرآني ونفي التأليف البشري"
-      }
-    ],
-    deepLearningQuestions: [
-      "ما هي أدلة إعجاز القرآن اللغوي والبياني التي تحدى بها العرب؟",
-      "كيف وثق الصحابة جمع القرآن الكريم في عهد أبي بكر وعثمان رضي الله عنهما؟",
-      "ما الفرق بين الحديث القدسي والقرآن الكريم من حيث اللفظ والمعنى؟",
-      "كيف رد العلماء على شبهات المستشرقين حول مصادر القرآن التاريخية؟"
-    ]
-  };
+  // If no resultData provided, display clean empty state without fabricating fake answers
+  if (!resultData) {
+    return (
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+        <button
+          onClick={onBack}
+          className="inline-flex items-center gap-2 text-sm text-[#D1EAE2] hover:text-[#34D399] transition-colors mb-6 group"
+        >
+          <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+          العودة إلى الصفحة الرئيسية
+        </button>
+        <div className="bg-[#082A22] border border-[#1A5243] rounded-2xl p-12 text-center shadow-xl">
+          <HelpCircle className="w-12 h-12 text-[#34D399] mx-auto mb-4" />
+          <h3 className="text-xl font-bold text-white mb-2">لا توجد إجابة معروضة حالياً</h3>
+          <p className="text-sm text-[#D1EAE2]/70 max-w-md mx-auto mb-6">
+            يرجى كتابة سؤالك في محرك البحث للوصول إلى إجابة موثقة من المصادر المعتمدة.
+          </p>
+          <button
+            onClick={onBack}
+            className="px-6 py-2.5 rounded-xl bg-[#34D399] hover:bg-[#6EE7B7] text-[#06231C] font-bold text-sm transition-colors"
+          >
+            طرح سؤال جديد
+          </button>
+        </div>
+      </div>
+    );
+  }
 
-  // Harmonize sources and deep learning from either prototype or canonical API schema
+  const data = resultData;
+
+  // Harmonize sources and deep learning from canonical API schema
   const sources = (data.sources || []).map((src, idx) => ({
     id: src.id || src.sourceId || idx + 1,
     name: src.sourceName || src.name || 'مصدر معتمد',

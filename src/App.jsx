@@ -30,12 +30,13 @@ export default function App() {
   const [reportData, setReportData] = useState(null);
   const [isSubmittingAssessment, setIsSubmittingAssessment] = useState(false);
 
-  // Load journey state and question history when entering journey view or on initial mount
+  // Load real persisted journey state, question history, and report on initial mount or view switch
   const refreshJourney = async () => {
     try {
-      const [journeyRes, historyRes] = await Promise.all([
+      const [journeyRes, historyRes, reportRes] = await Promise.all([
         mishkatApi.getJourney(sessionId),
-        mishkatApi.getQuestionHistory(sessionId)
+        mishkatApi.getQuestionHistory(sessionId),
+        mishkatApi.getReport(sessionId)
       ]);
       if (journeyRes && journeyRes.success && journeyRes.data) {
         setJourneyState(journeyRes.data.journeyProgress || journeyRes.data);
@@ -46,13 +47,22 @@ export default function App() {
       if (historyRes && historyRes.success && Array.isArray(historyRes.data?.history)) {
         setQuestionHistory(historyRes.data.history);
       }
+      if (reportRes && reportRes.success && reportRes.data?.report) {
+        setReportData(reportRes.data.report);
+        setAssessmentCompleted(true);
+      }
     } catch {
       // Non-blocking fallback
     }
   };
 
+  // Restore state from real persistence on initial load
   useEffect(() => {
-    if (currentView === 'journey') {
+    refreshJourney();
+  }, []);
+
+  useEffect(() => {
+    if (currentView === 'journey' || currentView === 'report') {
       refreshJourney();
     }
   }, [currentView]);
@@ -79,6 +89,8 @@ export default function App() {
         if (res.data.journeyProgress) {
           setJourneyState(res.data.journeyProgress);
         }
+        // Refresh journey records and history after every question
+        refreshJourney();
         setCurrentView('result');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
@@ -92,7 +104,7 @@ export default function App() {
   };
 
   const handleSelectRecord = (record) => {
-    handleAskQuestion(record.question || record.questionText);
+    handleAskQuestion(record.question || record.questionText || record.originalQuestion);
   };
 
   const handleStartAssessment = async () => {
@@ -102,9 +114,15 @@ export default function App() {
     try {
       const res = await mishkatApi.generateAssessment({ sessionId });
       if (res && res.success && res.data) {
-        setAssessmentData(res.data);
-        setCurrentView('assessment');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Backend returns { status: 'CREATED', assessment: { assessmentId, totalItems, items } }
+        const assessment = res.data.assessment || res.data;
+        if (assessment && Array.isArray(assessment.items) && assessment.items.length > 0) {
+          setAssessmentData(assessment);
+          setCurrentView('assessment');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          setErrorMessage(res.data?.reason || 'لا تتوفر أسئلة تقييم مشتقة من رحلتك المعرفية.');
+        }
       } else {
         setErrorMessage(res?.error || 'لا يمكن بدء الاختبار قبل إتمام 20 محطة موثقة في رحلتك.');
       }
@@ -133,7 +151,8 @@ export default function App() {
         });
 
         if (repRes && repRes.success && repRes.data) {
-          setReportData(repRes.data.report || repRes.data);
+          const report = repRes.data.report || repRes.data;
+          setReportData(report);
           setAssessmentCompleted(true);
           setCurrentView('report');
           window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -150,7 +169,18 @@ export default function App() {
     }
   };
 
-  const handleViewReport = () => {
+  const handleViewReport = async () => {
+    if (!reportData) {
+      try {
+        const repRes = await mishkatApi.getReport(sessionId);
+        if (repRes && repRes.success && repRes.data?.report) {
+          setReportData(repRes.data.report);
+          setAssessmentCompleted(true);
+        }
+      } catch {
+        // ignore
+      }
+    }
     setCurrentView('report');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };

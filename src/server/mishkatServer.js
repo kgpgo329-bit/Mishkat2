@@ -164,6 +164,14 @@ export class MishkatServerManager {
         return this._sendJson(res, 200, repResult);
       }
 
+      // ── 5B. GET /api/report ──────────────────────────────────────────────
+      if (req.method === 'GET' && pathname === '/api/report') {
+        const sessionId = parsedUrl.searchParams.get('sessionId') || 'default_session';
+        const reports = await this.reportService.getReportsBySession(sessionId);
+        const latestReport = reports && reports.length > 0 ? reports[reports.length - 1] : null;
+        return this._sendJson(res, 200, { sessionId, report: latestReport, hasReport: Boolean(latestReport) });
+      }
+
       // ── 404 Not Found ────────────────────────────────────────────────────
       return this._sendJson(res, 404, {
         error: 'ENDPOINT_NOT_FOUND',

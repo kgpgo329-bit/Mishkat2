@@ -220,6 +220,19 @@ export async function generateReport({ sessionId, assessmentResult, version = '1
   });
 }
 
+/**
+ * Retrieves the user's persisted Learning Report via GET /api/report.
+ *
+ * @param {string} [sessionId]
+ * @returns {Promise<{success: boolean, data: any, error?: string}>}
+ */
+export async function getReport(sessionId) {
+  const sid = sessionId || getSessionId();
+  return apiRequest(`/api/report?sessionId=${encodeURIComponent(sid)}`, {
+    method: 'GET'
+  });
+}
+
 export const mishkatApi = {
   setApiBaseUrl,
   getApiBaseUrl,
@@ -230,7 +243,8 @@ export const mishkatApi = {
   getQuestionHistory,
   generateAssessment,
   submitAssessment,
-  generateReport
+  generateReport,
+  getReport
 };
 
 export default mishkatApi;

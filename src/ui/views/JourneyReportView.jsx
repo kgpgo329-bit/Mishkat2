@@ -20,61 +20,57 @@ export default function JourneyReportView({ reportData, onBackToJourney, onAskQu
   const js = reportData?.sections?.['ملخص الرحلة المعرفية'] || reportData?.sections?.JOURNEY_SUMMARY;
   const as = reportData?.sections?.['تقييم الفهم'] || reportData?.sections?.ASSESSMENT_EVALUATION;
 
-  // Harmonized report object
+  // If report data has not been generated yet, render authentic empty state
+  if (!reportData || (!js && !as)) {
+    return (
+      <div className="max-w-2xl mx-auto px-4 py-16 text-center">
+        <div className="bg-[#082A22] border border-[#1A5243] rounded-3xl p-8 shadow-xl">
+          <div className="w-16 h-16 rounded-full bg-[#103C31] text-[#34D399] flex items-center justify-center mx-auto mb-4">
+            <Award className="w-8 h-8" />
+          </div>
+          <h2 className="text-xl font-bold text-white mb-2">
+            لم يتم إصدار تقرير الرحلة المعرفية بعد
+          </h2>
+          <p className="text-sm text-[#D1EAE2]/80 leading-relaxed mb-6">
+            يصدر التقرير النهائي تلقائياً بعد إتمام 20 محطة معرفية موثقة واجتياز تقييم الفهم بنجاح عبر النظام الحقيقي.
+          </p>
+          <button
+            onClick={onBackToJourney}
+            className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#34D399] text-[#051C17] font-semibold text-sm rounded-xl hover:bg-[#2BB380] transition-colors"
+          >
+            <ArrowRight className="w-4 h-4" />
+            العودة إلى رحلتي المعرفية
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // Harmonized report object from real persisted state only
   const report = {
-    verifiedQuestionsCount: js?.uniqueVerifiedCount ?? reportData?.verifiedQuestionsCount ?? 20,
-    overallScore: as?.scorePercentage ?? reportData?.overallScore ?? 100,
+    verifiedQuestionsCount: js?.uniqueVerifiedCount ?? reportData?.verifiedQuestionsCount ?? 0,
+    overallScore: as?.scorePercentage ?? reportData?.overallScore ?? 0,
     completionDate: reportData?.createdAt
       ? new Date(reportData.createdAt).toLocaleDateString('ar-SA')
       : (reportData?.completionDate || new Date().toLocaleDateString('ar-SA')),
     topics: js?.topicsCovered
       ? js.topicsCovered.map(t => typeof t === 'string' ? { name: t, count: '' } : t)
-      : (reportData?.topics || [
-          { name: 'القرآن وعلومه', count: 6 },
-          { name: 'العقيدة الإسلامية', count: 5 },
-          { name: 'الفقه والأحكام', count: 4 },
-          { name: 'السيرة والتاريخ', count: 3 },
-          { name: 'المصطلحات والأخلاق', count: 2 }
-        ]),
-    keyConcepts: js?.conceptsEncountered || reportData?.keyConcepts || [
-      'حفظ الوحي ونفي التأليف البشري',
-      'أسباب اختلاف الفقهاء في الفروع',
-      'حقيقة التوكل والفرق بينه وبين التواكل',
-      'ضوابط قبول الحديث وتوثيق الأسانيد',
-      'مراتب الدين وأركان الإيمان'
-    ],
+      : (reportData?.topics || []),
+    keyConcepts: js?.conceptsEncountered || reportData?.keyConcepts || [],
     consultedSources: js?.sourcesUsed
       ? js.sourcesUsed.map(s => ({
           name: s.sourceName || s.name || 'مصدر معتمد',
           title: s.title || '',
           url: s.url || ''
         }))
-      : (reportData?.consultedSources || [
-          { name: 'تفسير الطبري', title: 'جامع البيان', url: 'https://dorar.net/tafseer' },
-          { name: 'صحيح البخاري', title: 'الجامع المسند الصحيح', url: 'https://dorar.net/hadith' },
-          { name: 'موسوعة الفقه الإسلامي', title: 'الدرر السنية', url: 'https://dorar.net/feqhia' },
-          { name: 'الموسوعة التاريخية', title: 'تاريخ الإسلام', url: 'https://dorar.net/history' }
-        ]),
-    deepLearningPaths: reportData?.deepLearningPaths || [
-      { from: 'هل القرآن من تأليف محمد؟', to: 'أدلة الإعجاز اللغوي والبياني وتحدي القرآن' },
-      { from: 'لماذا تختلف المذاهب؟', to: 'أثر اختلاف دلالات الألفاظ والقواعد الأصولية' }
-    ],
+      : (reportData?.consultedSources || []),
+    deepLearningPaths: reportData?.deepLearningPaths || [],
     progression: js?.progression || null,
-    masteredConcepts: as?.conceptsUnderstood || reportData?.masteredConcepts || [
-      'التفريق الدقيق بين الوحي الرباني والنصوص الأدبية البشرية',
-      'إدراك مشروعية اختلاف الفقهاء وأنه نابع من سعة مدارك الاجتهاد',
-      'ضوابط الأمانة العلمية والتوقف المنهجي عند غياب الدليل'
-    ],
+    masteredConcepts: as?.conceptsUnderstood || reportData?.masteredConcepts || [],
     reviewNeededConcepts: as?.conceptsNeedingReview || reportData?.reviewNeededConcepts || [],
     factualInterpretation: as?.factualInterpretation || null,
-    recommendedSourcesForReview: reportData?.recommendedSourcesForReview || [
-      { name: 'الموسوعة الفقهية - الدرر السنية', url: 'https://dorar.net/feqhia' },
-      { name: 'كتاب الإحكام في أصول الأحكام لابن حزم', url: 'https://dorar.net' }
-    ],
-    suggestedNextQuestions: reportData?.suggestedNextQuestions || [
-      'ما هي مراتب الإجماع في أصول الفقه وما الفرق بين قطعي الدلالة وظنيها؟',
-      'كيف يتعامل الفقيه مع المسائل المعاصرة والنوازل الطبية والمالية؟'
-    ]
+    recommendedSourcesForReview: reportData?.recommendedSourcesForReview || [],
+    suggestedNextQuestions: reportData?.suggestedNextQuestions || []
   };
 
   return (
@@ -168,16 +164,20 @@ export default function JourneyReportView({ reportData, onBackToJourney, onAskQu
               <BookOpen className="w-4 h-4 text-[#34D399]" />
               الموضوعات التي استكشفتها
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {report.topics.map((t, i) => (
-                <div key={i} className="p-3 rounded-xl bg-[#0D332A] border border-[#1A5243]">
-                  <div className="text-sm font-semibold text-white">{t.name}</div>
-                  {t.count ? (
-                    <div className="text-xs text-[#34D399] mt-1">{t.count} أسئلة موثقة</div>
-                  ) : null}
-                </div>
-              ))}
-            </div>
+            {report.topics.length > 0 ? (
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {report.topics.map((t, i) => (
+                  <div key={i} className="p-3 rounded-xl bg-[#0D332A] border border-[#1A5243]">
+                    <div className="text-sm font-semibold text-white">{t.name}</div>
+                    {t.count ? (
+                      <div className="text-xs text-[#34D399] mt-1">{t.count} أسئلة موثقة</div>
+                    ) : null}
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="text-xs text-[#7CA79B]">لم يتم تسجيل موضوعات موثقة بعد.</p>
+            )}
           </div>
 
           {/* Key Concepts */}
@@ -186,16 +186,20 @@ export default function JourneyReportView({ reportData, onBackToJourney, onAskQu
               <Sparkles className="w-4 h-4 text-[#34D399]" />
               المفاهيم الرئيسية المكتسبة
             </h3>
-            <ul className="space-y-2.5">
-              {report.keyConcepts.map((concept, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-sm text-[#D1EAE2]">
-                  <span className="w-5 h-5 rounded-full bg-[#103C31] text-[#34D399] flex items-center justify-center text-xs shrink-0 mt-0.5">
-                    ✓
-                  </span>
-                  <span>{concept}</span>
-                </li>
-              ))}
-            </ul>
+            {report.keyConcepts.length > 0 ? (
+              <ul className="space-y-2.5">
+                {report.keyConcepts.map((concept, idx) => (
+                  <li key={idx} className="flex items-start gap-3 text-sm text-[#D1EAE2]">
+                    <span className="w-5 h-5 rounded-full bg-[#103C31] text-[#34D399] flex items-center justify-center text-xs shrink-0 mt-0.5">
+                      ✓
+                    </span>
+                    <span>{concept}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-xs text-[#7CA79B]">لم تسجل مفاهيم مكتسبة بعد.</p>
+            )}
           </div>
 
           {/* Progression Overview (if available from real journey) */}
@@ -242,34 +246,36 @@ export default function JourneyReportView({ reportData, onBackToJourney, onAskQu
           )}
 
           {/* Sources Consulted */}
-          <div className="bg-[#082A22] border border-[#1A5243] rounded-2xl p-6">
-            <h3 className="text-base font-bold text-white mb-4 flex items-center gap-2">
-              <ExternalLink className="w-4 h-4 text-[#34D399]" />
-              المصادر المعتمدة التي رجعت إليها
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {report.consultedSources.map((s, idx) => (
-                <div
-                  key={idx}
-                  className="p-3 rounded-xl bg-[#0D332A] border border-[#1A5243] text-xs flex items-center justify-between"
-                >
-                  <span className="text-white font-medium">
-                    {s.name} {s.title ? `— ${s.title}` : ''}
-                  </span>
-                  {s.url && (
-                    <a
-                      href={s.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#34D399] hover:underline flex items-center gap-1"
-                    >
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  )}
-                </div>
-              ))}
+          {report.consultedSources.length > 0 && (
+            <div className="bg-[#082A22] border border-[#1A5243] rounded-2xl p-6">
+              <h3 className="text-base font-bold text-white mb-4 flex items-center gap-2">
+                <ExternalLink className="w-4 h-4 text-[#34D399]" />
+                المصادر المعتمدة التي رجعت إليها
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {report.consultedSources.map((s, idx) => (
+                  <div
+                    key={idx}
+                    className="p-3 rounded-xl bg-[#0D332A] border border-[#1A5243] text-xs flex items-center justify-between"
+                  >
+                    <span className="text-white font-medium">
+                      {s.name} {s.title ? `— ${s.title}` : ''}
+                    </span>
+                    {s.url && (
+                      <a
+                        href={s.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#34D399] hover:underline flex items-center gap-1"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )}
 
@@ -326,52 +332,56 @@ export default function JourneyReportView({ reportData, onBackToJourney, onAskQu
           )}
 
           {/* Recommended Sources for Review */}
-          <div className="bg-[#082A22] border border-[#1A5243] rounded-2xl p-6">
-            <h3 className="text-base font-bold text-white mb-4 flex items-center gap-2">
-              <BookOpen className="w-4 h-4 text-[#34D399]" />
-              مصادر مقترحة للمراجعة والتعمّق
-            </h3>
-            <div className="space-y-2">
-              {report.recommendedSourcesForReview.map((src, idx) => (
-                <div
-                  key={idx}
-                  className="p-3 rounded-xl bg-[#0D332A] border border-[#1A5243] text-xs sm:text-sm text-[#D1EAE2] flex items-center justify-between"
-                >
-                  <span>{src.name}</span>
-                  {src.url && (
-                    <a
-                      href={src.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#34D399] hover:underline flex items-center gap-1"
-                    >
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  )}
-                </div>
-              ))}
+          {report.recommendedSourcesForReview.length > 0 && (
+            <div className="bg-[#082A22] border border-[#1A5243] rounded-2xl p-6">
+              <h3 className="text-base font-bold text-white mb-4 flex items-center gap-2">
+                <BookOpen className="w-4 h-4 text-[#34D399]" />
+                مصادر مقترحة للمراجعة والتعمّق
+              </h3>
+              <div className="space-y-2">
+                {report.recommendedSourcesForReview.map((src, idx) => (
+                  <div
+                    key={idx}
+                    className="p-3 rounded-xl bg-[#0D332A] border border-[#1A5243] text-xs sm:text-sm text-[#D1EAE2] flex items-center justify-between"
+                  >
+                    <span>{src.name}</span>
+                    {src.url && (
+                      <a
+                        href={src.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#34D399] hover:underline flex items-center gap-1"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Suggested Next Questions */}
-          <div className="bg-[#082A22] border border-[#1A5243] rounded-2xl p-6">
-            <h3 className="text-base font-bold text-white mb-4 flex items-center gap-2">
-              <Sparkles className="w-4 h-4 text-[#34D399]" />
-              أسئلة مقترحة لبدء رحلتك القادمة
-            </h3>
-            <div className="space-y-3">
-              {report.suggestedNextQuestions.map((q, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => onAskQuestion && onAskQuestion(q)}
-                  className="w-full text-right p-3.5 rounded-xl bg-[#0D332A] hover:bg-[#103C31] border border-[#1A5243] hover:border-[#34D399]/40 text-xs sm:text-sm text-[#D1EAE2] hover:text-white flex items-center justify-between transition-colors group"
-                >
-                  <span>{q}</span>
-                  <ChevronLeft className="w-4 h-4 text-[#7CA79B] group-hover:text-[#34D399] group-hover:-translate-x-1 transition-all" />
-                </button>
-              ))}
+          {report.suggestedNextQuestions.length > 0 && (
+            <div className="bg-[#082A22] border border-[#1A5243] rounded-2xl p-6">
+              <h3 className="text-base font-bold text-white mb-4 flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-[#34D399]" />
+                أسئلة مقترحة لبدء رحلتك القادمة
+              </h3>
+              <div className="space-y-3">
+                {report.suggestedNextQuestions.map((q, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => onAskQuestion && onAskQuestion(q)}
+                    className="w-full text-right p-3.5 rounded-xl bg-[#0D332A] hover:bg-[#103C31] border border-[#1A5243] hover:border-[#34D399]/40 text-xs sm:text-sm text-[#D1EAE2] hover:text-white flex items-center justify-between transition-colors group"
+                  >
+                    <span>{q}</span>
+                    <ChevronLeft className="w-4 h-4 text-[#7CA79B] group-hover:text-[#34D399] group-hover:-translate-x-1 transition-all" />
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )}
     </div>
