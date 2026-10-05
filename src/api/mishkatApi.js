@@ -150,6 +150,19 @@ export async function getJourney(sessionId) {
 }
 
 /**
+ * Retrieves the user's Question History via GET /api/history.
+ *
+ * @param {string} [sessionId]
+ * @returns {Promise<{success: boolean, data: any, error?: string}>}
+ */
+export async function getQuestionHistory(sessionId) {
+  const sid = sessionId || getSessionId();
+  return apiRequest(`/api/history?sessionId=${encodeURIComponent(sid)}`, {
+    method: 'GET'
+  });
+}
+
+/**
  * Requests dynamic assessment generation via POST /api/assessment/generate.
  *
  * @param {Object} [params]
@@ -214,6 +227,7 @@ export const mishkatApi = {
   setSessionId,
   askQuestion,
   getJourney,
+  getQuestionHistory,
   generateAssessment,
   submitAssessment,
   generateReport

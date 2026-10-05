@@ -33,9 +33,11 @@ export class MishkatServerManager {
     this.journeyStorage = options.journeyStorage || stores.journeyStorage;
     this.assessmentStorage = options.assessmentStorage || stores.assessmentStorage;
     this.reportStorage = options.reportStorage || stores.reportStorage;
+    this.historyStorage = options.historyStorage || stores.historyStorage;
 
     this.pipelineService = options.pipelineService || new MishkatPipelineService({
-      journeyStorage: this.journeyStorage
+      journeyStorage: this.journeyStorage,
+      historyStorage: this.historyStorage
     });
     this.assessmentService = options.assessmentService || new AssessmentService(this.assessmentStorage);
     this.reportService = options.reportService || new ReportService(this.reportStorage);
@@ -89,6 +91,13 @@ export class MishkatServerManager {
         const sessionId = parsedUrl.searchParams.get('sessionId') || 'default_session';
         const journeyState = await this.pipelineService.getJourneyState(sessionId);
         return this._sendJson(res, 200, journeyState);
+      }
+
+      // ── 2B. GET /api/history ─────────────────────────────────────────────
+      if (req.method === 'GET' && pathname === '/api/history') {
+        const sessionId = parsedUrl.searchParams.get('sessionId') || 'default_session';
+        const history = await this.pipelineService.getQuestionHistory(sessionId);
+        return this._sendJson(res, 200, { sessionId, history });
       }
 
       // ── 3. POST /api/assessment/generate ─────────────────────────────────

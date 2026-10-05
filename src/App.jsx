@@ -24,20 +24,27 @@ export default function App() {
   const [sessionId] = useState(() => mishkatApi.getSessionId());
   const [journeyState, setJourneyState] = useState(null);
   const [journeyRecords, setJourneyRecords] = useState([]);
+  const [questionHistory, setQuestionHistory] = useState([]);
   const [assessmentData, setAssessmentData] = useState(null);
   const [assessmentCompleted, setAssessmentCompleted] = useState(false);
   const [reportData, setReportData] = useState(null);
   const [isSubmittingAssessment, setIsSubmittingAssessment] = useState(false);
 
-  // Load journey state when entering journey view or on initial mount
+  // Load journey state and question history when entering journey view or on initial mount
   const refreshJourney = async () => {
     try {
-      const res = await mishkatApi.getJourney(sessionId);
-      if (res && res.success && res.data) {
-        setJourneyState(res.data.journeyProgress || res.data);
-        if (Array.isArray(res.data.verifiedRecords)) {
-          setJourneyRecords(res.data.verifiedRecords);
+      const [journeyRes, historyRes] = await Promise.all([
+        mishkatApi.getJourney(sessionId),
+        mishkatApi.getQuestionHistory(sessionId)
+      ]);
+      if (journeyRes && journeyRes.success && journeyRes.data) {
+        setJourneyState(journeyRes.data.journeyProgress || journeyRes.data);
+        if (Array.isArray(journeyRes.data.verifiedRecords)) {
+          setJourneyRecords(journeyRes.data.verifiedRecords);
         }
+      }
+      if (historyRes && historyRes.success && Array.isArray(historyRes.data?.history)) {
+        setQuestionHistory(historyRes.data.history);
       }
     } catch {
       // Non-blocking fallback
@@ -214,6 +221,7 @@ export default function App() {
         {currentView === 'journey' && (
           <JourneyView
             records={journeyRecords}
+            history={questionHistory}
             journeyState={journeyState}
             onSelectRecord={handleSelectRecord}
             onStartAssessment={handleStartAssessment}

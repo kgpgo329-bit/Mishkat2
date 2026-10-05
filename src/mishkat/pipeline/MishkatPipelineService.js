@@ -18,6 +18,7 @@
  * - Deep Learning questions re-enter this same pipeline with origin: 'DEEP_LEARNING' and parentRecordId.
  */
 
+import crypto from 'crypto';
 import { defaultTrustedSourceRepository } from '../knowledge/TrustedSourceRepository.js';
 import { RetrievalService } from '../retrieval/RetrievalService.js';
 import { EvidenceVerificationService } from '../evidence/EvidenceVerificationService.js';
@@ -26,6 +27,7 @@ import { GroundedAnswerService, ANSWER_STATUS } from '../answer/index.js';
 import { DeepLearningService } from '../deeplearning/DeepLearningService.js';
 import { JourneyService } from '../journey/JourneyService.js';
 import { InMemoryJourneyStorage } from '../journey/journeyStorage.js';
+import { InMemoryHistoryStorage } from '../history/historyStorage.js';
 import {
   processQuestionInterpretationAsync,
   processQuestionInterpretation
@@ -46,6 +48,9 @@ export class MishkatPipelineService {
     // Session-aware journey service: maps sessionId -> JourneyService or shared storage
     this.journeyStorage = dependencies.journeyStorage || new InMemoryJourneyStorage();
     this.journeyService = dependencies.journeyService || new JourneyService(this.journeyStorage);
+
+    // Independent Question History storage
+    this.historyStorage = dependencies.historyStorage || new InMemoryHistoryStorage();
 
     this._initialized = false;
   }
@@ -106,7 +111,10 @@ export class MishkatPipelineService {
         status: ANSWER_STATUS.REFER_TO_AUTHORITY,
         statusLabel: 'إحالة إلى دار الإفتاء',
         answerText: 'المسألة المطروحة تتعلق بحالة فتوى شخصية خاصة تتطلب التحقق من ملابسات وظروف السائل؛ الواجب الشرعي يقتضي توجيهك إلى مراجعة دور الإفتاء الرسمية المعتمدة أو استشارة مفتٍ مؤهل ومصرح له مباشرة.',
-        sessionId
+        sessionId,
+        questionText: cleanQuestion,
+        origin,
+        parentRecordId
       });
     }
 
@@ -116,7 +124,10 @@ export class MishkatPipelineService {
         status: ANSWER_STATUS.NEEDS_CLARIFICATION,
         statusLabel: 'استيضاح المطلوب',
         answerText: `نرجو التكرم بتوضيح السؤال: ${interpretation.clarificationReason || 'المسألة تحتاج إلى مزيد من الإيضاح لتحديد الحكم والجواب بدقة.'}`,
-        sessionId
+        sessionId,
+        questionText: cleanQuestion,
+        origin,
+        parentRecordId
       });
     }
 
@@ -203,6 +214,22 @@ export class MishkatPipelineService {
     // Fetch current Journey State for the session
     const journeyState = await this.journeyService.getJourneyState(sessionId);
 
+    // ── 8B. Record Question History (Completely Independent from Journey) ──
+    try {
+      await this.historyStorage.saveInteraction({
+        interactionId: 'hist_' + crypto.randomBytes(6).toString('hex'),
+        sessionId,
+        originalQuestion: cleanQuestion,
+        timestamp: new Date().toISOString(),
+        status: answerResult.answerStatus,
+        recordId: journeyRecordId || null,
+        origin: origin || 'USER_QUESTION',
+        parentRecordId: parentRecordId || null
+      });
+    } catch {
+      // Non-blocking history audit logging
+    }
+
     // ── 9. Construct Client-Safe Output Payload ────────────────────────────
     return {
       status: answerResult.answerStatus,
@@ -247,9 +274,34 @@ export class MishkatPipelineService {
     return this.journeyService.getJourneyState(sessionId);
   }
 
+  /**
+   * Helper to fetch Question History directly.
+   * @param {string} sessionId
+   * @returns {Promise<Array<Object>>}
+   */
+  async getQuestionHistory(sessionId) {
+    return this.historyStorage.getHistory(sessionId);
+  }
+
   // ── Private Helpers ────────────────────────────────────────────────────────
 
-  async _buildSpecialRoutingResponse({ status, statusLabel, answerText, sessionId }) {
+  async _buildSpecialRoutingResponse({ status, statusLabel, answerText, sessionId, questionText = '', origin = 'USER_QUESTION', parentRecordId = null }) {
+    // Record special routed interaction in history
+    try {
+      await this.historyStorage.saveInteraction({
+        interactionId: 'hist_' + crypto.randomBytes(6).toString('hex'),
+        sessionId,
+        originalQuestion: questionText,
+        timestamp: new Date().toISOString(),
+        status,
+        recordId: null,
+        origin,
+        parentRecordId
+      });
+    } catch {
+      // Non-blocking history audit logging
+    }
+
     const journeyState = await this.journeyService.getJourneyState(sessionId);
     return {
       status,

@@ -20,6 +20,7 @@
 
 import crypto from 'crypto';
 import { FOLLOW_UP_ORIGIN, DEEP_LEARNING_CONFIG } from './deepLearningTypes.js';
+import { generateAiFollowUps, isGeminiConfigured } from './aiFollowUpGenerator.js';
 
 /** @returns {string} A short random follow-up ID */
 function makeFollowUpId() {
@@ -176,6 +177,28 @@ export async function generateFollowUps(ctx, options = {}) {
   // AI boundary 2: custom generator function (DI / future Gemini integration)
   if (typeof options.generatorOverride === 'function') {
     return await options.generatorOverride(ctx, options);
+  }
+
+  // AI generation: server-side Gemini when configured and not in strict deterministic mode
+  if (options.mode !== 'deterministic' && !options.forceFallback && isGeminiConfigured()) {
+    try {
+      const aiQuestions = await generateAiFollowUps(ctx, options);
+      if (Array.isArray(aiQuestions) && aiQuestions.length >= 2) {
+        return aiQuestions.map(q => ({
+          followUpId: makeFollowUpId(),
+          question: q.question,
+          origin: FOLLOW_UP_ORIGIN,
+          parentRecordId: null,
+          relatedOriginalClaimIds: (ctx.originalClaims || []).slice(0, 2).map(c => c.claimId).filter(Boolean),
+          relatedAnswerClaimIds: (ctx.answerClaims || []).slice(0, 2).map(c => c.claimId).filter(Boolean),
+          relatedEvidenceIds: (ctx.acceptedEvidence || []).slice(0, 2).map(e => e.evidenceId).filter(Boolean),
+          relatedSourceIds: (ctx.usedSources || []).slice(0, 2).map(s => s.sourceId).filter(Boolean),
+          rationale: q.rationale || 'سؤال استكشافي مشتق من الجواب الموثق'
+        })).slice(0, DEEP_LEARNING_CONFIG.MAX_SUGGESTIONS);
+      }
+    } catch {
+      // Safe fallback on any AI generation failure
+    }
   }
 
   // Default: deterministic synthesis
